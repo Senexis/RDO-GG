@@ -1,1 +1,2 @@
-# RDO-Compendium-GG
+# RDO GG
+Something should be coming here eventually.
