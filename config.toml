@@ -74,7 +74,7 @@ disqusShortname = ""
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "RDO.GG & RDO Compendium"
-    subtitle = "Welcome! Here you can find various links regarding everything that has to do with RDO.GG, RDO Compendium. You'll be able to find information and quick access to various resources on this page."
+    subtitle = "Welcome! Here you can find various links regarding everything that has to do with RDO.GG and RDO Compendium. You'll be able to find information and quick access to various resources on this page."
     buttonText = "Browse"
 
 
@@ -84,16 +84,16 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "RDO.GG API"
-      subtitle = "The RDO.GG API is a developer resource that aims to centralize most data for use in various applications."
-      image = "pic001.jpg"
-      url = "https://api.rdo.gg/"
+      title = "Patreon"
+      subtitle = "If you one day find yourself impressed by the bot or the other services we provide you, please consider pledging to our Patreon. It helps a lot, and you get some cool features in return."
+      image = "pic059.jpg"
+      url = "patreon"
 
     [[params.tiles.showcase]]
       title = "RDO Compendium"
       subtitle = "RDO Compendium is a bot that allows you to locate different types of collectibles, missions, herbs, animals, shops, treasures, and more within Red Dead Redemption 2 and Red Dead Online."
       image = "pic031.jpg"
-      url = "https://rdo-compendium.com/"
+      url = "bot"
 
     [[params.tiles.showcase]]
       title = "Invite RDO Compendium"
@@ -114,10 +114,11 @@ disqusShortname = ""
       url = "twitter"
 
     [[params.tiles.showcase]]
-      title = "Patreon"
-      subtitle = "If you one day find yourself impressed by the bot or the other services we provide you, please consider pledging to our Patreon. It helps a lot, and you get some cool features in return."
-      image = "pic059.jpg"
-      url = "patreon"
+      title = "RDO.GG API"
+      subtitle = "The RDO.GG API is a developer resource that aims to centralize most data for use in various applications."
+      image = "pic001.jpg"
+      url = "api"
+
     # You can make more showcases by copy and pasting the code above
 
   [params.blog]
