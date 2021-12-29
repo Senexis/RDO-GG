@@ -18,8 +18,8 @@
                             <header class="major">
                                 <h1>{{ .Title}}</h1>
                             </header>
-                            {{ if .Params.image }}
-                                <span class="image main"><img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" /></span>
+                            {{ if and (.Params.image) (.Params.image_on_details) }}
+                                <span class="image main"><img src="{{ .Params.image | absURL }}" alt="" /></span>
                             {{ end }}
                             {{ .Content }}
                         </div>

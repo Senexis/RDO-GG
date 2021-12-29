@@ -47,26 +47,18 @@ disqusShortname = ""
       url = "/"
 
     [[params.navigation.links]]
-      name = "Blog"
-      url = "blogs"
-
-    # [[params.navigation.links]]
-    #   name = "Generic Blog"
-    #   url = "blogs/ipsum"
-
-    # [[params.navigation.links]]
-    #   name = "Elements"
-    #   url = "elements.html"
+      name = "Knowledge Base"
+      url = "/knowledge-base/"
 
     # Button Style 1
     # [[params.navigation.button1]]
     #   name = "Get Started"
-    #   url = "blogs"
+    #   url = "/knowledge-base/"
 
     # Button Style 2
-    # [[params.navigation.button2]]
-    #   name = "Log In"
-    #   url = "#"
+    [[params.navigation.button2]]
+      name = "API Documentation"
+      url = "/api/"
 
 
   # Banner section
@@ -183,32 +175,37 @@ disqusShortname = ""
     copyright = "2021 - RDO Compendium — Red Dead Redemption, Red Dead Online, RDR and RDO are registered trademarks by Rockstar Games. This site and bot are not endorsed, recognised, sponsored, or approved by Rockstar Games. Thanks to Marcus Virginia for the design!"
 
     # Uses font awesome icons
-    # [[params.footer.social]]
-    #   icon = "fa-twitter"
-    #   url= "https://www.twitter.com"
-    #   label = "Twitter"
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      url= "https://twitter.com/RDOCompendium"
+      label = "Twitter"
 
     # [[params.footer.social]]
     #   icon = "fa-facebook"
-    #   url= "https://www.facebook.com"
+    #   url= "https://facebook.com"
     #   label = "Facebook"
 
     # [[params.footer.social]]
     #   icon = "fa-instagram"
-    #   url= "https://www.instagram.com"
+    #   url= "https://instagram.com"
     #   label = "Instagram"
     
-    # [[params.footer.social]]
-    #   icon = "fa-github"
-    #   url= "https://www.github.com"
-    #   label = "GitHub"
+    [[params.footer.social]]
+      icon = "fa-github"
+      url= "https://github.com/Senexis"
+      label = "GitHub"
 
     # [[params.footer.social]]
     #   icon = "fa-linkedin"
-    #   url= "https://www.linkedin.com"
+    #   url= "https://linkedin.com"
     #   label = "LinkedIn"
 
-    # [[params.footer.quicklinks]]
-    #   text = "Design: "
-    #   url= "https://www.html5up.net"
-    #   alt = "HTML5 UP"
+    [[params.footer.quicklinks]]
+      text = ""
+      url = "/knowledge-base/privacy-policy/"
+      alt = "Privacy Policy"
+
+    [[params.footer.quicklinks]]
+      text = ""
+      url = "/knowledge-base/terms-of-service/"
+      alt = "Terms of Service"

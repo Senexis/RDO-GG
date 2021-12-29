@@ -2375,6 +2375,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			text-align: center;
 		}
 
 			ul.icons li {
@@ -3046,7 +3047,7 @@
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #222;
 		}
 
 			.spotlights > section > .image {
@@ -3093,7 +3094,7 @@
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
-				padding: 2em 3em 0.1em 3em ;
+				padding: 1em 3em 1em 3em;
 				width: 70%;
 			}
 
@@ -3103,12 +3104,21 @@
 					width: 65em;
 				}
 
+					.spotlights > section > .content > .inner > p {
+						font-size: 20px;
+						margin-bottom: 1.5em;
+					}
+
+					.spotlights > section > .content > .inner > .actions {
+						margin-bottom: 0;
+					}
+
 			.spotlights > section:nth-child(2n) {
 				-moz-flex-direction: row-reverse;
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #333856;
+				background-color: #333;
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3256,7 +3266,7 @@
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
-				padding: 0 0.375em 0 0.375em;
+				padding: 0.2em 0.375em 0 0.375em;
 				font-family: Rdr-lino;
 			}
 
@@ -3354,10 +3364,6 @@
 			-webkit-transition: opacity 2.5s ease;
 			-ms-transition: opacity 2.5s ease;
 			transition: opacity 2.5s ease;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
 			-moz-animation: none;
 			-webkit-animation: none;
 			-ms-animation: none;
@@ -3457,11 +3463,6 @@
 		}
 
 		@media screen and (max-width: 480px) {
-
-			#header .logo span {
-				display: none;
-			}
-
 			#header nav a[href="#menu"] {
 				overflow: hidden;
 				padding-right: 0 !important;
@@ -3510,14 +3511,10 @@
 	}
 
 		#banner:after {
-			-moz-transition: opacity 2.5s ease;
-			-webkit-transition: opacity 2.5s ease;
-			-ms-transition: opacity 2.5s ease;
-			transition: opacity 2.5s ease;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition: opacity 1s ease;
+			-webkit-transition: opacity 1s ease;
+			-ms-transition: opacity 1s ease;
+			transition: opacity 1s ease;
 			-moz-pointer-events: none;
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
@@ -3832,6 +3829,7 @@
 			line-height: 1.4;
 			margin-left: 1em;
 			padding-left: 1em;
+			text-align: center;
 		}
 
 			#footer .copyright li:first-child {
