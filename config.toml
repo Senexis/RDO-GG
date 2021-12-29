@@ -38,7 +38,7 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "RDO.GG"
-    subtitle = "By Bob Ross"
+    subtitle = "By Senexis"
     menu = "Menu"
     # logo = "logo.png"
 
