@@ -3110,7 +3110,7 @@
 					}
 
 					.spotlights > section > .content > .inner > .actions {
-						margin-bottom: 0;
+						margin-bottom: 0.5em;
 					}
 
 			.spotlights > section:nth-child(2n) {
@@ -3167,6 +3167,13 @@
 					width: 100%;
 				}
 
+		}
+
+		@media screen and (min-width: 981px) {
+			.spotlights > section > .image img {
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 
 		@media screen and (max-width: 736px) {
