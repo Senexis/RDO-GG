@@ -2,7 +2,7 @@
 title: "Terms of Service"
 description: "Please read the following terms and conditions carefully before using this website and service(s)."
 slug: "terms-of-service"
-image: "http://localhost:1313/img/pic134.jpg"
+image: "/img/pic134.jpg"
 image_on_details: false
 keywords: ""
 categories: 
