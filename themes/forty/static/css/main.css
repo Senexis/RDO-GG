@@ -1,5 +1,5 @@
 @font-face {
-	font-family: Redemption, serif;
+	font-family: "Redemption", serif;
 	src: url(../fonts/Redemption-3632c8affcd3ad0d1727929b00d88c8d.eot);
 	src: url(../fonts/Redemption-3632c8affcd3ad0d1727929b00d88c8d.eot?#iefix) format("embedded-opentype"),
 			url(../fonts/Redemption-4647f57afb68071ad793a4cbdbb375f5.woff) format("woff"),
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-	font-family: Redemption-ja_jp, serif;
+	font-family: "Redemption-ja_jp", serif;
 	src: url(../fonts/ARGothicJIS-SuperBold-acb3c8ed0bf6d5efa70f2443019f9f02.eot);
 	src: url(../fonts/ARGothicJIS-SuperBold-acb3c8ed0bf6d5efa70f2443019f9f02.eot?#iefix) format("embedded-opentype"),
 			url(../fonts/ARGothicJIS-SuperBold-041ff792559f089cffe257586fafb61c.woff) format("woff"),
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-	font-family: Redemption-zh_tw, serif;
+	font-family: "Redemption-zh_tw", serif;
 	src: url(../fonts/ARGuyinB5-B-d41d8cd98f00b204e9800998ecf8427e.eot);
 	src: url(../fonts/ARGuyinB5-B-d41d8cd98f00b204e9800998ecf8427e.eot?#iefix) format("embedded-opentype"),
 			url(../fonts/ARGuyinB5-B-6e905c8d5d1dda774a32e4471bb70576.woff) format("woff"),
@@ -29,7 +29,7 @@
 }
 
 @font-face {
-	font-family: Redemption-ko_kr, serif;
+	font-family: "Redemption-ko_kr", serif;
 	src: url(../fonts/YoonGogooryoM-90fc402c5afe0f436160802dff168834.eot);
 	src: url(../fonts/YoonGogooryoM-90fc402c5afe0f436160802dff168834.eot?#iefix) format("embedded-opentype"),
 			url(../fonts/YoonGogooryoM-486dcc055a199de1a076c1e3d5c1945a.woff) format("woff"),
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-	font-family: Redemption-zh_hans, serif;
+	font-family: "Redemption-zh_hans", serif;
 	src: url(../fonts/MLiPRC-Bold-cee666b26748cca8b945fa859ed9b4a7.eot);
 	src: url(../fonts/MLiPRC-Bold-cee666b26748cca8b945fa859ed9b4a7.eot?#iefix) format("embedded-opentype"),
 			url(../fonts/MLiPRC-Bold-be479ff23d59d4991d6fc47068588bc4.woff) format("woff"),
@@ -49,7 +49,7 @@
 }
 
 @font-face {
-	font-family: Rdr-lino, serif;
+	font-family: "Rdr-lino", serif;
 	src: url(../fonts/RDRLino-Regular-751fa189d50adf6be54009fcaa62c5f1.eot);
 	src: url(../fonts/RDRLino-Regular-751fa189d50adf6be54009fcaa62c5f1.eot?#iefix) format("embedded-opentype"),
 			url(../fonts/RDRLino-Regular-6e10194f8ed679b4392a3935dbfd830d.woff) format("woff"),
@@ -59,7 +59,7 @@
 }
 
 @font-face {
-	font-family: Hapna, serif;
+	font-family: "Hapna", serif;
 	src: url(../fonts/HapnaSlabSerif-DemiBold-0af4dc37a4816c6434eb96e3f98bdb9d.eot);
 	src: url(../fonts/HapnaSlabSerif-DemiBold-0af4dc37a4816c6434eb96e3f98bdb9d.eot?#iefix) format("embedded-opentype"),
 			url(../fonts/HapnaSlabSerif-DemiBold-b9f6380c7b76fcf88c9ade27de58f50c.woff) format("woff"),
@@ -69,7 +69,7 @@
 }
 
 @font-face {
-	font-family: RDRCatalogue-Bold, serif;
+	font-family: "RDRCatalogue-Bold", serif;
 	src: url(../fonts/RDRCatalogueBold-Bold-a33e8053ba96f79d0b39be465647588a.eot);
 	src: url(../fonts/RDRCatalogueBold-Bold-a33e8053ba96f79d0b39be465647588a.eot?#iefix) format("embedded-opentype"),
 			url(../fonts/RDRCatalogueBold-Bold-d050b63918076204fa9ed78391dcf380.woff) format("woff"),
@@ -79,7 +79,7 @@
 }
 
 @font-face {
-	font-family: RDRGothica-Regular, serif;
+	font-family: "RDRGothica-Regular", serif;
 	src: url(../fonts/RDRGothica-Regular-13240b4b7d6c8c9f6cae74ef61e4e6e4.eot);
 	src: url(../fonts/RDRGothica-Regular-13240b4b7d6c8c9f6cae74ef61e4e6e4.eot?#iefix) format("embedded-opentype"),
 			url(../fonts/RDRGothica-Regular-0394966f8ddc515a5c651c63f8ecb92f.woff) format("woff"),
@@ -1724,7 +1724,7 @@
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: Hapna, serif;
+		font-family: "Hapna", serif;
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -1790,7 +1790,7 @@
 		color: #ffffff;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
-		font-family: Rdr-lino, serif;
+		font-family: "Rdr-lino", serif;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -3274,7 +3274,7 @@
 				line-height: 1.65em;
 				margin-right: 0.325em;
 				padding: 0.2em 0.375em 0 0.375em;
-				font-family: Rdr-lino, serif;
+				font-family: "Rdr-lino", serif;
 			}
 
 			#header .logo:hover strong {
@@ -3311,7 +3311,7 @@
 				padding: 0 0.75em;
 				position: relative;
 				vertical-align: middle;
-				font-family: Rdr-lino, serif;
+				font-family: "Rdr-lino", serif;
 			}
 
 				#header nav a:last-child {
@@ -3665,7 +3665,7 @@
 
 				#banner h1 {
 					font-size: 2em;
-					font-family: Rdr-lino, serif;
+					font-family: "Rdr-lino", serif;
 					letter-spacing: 0.1em;
 				}
 
@@ -3981,13 +3981,13 @@
 						line-height: 4em;
 						text-decoration: none;
 						text-transform: uppercase;
-						font-family: Rdr-lino, serif;
+						font-family: "Rdr-lino", serif;
 					}
 
 					#menu ul.links > li > .button {
 						display: block;
 						margin: 0.5em 0 0 0;
-						font-family: Rdr-lino, serif;
+						font-family: "Rdr-lino", serif;
 					}
 
 					#menu ul.links > li:first-child > a:not(.button) {
