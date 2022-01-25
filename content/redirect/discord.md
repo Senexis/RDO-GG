@@ -3,8 +3,7 @@
 # url to "/old_blog" and redirect_to to "/blog" below
 type = "redirect"
 url = "/discord"
-# redirect_to = "https://discord.gg/RBZVHQ7"
-redirect_to = "https://www.patreon.com/posts/60473313"
+redirect_to = "https://discord.gg/UZv7MpETMw"
 redirect_enabled = true
 private = false
 +++
