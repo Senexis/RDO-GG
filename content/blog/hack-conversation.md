@@ -437,6 +437,13 @@ Note regarding this message: If you experience similar feelings, please know tha
 Note regarding this message: This is it, I was too fed up with this chain to bother closing the mail properly.
 > 3 weeks now. Nothing.
 
+### Senexis, Wed, Jan 26, 2022 at 11:13 AM
+> A full month without a reply. Feel free to reply any day now, Discord...
+> 
+> Cheers,
+> 
+> [removed].
+
 ## Closing Thoughts
 Do better Discord. At the time of writing this ticket has been ignored for 3 weeks. Whether I was being a jerk or not, not replying to a ticket for at least 3 weeks is bad whatever way you look at it. This article will be updated should any further replies from Discord come in.
 
