@@ -1857,6 +1857,10 @@
 		padding: 0.5em 0 0.5em 2em;
 	}
 
+	blockquote > p:last-of-type {
+		margin-bottom: 0;
+	}
+
 	code {
 		background: rgba(212, 212, 255, 0.035);
 		font-family: "Courier New", monospace;
