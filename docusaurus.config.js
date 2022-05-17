@@ -108,6 +108,8 @@ const config = {
         redirects: [
           { from: '/help', to: '/wiki/guides/commands' },
           { from: '/knowledge-base', to: '/wiki/faq' },
+          { from: '/knowledge-base/all-about-premium', to: '/wiki/guides/premium' },
+          { from: '/knowledge-base/message-command-deprecation', to: '/news/2022/03/01/message-command-deprecation' },
           { from: '/knowledge-base/privacy-policy', to: '/wiki/privacy-policy' },
           { from: '/knowledge-base/terms-of-service', to: '/wiki/terms-of-service' },
           { from: '/premium', to: '/wiki/guides/premium' },
