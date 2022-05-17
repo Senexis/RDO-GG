@@ -45,14 +45,14 @@ These commands find information about the game that is not within the game.
 
 These commands are additional functionality reserved for Patrons.
 
-| Command   | Description                                 |
-| :-------- | :------------------------------------------ |
-| /audio    | Sends a random audio clip from the game     |
-| /feed     | Generates an RDO-styled feed                |
-| /loading  | Sends a random loading screen from the game |
-| /location | Generates an RDO-styled location card       |
-| /title    | Generates an RDO-styled title               |
-| /toast    | Generates an RDO-styled toast               |
+| Command   | Description                                                                                    |
+| :-------- | :--------------------------------------------------------------------------------------------- |
+| /audio    | Sends a random audio clip from the game                                                        |
+| /feed     | Generates an RDO-styled feed<br />![Feed example](/img/wiki/feed-example.png)                  |
+| /loading  | Sends a random loading screen from the game                                                    |
+| /location | Generates an RDO-styled location card<br />![Location example](/img/wiki/location-example.png) |
+| /title    | Generates an RDO-styled title<br />![Title example](/img/wiki/title-example.png)               |
+| /toast    | Generates an RDO-styled toast<br />![Toast example](/img/wiki/toast-example.png)               |
 
 ## Miscellaneous
 
