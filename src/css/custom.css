@@ -1,3 +1,5 @@
+@import url("/node_modules/@fortawesome/fontawesome-free/css/brands.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -130,4 +132,16 @@ h5,
 h6 {
   font-weight: normal;
   font-family: "Rdr-lino", "Times New Roman", Times, serif;
+}
+
+.fa-discord {
+  color: #5865f2;
+}
+
+.fa-patreon {
+  color: #ff424d;
+}
+
+.fa-twitter {
+  color: #1da1f2;
 }
