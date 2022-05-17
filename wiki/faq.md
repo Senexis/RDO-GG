@@ -5,7 +5,7 @@ sidebar_position: 1
 # FAQ
 
 If you're reading this page, you're probably looking for an answer for some question. To help get you going and back to Discord, here's a list of questions that are frequently asked.
-Please note that a command guide and a settings guide are available, so if you're looking for a list of commands, those are available over there.
+Please note that a [commands guide](./guides/commands) and a [settings guide](./guides/settings) are available, so if you're looking for a list of commands, those are available over there.
 
 :::note
 Is something missing from this FAQ? Let us know in the support server or use `/feedback` in a guild with RDO Compendium.

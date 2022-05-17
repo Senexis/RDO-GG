@@ -24,6 +24,10 @@ can use the following steps to get your Premium benefits:
 3. Create an invite link for the server you want to activate, or ask a staff member to create one for you;
 4. Use the `/premium activate` command together with the link to activate your server.
 
+:::note
+Need help linking your Patreon account to your Discord account? Patreon has instructions on how to do so [available here](https://support.patreon.com/hc/en-us/articles/212052266).
+:::
+
 :::tip
 If you are not able to use the `/premium` commands, it means that you have not been assigned a role in the support Discord yet. Please wait up to 24 hours for a role to be assigned to you.
 If after waiting you still don’t have a role, please contact the RDO.GG Support staff.
