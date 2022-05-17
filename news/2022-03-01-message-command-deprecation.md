@@ -9,11 +9,10 @@ This change has been made since Discord will be limiting access to messages to v
 will not be applying to get explicit access to your messages after that date and instead migrated to Slash Commands. For a more detailed explanation, feel free to
 [read this support article](https://support-dev.discord.com/hc/en-us/articles/4404772028055).
 
-Attempting to use a message command in any RDO.GG bot will result in a deprecation notice being displayed. This deprecation notice can be disabled using the `/settings` command. If you choose not to
-disable to deprecation notice, it will automatically be removed after August 31st 2022.
+Attempting to use a message command in any RDO.GG bot will result in a deprecation notice being displayed.
 
 :::tip
-You can use the `/settings set boolean` command to disable this deprecation notice.
+You can use the `/settings set boolean` command to disable this deprecation notice. If you choose not to disable to deprecation notice, it will automatically be removed after August 31st 2022.
 :::
 
 ## Benefits
