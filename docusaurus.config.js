@@ -58,20 +58,14 @@ const config = {
         items: [
           {
             type: 'doc',
-            label: 'Wiki',
+            label: 'Information & Guides',
             position: 'left',
             docId: 'faq',
           },
           {
             to: '/news',
-            label: 'News',
+            label: 'News & Updates',
             position: 'left',
-          },
-          {
-            href: 'https://rdo.gg/invite/',
-            label: 'Invite the Bot',
-            position: 'left',
-            target: '_blank',
           },
           {
             href: 'https://rdo.gg/discord/',
@@ -113,6 +107,9 @@ const config = {
         fromExtensions: ['html', 'htm'],
         redirects: [
           { from: '/help', to: '/wiki/guides/commands' },
+          { from: '/knowledge-base', to: '/wiki/faq' },
+          { from: '/knowledge-base/privacy-policy', to: '/wiki/privacy-policy' },
+          { from: '/knowledge-base/terms-of-service', to: '/wiki/terms-of-service' },
           { from: '/premium', to: '/wiki/guides/premium' },
           { from: '/upsale', to: '/wiki/guides/premium' },
         ],
