@@ -49,6 +49,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        content: 'Welcome to the new RDO.GG. Pardon the dust while we finish the documentation. 🧹',
+        textColor: 'var(--ifm-font-color-base)',
+        backgroundColor: 'var(--ifm-footer-background-color)',
+        isCloseable: false,
+      },
       navbar: {
         title: 'RDO.GG',
         logo: {
