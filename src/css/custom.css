@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Redemption;
+  src: url(/static/fonts/Redemption.eot);
+  src: url(/static/fonts/Redemption.eot?#iefix) format("embedded-opentype"),
+    url(/static/fonts/Redemption.woff) format("woff"),
+    url(/static/fonts/Redemption.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Redemption-ja_jp;
+  src: url(/static/fonts/ARGothicJIS-SuperBold.eot);
+  src: url(/static/fonts/ARGothicJIS-SuperBold.eot?#iefix) format("embedded-opentype"),
+    url(/static/fonts/ARGothicJIS-SuperBold.woff) format("woff"),
+    url(/static/fonts/ARGothicJIS-SuperBold.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Redemption-zh_tw;
+  src: url(/static/fonts/ARGuyinB5-B.eot);
+  src: url(/static/fonts/ARGuyinB5-B.eot?#iefix) format("embedded-opentype"),
+    url(/static/fonts/ARGuyinB5-B.woff) format("woff"),
+    url(/static/fonts/ARGuyinB5-B.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Redemption-ko_kr;
+  src: url(/static/fonts/YoonGogooryoM.eot);
+  src: url(/static/fonts/YoonGogooryoM.eot?#iefix) format("embedded-opentype"),
+    url(/static/fonts/YoonGogooryoM.woff) format("woff"),
+    url(/static/fonts/YoonGogooryoM.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Redemption-zh_hans;
+  src: url(/static/fonts/MLiPRC-Bold.eot);
+  src: url(/static/fonts/MLiPRC-Bold.eot?#iefix) format("embedded-opentype"),
+    url(/static/fonts/MLiPRC-Bold.woff) format("woff"),
+    url(/static/fonts/MLiPRC-Bold.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rdr-lino;
+  src: url(/static/fonts/RDRLino-Regular.eot);
+  src: url(/static/fonts/RDRLino-Regular.eot?#iefix) format("embedded-opentype"),
+    url(/static/fonts/RDRLino-Regular.woff) format("woff"),
+    url(/static/fonts/RDRLino-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Hapna;
+  src: url(/static/fonts/HapnaSlabSerif-DemiBold.eot);
+  src: url(/static/fonts/HapnaSlabSerif-DemiBold.eot?#iefix) format("embedded-opentype"),
+    url(/static/fonts/HapnaSlabSerif-DemiBold.woff) format("woff"),
+    url(/static/fonts/HapnaSlabSerif-DemiBold.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: RDRCatalogue-Bold;
+  src: url(/static/fonts/RDRCatalogueBold-Bold.eot);
+  src: url(/static/fonts/RDRCatalogueBold-Bold.eot?#iefix) format("embedded-opentype"),
+    url(/static/fonts/RDRCatalogueBold-Bold.woff) format("woff"),
+    url(/static/fonts/RDRCatalogueBold-Bold.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: RDRGothica-Regular;
+  src: url(/static/fonts/RDRGothica-Regular.eot);
+  src: url(/static/fonts/RDRGothica-Regular.eot?#iefix) format("embedded-opentype"),
+    url(/static/fonts/RDRGothica-Regular.woff) format("woff"),
+    url(/static/fonts/RDRGothica-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --ifm-color-primary: #ff2424;
+  --ifm-color-primary-dark: #ff0707;
+  --ifm-color-primary-darker: #f70000;
+  --ifm-color-primary-darkest: #cc0000;
+  --ifm-color-primary-light: #ff4141;
+  --ifm-color-primary-lighter: #ff5050;
+  --ifm-color-primary-lightest: #ff7b7b;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-font-size-base: 110%;
+  --ifm-font-family-base: "Hapna", "Times New Roman", Times, serif;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #ff2424;
+  --ifm-color-primary-dark: #ff0707;
+  --ifm-color-primary-darker: #f70000;
+  --ifm-color-primary-darkest: #cc0000;
+  --ifm-color-primary-light: #ff4141;
+  --ifm-color-primary-lighter: #ff5050;
+  --ifm-color-primary-lightest: #ff7b7b;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+table {
+  @apply table w-full
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-family: "Rdr-lino", "Times New Roman", Times, serif;
+}
