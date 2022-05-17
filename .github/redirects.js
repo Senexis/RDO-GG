@@ -15,19 +15,40 @@ for (const [from, to] of Object.entries(redirects)) {
 
   const file = `
     <!doctype html>
-    <html>
-    
-    <head>
-      <title>Redirecting...</title>
-      <link rel="canonical" href="${to}" />
-      <meta charset="utf-8">
-      <meta http-equiv="refresh" content="0; url=${to}">
-    </head>
-
-    <body>
-      <p>You are being redirected to <a href="${to}">${to}</a>.</p>
-    </body>
-    
+    <html lang="en">
+      <head>
+        <title>Redirecting...</title>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="0; url=${to}">
+        <link rel="canonical" href="${to}" />
+        <style>
+          html {
+            background-color: #1b1b1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+          }
+          div {
+            padding: 2em;
+            text-align: center;
+          }
+          a {
+            color: #ff2424;
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        </style>
+      </head>
+      <body>
+        <div>
+          <h1>You are being redirected...</h1>
+          <p>If you are not redirected in the next couple of seconds, <a href="${to}">please click here</a>.</p>
+        </div>
+        <script>
+          window.location.href = '${to}';
+        </script>
+      </body>
     </html>
   `;
 
