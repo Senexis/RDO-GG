@@ -9,7 +9,7 @@ export default function Home(): JSX.Element {
     <Layout title='Home'>
       <Parallax strength={500}>
         <div className="container mx-auto flex px-5 py-24 lg:py-36 items-center justify-center flex-col">
-          <div className="text-center lg:w-2/3 w-full">
+          <div className="w-full md:w-5/6 lg:w-3/4 2xl:w-2/3 text-center">
             <img className="w-2/3 lg:w-1/2 mb-8" src="/img/header-logo.png" />
             <p className="leading-relaxed mb-8">Welcome! Here you can find various links regarding everything that has to do with RDO.GG and RDO Compendium. You'll be able to find information and quick access to various resources on this page.</p>
             <div className="text-center">
@@ -23,7 +23,7 @@ export default function Home(): JSX.Element {
           </div>
         </div>
         <div className="px-5 py-12 mx-auto flex flex-wrap">
-          <div className="w-full lg:w-2/3 mx-auto">
+          <div className="w-full md:w-5/6 lg:w-3/4 2xl:w-2/3 mx-auto">
             <div className="flex flex-wrap -mx-2">
               <div className="p-2 w-full">
                 <Link to="https://rdo.gg/invite/" className="min-h-[30vh] lg:min-h-[40vh] flex flex-wrap w-full py-32 px-10 relative">

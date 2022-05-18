@@ -134,6 +134,14 @@ h6 {
   font-family: "Rdr-lino", "Times New Roman", Times, serif;
 }
 
+h2 > a {
+  color: inherit;
+}
+
+h2 > a:hover {
+  text-decoration: none;
+}
+
 .fa-discord {
   color: #5865f2;
 }
