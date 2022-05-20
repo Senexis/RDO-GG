@@ -13,7 +13,7 @@ const GetStartedStep = (props) => {
   const { isFirst, isLast, hasNext, next, hasPrev, prev, current, total } = useSteps();
 
   return (
-    <div className="w-full h-[70vh] overflow-hidden flex flex-col rounded-lg bg-[#18191c] shadow-lg mb-8">
+    <div className="w-full h-[70vh] overflow-hidden flex flex-col rounded-lg text-white bg-[#18191c] shadow-lg mb-8">
       <div className="flex-none px-8 h-16 flex items-center bg-[#2f3136]">
         <h2 className="m-0">{props.title ?? `Step ${current}`}</h2>
       </div>
@@ -57,7 +57,7 @@ const GetStartedSteps = () => {
         <div className="mb-4 text-center">
           <img src="/img/wiki/get-started-1.png" alt="A screenshot showing Discord's external application invitation screen." />
         </div>
-        <p>Pfew, that's a bit of information. What it's actually telling you is that you're about to add the RDO Compendium bot to one of your servers. It mentions that it will be able to create commands, and that's exactly what we want! What Discord means with being able to create commands is that the bot will be able to show commands like <code>/find</code> to the users in your server.</p>
+        <p>Pfew, that's a bit of information. What it's actually telling you is that you're about to add the RDO Compendium bot to one of your servers. It mentions that it will be able to create commands, and that's exactly what we want! What Discord means with being able to create commands is that the bot will be able to show commands like <code className="text-black">/find</code> to the users in your server.</p>
         <p>Let's go ahead and add the bot! Click Continue.</p>
       </GetStartedStep>
       <GetStartedStep title="Select your server">
@@ -95,9 +95,9 @@ const GetStartedSteps = () => {
         <ul>
           <li>Manage Webhooks: Used to create, update and delete webhooks. Webhooks are a way for bots to send messages to your channels. RDO Compendium uses these for automated pings, like for Madam Nazar's new location.</li>
           <li>Send Messages: Used to send messages in channels the bot has access to. RDO Compendium uses this to occasionally send a message to respond to you, or to notify you of any changes in the bot.</li>
-          <li>Send Messages in Threads: Used to send messages in threads specifically. RDO Compendium uses this in the <code>/train</code> commands to update the group about the status of the train.</li>
-          <li>Create Public Threads: Used to be able to create public threads. RDO Compendium uses this to create threads for <code>/train</code> groups.</li>
-          <li>Create Private Threads: Used to be able to create private threads. RDO Compendium uses this to create threads for <code>/train</code> groups.</li>
+          <li>Send Messages in Threads: Used to send messages in threads specifically. RDO Compendium uses this in the <code className="text-black">/train</code> commands to update the group about the status of the train.</li>
+          <li>Create Public Threads: Used to be able to create public threads. RDO Compendium uses this to create threads for <code className="text-black">/train</code> groups.</li>
+          <li>Create Private Threads: Used to be able to create private threads. RDO Compendium uses this to create threads for <code className="text-black">/train</code> groups.</li>
           <li>Embed Links: Used to show previews of links, and to be able to post fancy-looking messages. RDO Compendium uses embeds for responses to any of your commands.</li>
           <li>Attach Files: Used to be able to upload media in channels the bot has access to. RDO Compendium uses this to be able to post images of for the location of Bears.</li>
           <li>Read Message History: Used to be able to read posted messages. RDO Compendium uses this to respond to your commands.</li>
