@@ -8,6 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'RDO.GG',
   tagline: 'Home of the RDO.GG API and RDO Compendium',
+  titleDelimiter: ' - ',
   url: 'https://rdo.gg',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -32,6 +33,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           path: 'wiki',
           routeBasePath: '/wiki',
+          showLastUpdateTime: true,
         },
         blog: {
           path: './news',
@@ -66,7 +68,7 @@ const config = {
             type: 'doc',
             label: 'Information & Guides',
             position: 'left',
-            docId: 'faq',
+            docId: 'getting-started',
           },
           {
             to: '/news',
@@ -129,7 +131,7 @@ const config = {
         redirects: [
           { from: '/deprecation', to: '/news/2022/03/01/message-command-deprecation' },
           { from: '/help', to: '/wiki/guides/commands' },
-          { from: '/knowledge-base', to: '/wiki/faq' },
+          { from: '/knowledge-base', to: '/wiki/getting-started' },
           { from: '/knowledge-base/all-about-premium', to: '/wiki/guides/premium' },
           { from: '/knowledge-base/message-command-deprecation', to: '/news/2022/03/01/message-command-deprecation' },
           { from: '/knowledge-base/privacy-policy', to: '/wiki/privacy-policy' },

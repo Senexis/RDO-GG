@@ -16,8 +16,8 @@ export default function Home(): JSX.Element {
               <Link className="button button--secondary button--lg m-2 block lg:inline-block" to="https://rdo.gg/invite/">
                 Invite the Bot
               </Link>
-              <Link className="button button--secondary button--lg m-2 block lg:inline-block" to="https://rdo.gg/discord/">
-                Join the Discord
+              <Link className="button button--secondary button--lg m-2 block lg:inline-block" to="/wiki/getting-started">
+                Getting Started
               </Link>
             </div>
           </div>
