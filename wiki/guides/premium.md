@@ -4,6 +4,18 @@ While the bulk of the features of RDO Compendium are free, there are some Premiu
 bots through Patreon. If you are interested in supporting the bots, thank you very much! On this page you’ll find more info about the Premium features, how to activate your premium benefits, and
 how to manage them.
 
+:::tip
+
+If you don't feel like reading, here's the commands:
+
+- `/premium activate`: Activate your server.
+- `/premium deactivate`: Deactivate your server.
+- `/premium list`: List the servers you've activated.
+
+You can use these in the [RDO.GG Support Discord](https://rdo.gg/discord/).
+
+:::
+
 ## Premium Benefits
 
 The currently available Premium benefits include:
@@ -20,7 +32,7 @@ To activate Premium, first head over to our Patreon page and choose one of the a
 can use the following steps to get your Premium benefits:
 
 1. Become a Patron and link your Patreon account to your Discord account;
-2. Join the RDO.GG Support Discord;
+2. Join the [RDO.GG Support Discord](https://rdo.gg/discord/);
 3. Create an invite link for the server you want to activate, or ask a staff member to create one for you;
 4. Use the `/premium activate` command together with the link to activate your server.
 
@@ -37,9 +49,9 @@ If after waiting you still don’t have a role, please contact the RDO.GG Suppor
 
 Sometimes you may want to switch servers and take your Premium benefits with you. Here’s how to get your new server set up with those benefits:
 
-1. Join the RDO.GG Support Discord;
+1. Join the [RDO.GG Support Discord](https://rdo.gg/discord/);
 2. Use the `/premium list` command to see all of your currently activated servers;
-3. For the server you want to switch from, use the `/premium remove` command together with the name to deactivate that server;
+3. For the server you want to switch from, use the `/premium deactivate` command together with the name to deactivate that server;
 4. Create an invite link for the server you want to activate, or ask a staff member to create one for you;
 5. For the server you want to switch to, use the `/premium activate` command together with the link to activate your server.
 
@@ -51,9 +63,9 @@ If you decide you want to switch servers, the Premium benefits will be removed f
 
 If you decide you want to stop providing Premium benefits to a server, you can use the following steps to remove your Premium benefits from it:
 
-1. Join the RDO.GG Support Discord;
+1. Join the [RDO.GG Support Discord](https://rdo.gg/discord/);
 2. Use the `/premium list` command to see all of your currently activated servers;
-3. For the server you want to switch from, use the `/premium remove` command together with the name to deactivate that server.
+3. For the server you want to switch from, use the `/premium deactivate` command together with the name to deactivate that server.
 
 :::caution
 If you decide you want to leave a server, the Premium benefits will be removed from that server, which will reset all Premium-only settings to their defaults.
