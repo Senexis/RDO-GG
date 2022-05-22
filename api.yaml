@@ -9,8 +9,6 @@ info:
     **Support the API.** While I won't send the Pinkertons after you if you don't, I'd really appreciate it if you credit this API when you use it. In the case of a different provider being mentioned, please also credit them. This API is provided for free by the RDO.GG project. Please consider [becoming a Patron](https://rdo.gg/patreon/) to help support continued development.
 
     **Don't abuse the API.** If you do, you will jeopardize the future of the API. There is no need to update your application excessively. Properties such as `endTime` are provided to save you having to make requests and save the API from having to serve those requests. If I detect extensive abuse I will make further changes to the API such as introducing API tokens. I don't want to, but I will if I have to.
-
-    _© 2021 - All rights reserved. Red Dead Redemption, Red Dead Online and Social Club are registered trademarks by Rockstar Games. This service is not endorsed, recognised, sponsored, or approved by Rockstar Games._
   contact:
     name: RDO.GG API Support
     url: https://rdo.gg/discord/
