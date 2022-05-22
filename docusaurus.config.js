@@ -43,8 +43,8 @@ const config = {
             disableSearch: true,
             expandResponses: '200',
             hideDownloadButton: true,
+            hideSchemaTitles: true,
             sortEnumValuesAlphabetically: true,
-            sortOperationsAlphabetically: true,
           },
         },
       },
@@ -75,12 +75,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        content: 'Welcome to the new RDO.GG. Pardon the dust while we finish the documentation. 🧹',
-        textColor: 'var(--ifm-font-color-base)',
-        backgroundColor: 'var(--ifm-footer-background-color)',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   content: 'Welcome to the new RDO.GG. Pardon the dust while we finish the documentation. 🧹',
+      //   textColor: 'var(--ifm-font-color-base)',
+      //   backgroundColor: 'var(--ifm-footer-background-color)',
+      //   isCloseable: false,
+      // },
       navbar: {
         title: 'RDO.GG',
         logo: {
