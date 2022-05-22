@@ -26,6 +26,30 @@ const config = {
 
   presets: [
     [
+      'redocusaurus',
+      {
+        specs: [
+          {
+            spec: 'api.yaml',
+            route: '/api/',
+            layout: {
+              title: 'API',
+            },
+          },
+        ],
+        theme: {
+          primaryColor: '#cc0000',
+          options: { 
+            disableSearch: true,
+            expandResponses: '200',
+            hideDownloadButton: true,
+            sortEnumValuesAlphabetically: true,
+            sortOperationsAlphabetically: true,
+          },
+        },
+      },
+    ],
+    [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
@@ -73,6 +97,11 @@ const config = {
           {
             to: '/news',
             label: 'News & Updates',
+            position: 'left',
+          },
+          {
+            to: '/api',
+            label: 'API',
             position: 'left',
           },
           {

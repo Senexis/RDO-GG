@@ -1,0 +1,1466 @@
+---
+openapi: 3.0.0
+info:
+  title: RDO.GG API
+  description: |-
+    The RDO.GG API aims to centralize any and all API endpoints that can be used to build awesome applications for the Red Dead Online community. If you know an API endpoint that is not listed below, please [join the Discord](https://rdo.gg/discord/) and report the endpoint together with some implementation details.
+
+    **Developers, developers, developers.** Please note that this API is geared towards a more advanced audience as it uses codenames over actual names. This is done to allow creativity with how the various API endpoints can be used and to limit the size of the requests. If you are not a developer, please visit other sites like  [the collector map](https://jeanropke.github.io/RDR2CollectorsMap/) and others, or use the [RDO Compendium Discord bot](https://rdo-compendium.com/).
+
+    **Support the API.** While I won't send the Pinkertons after you if you don't, I'd really appreciate it if you credit this API when you use it. In the case of a different provider being mentioned, please also credit them. This API is provided for free by the RDO.GG project. Please consider [becoming a Patron](https://rdo.gg/patreon/) to help support continued development.
+
+    **Don't abuse the API.** If you do, you will jeopardize the future of the API. There is no need to update your application excessively. Properties such as `endTime` are provided to save you having to make requests and save the API from having to serve those requests. If I detect extensive abuse I will make further changes to the API such as introducing API tokens. I don't want to, but I will if I have to.
+
+    _© 2021 - All rights reserved. Red Dead Redemption, Red Dead Online and Social Club are registered trademarks by Rockstar Games. This service is not endorsed, recognised, sponsored, or approved by Rockstar Games._
+  contact:
+    name: RDO.GG API Support
+    url: https://rdo.gg/discord/
+    email: hello@rdo.gg
+  version: 1.1.0
+servers:
+- url: https://api.rdo.gg
+  description: The main RDO.GG API endpoint.
+tags:
+- name: Collector
+  description: Everything related to the Collector role.
+- name: Daily Challenges
+  description: Everything related to Daily Challenges.
+- name: Free Roam Events
+  description: Everything related to Free Roam events.
+- name: Social Club
+  description: Everything related to Social Club.
+- name: Status
+  description: Everything related to service status.
+- name: Tunables
+  description: Everything related to Tunables.
+- name: RDO.GG
+  description: Everything related to RDO.GG.
+paths:
+  /benefits:
+    get:
+      tags:
+      - Social Club
+      summary: Get current Benefits articles.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/).**
+
+        Retrieves the full list of the current Benefits. These update every Tuesday at around 3 PM (UTC) but the update window is pretty sizeable.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BenefitsResponse'
+  /challenges:
+    get:
+      tags:
+      - Daily Challenges
+      summary: Get current Daily Challenges.
+      description: |-
+        **Provided by [Alloc8or](https://twitter.com/alloc8or).**
+
+        Retrieves the full list of the current daily challenges. Daily Challenges are updated every day at 6 AM (UTC), also denoted by `endTime`. There is no need to keep updating the daily challenges as they will only update after the end time has passed.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChallengesResponse'
+  /cycles:
+    get:
+      tags:
+      - Collector
+      summary: Get current Collector cycles.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/). Special thanks to Ghost and Michal__d.**
+
+        Retrieves the Collector cycles of yesterday, today, and tomorrow. Cycles change every day at 12 AM (UTC), also denoted by `endTime`. There is no need to keep updating the cycles as they will only update after the end time has passed.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CyclesResponse'
+  /fme:
+    get:
+      tags:
+      - Free Roam Events
+      summary: Deprecated, use /events instead.
+      description: '**Deprecated, use /events instead.**'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FmeResponse'
+      deprecated: true
+  /events:
+    get:
+      tags:
+      - Free Roam Events
+      summary: Get current Free Roam Events schedule.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
+
+        Retrieves the current Free Roam Events schedule. These are updated once a week when the tunables update. These change when Rockstar decides to do a custom schedule, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventsResponse'
+  /nazar:
+    get:
+      tags:
+      - Collector
+      summary: Get current Madam Nazar location.
+      description: |-
+        **Provided by [Alloc8or](https://twitter.com/alloc8or).**
+
+        Retrieves the current location of Madam Nazar. Madam Nazar's location is updated every day at 6 AM (UTC), also denoted by `endTime`. There is no need to keep updating the location as it will only update after the end time has passed.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NazarResponse'
+  /news:
+    get:
+      tags:
+      - Social Club
+      summary: Get current Newswire articles.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/).**
+
+        Retrieves the full list of the Newswire articles. These update every Tuesday at around 12 PM (UTC) but the update window is pretty sizeable.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewswireResponse'
+  /news/{id}.json:
+    get:
+      tags:
+      - Social Club
+      summary: Get specific Newswire article by ID.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/).**
+
+        Retrieves a specific Newswire article by ID. These update every Tuesday at around 12 PM (UTC) but the update window is pretty sizeable.
+      parameters:
+      - name: id
+        in: path
+        description: ID of the file.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewswireSingleResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /patches:
+    get:
+      tags:
+      - Social Club
+      summary: Get current game patches.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/).**
+
+        Retrieves the full list of the game patches. These update sporadically when the game updates, or on Tuesdays when a new event week activates which adds new content previously added by the update.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PatchesResponse'
+  /patrons:
+    get:
+      tags:
+      - RDO.GG
+      summary: Get current RDO.GG patrons.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/).**
+
+        Primarily used for RDO.GG related applications. Shows a full list of the people currently pledging to the RDO.GG Patreon. Also provides information about the currently active tiers on said Patreon. The list might not always be accurate due to Patreon API delays.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PatronsResponse'
+  /stamps:
+    get:
+      tags:
+      - Tunables
+      summary: Get current stamps displayed on in-game UIs like the Player Menu.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
+
+        Stamps are displayed on in-game UIs like the Player Menu to display currently active bonuses in certain competitive or cooperative modes in the game. They inform the player of active XP, Cash and/or Gold bonuses of x1, x2, or x3.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StampsResponse'
+  /status/{service}.json:
+    get:
+      tags:
+      - Status
+      summary: Get the service status of a service.
+      parameters:
+      - name: service
+        in: path
+        description: Service
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          enum:
+          - digital_ocean
+          - discord
+          - mongodb_cloud
+          - rockstar
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatusResponse'
+  /translations:
+    get:
+      tags:
+      - RDO.GG
+      summary: Get current translation status of RDO.GG.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/).**
+
+        Primarily used for RDO.GG related applications. Shows a full list of available languages, namespaces (commands), and all translation progress of each language. Additionally, also lists all the users with their respective word count.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TranslationsResponse'
+  /tunables:
+    get:
+      tags:
+      - Tunables
+      summary: Get current Red Dead Online Tunables.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
+
+        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TunablesResponse'
+  /tunables/all.json:
+    get:
+      tags:
+      - Tunables
+      summary: Get the full list of Red Dead Online Tunables by date.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
+
+        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TunableAllResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /tunables/{hash}.json:
+    get:
+      tags:
+      - Tunables
+      summary: Get specific Red Dead Online Tunables file by SHA-1 hash.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
+
+        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
+      parameters:
+      - name: hash
+        in: path
+        description: A generated SHA-1 hash of this response.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TunableResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /tunables/gta:
+    get:
+      tags:
+      - Tunables
+      summary: Get current GTA Online Tunables.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
+
+        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Thursday at around 9 AM (UTC) but the update window is pretty sizeable.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TunablesResponse'
+  /tunables/gta/all.json:
+    get:
+      tags:
+      - Tunables
+      summary: Get the full list of GTA Online Tunables by date.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
+
+        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Thursday at around 9 AM (UTC) but the update window is pretty sizeable.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TunableAllResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /tunables/gta/{hash}.json:
+    get:
+      tags:
+      - Tunables
+      summary: Get specific GTA Online Tunables file by SHA-1 hash.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
+
+        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Thursday at around 9 AM (UTC) but the update window is pretty sizeable.
+      parameters:
+      - name: hash
+        in: path
+        description: A generated SHA-1 hash of this response.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TunableResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /weekly:
+    get:
+      tags:
+      - Collector
+      summary: Get current Weekly Collectibles Request.
+      description: |-
+        **Provided by [Alloc8or](https://twitter.com/alloc8or).**
+
+        Retrieves the current Weekly Collectibles Request. Weekly Collectibles Requests is updated every Tuesday at 6 AM (UTC), also denoted by `endTime`. There is no need to keep updating the Weekly Collectibles Requests as the will only update after the end time has passed.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WeeklyResponse'
+components:
+  schemas:
+    ChallengesResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        startTime:
+          type: integer
+          description: The epoch timestamp today's challenges started.
+          example: 1620518400
+        endTime:
+          type: integer
+          description: The epoch timestamp today's challenges will end.
+          example: 1620518400
+        general:
+          maxItems: 7
+          minItems: 7
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        easy:
+          $ref: '#/components/schemas/ChallengesRoles'
+        med:
+          $ref: '#/components/schemas/ChallengesRoles'
+        hard:
+          $ref: '#/components/schemas/ChallengesRoles'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    ChallengesRoles:
+      properties:
+        bounty_hunter:
+          maxItems: 3
+          minItems: 3
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        trader:
+          maxItems: 3
+          minItems: 3
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        collector:
+          maxItems: 3
+          minItems: 3
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        moonshiner:
+          maxItems: 3
+          minItems: 3
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        naturalist:
+          maxItems: 3
+          minItems: 3
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+      description: The currently available roles for the Daily Challenges request.
+    ChallengesItem:
+      properties:
+        id:
+          type: string
+          description: The internal ID of the Daily Challenge. Corresponds to the items listed in `goals_mp_dailies.meta` or `goals_mp_dailies_role_*.meta`.
+          example: MPDC_Craft_Venison_Seasoned_00
+        title:
+          type: string
+          description: The translation key of the Daily Challenge. Corresponds to the `global.yldb` language file.
+          example: MPGC_CRAFT_VENISON_SEASONED
+        goal:
+          description: The desired goal of the Daily Challenge. Can be string.
+          example: $200.00
+          oneOf:
+          - type: string
+          - type: integer
+        goalFormat:
+          type: string
+          description: The translation key of the Daily Challenge goal format. Corresponds to the `global.yldb` language file.
+          example: ACMP_DC_PLAYER_MENU
+      description: A singular Daily Challenge item, representing one Daily Challenge.
+    CyclesResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        cycles:
+          maxItems: 3
+          minItems: 3
+          type: array
+          description: The cycles for yesterday, today and tomorrow, in that order.
+          items:
+            $ref: '#/components/schemas/CyclesItem'
+        next_cycle_times:
+          $ref: '#/components/schemas/CyclesResponse_next_cycle_times'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    CyclesItem:
+      type: object
+      properties:
+        startTime:
+          type: integer
+          description: The epoch timestamp this day's cycles will start.
+          example: 1620518400
+        endTime:
+          type: integer
+          description: The epoch timestamp this day's cycles will end.
+          example: 1620518400
+        arrowhead:
+          maximum: 6
+          minimum: 1
+          type: integer
+          description: This day's cycle for this category.
+      additionalProperties:
+        maximum: 6
+        minimum: 1
+        type: integer
+      description: A singular Collector cycles item, representing one day.
+    FmeResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        default:
+          $ref: '#/components/schemas/FmeResponse_default'
+        themed:
+          $ref: '#/components/schemas/FmeResponse_themed'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+      deprecated: true
+    FmeItem:
+      properties:
+        name:
+          type: string
+          description: A non-stale identifier for the event.
+          example: fme_challenges
+        variation:
+          type: string
+          description: (Optional) A variation for this event.
+          nullable: true
+          example: fme_challenge_wild_animals_kills
+      description: A singular FME item, representing one event timeslot.
+      deprecated: true
+    EventsResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        standard:
+          $ref: '#/components/schemas/EventsResponse_standard'
+        themed:
+          $ref: '#/components/schemas/EventsResponse_themed'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    EventItem:
+      properties:
+        id:
+          type: string
+          description: The internal identifier for the event.
+          example: hot_property
+          enum:
+          - animal_tagging
+          - archery
+          - challenges
+          - condor_egg
+          - dead_drop
+          - escaped_convicts
+          - golden_hat
+          - hot_property
+          - king_of_the_castle
+          - king_of_the_rails
+          - protect_legendary_animal
+          - round_up
+          - supply_train
+          - wildlife_photographer
+          - wreckage
+        alt:
+          type: string
+          description: (Optional) The non-stale identifier for the event. Will be null if the non-stale name is the same as the ID.
+          nullable: true
+          example: cold_dead_hands
+          enum:
+          - cold_dead_hands
+          - day_of_reckoning
+          - dispatch_rider
+          - fools_gold
+          - manhunt
+          - master_archer
+          - railroad_baron
+          - salvage
+          - trade_route
+        text:
+          type: string
+          description: The in-game UI key for this event, can be translated using global.yldb. Will be null if there is no available in-game UI key, this primarily happens when the challenge ID is "challenges" and the variation is set to random.
+          nullable: true
+          example: hp_intro
+          enum:
+          - dd_intro
+          - fmarch_name
+          - fme_at_name
+          - fme_ce_name
+          - fme_esc_name
+          - fme_kotc_variation_ffa_name
+          - fme_kotr_name
+          - fme_pla_name
+          - fme_ru_name
+          - fme_st_name
+          - fme_wk_name
+          - fme_wp_name
+          - fmechal_variation_bow_name
+          - fmechal_variation_fishing_lake_name
+          - fmechal_variation_fishing_river_name
+          - fmechal_variation_fishing_swamp_name
+          - fmechal_variation_headshot_name
+          - fmechal_variation_horseback_name
+          - fmechal_variation_hunting_name
+          - fmechal_variation_longarm_name
+          - fmechal_variation_sidearm_name
+          - gh_name
+          - hp_intro
+        icon:
+          type: string
+          description: The in-game texture key for this event, located in ui_textures_mp/toast_fme.ytd or ui_hud/hud_toasts.ytd.
+          example: fme_hot_property
+          enum:
+          - fme_archery
+          - fme_dead_drop
+          - fme_golden_hat
+          - fme_hot_property
+          - fme_king_of_the_castle
+          - fme_king_of_the_rail
+          - fme_role_animal_tagging
+          - fme_role_condor_egg
+          - fme_role_greatest_bounty_hunter
+          - fme_role_protect_legendary_animal
+          - fme_role_round_up
+          - fme_role_supply_train
+          - fme_role_wildlife_photographer
+          - fme_role_wreckage
+          - toast_mp_freemode_challenge
+        variation:
+          type: string
+          description: (Optional) The internal identifier for the static variation. Will be null if the event is set to pick one at random.
+          nullable: true
+          example: hunting
+          enum:
+          - bag_posse
+          - bayou_nwa_alligator
+          - big_valley_bear
+          - bluewater_marsh
+          - bow
+          - criminal
+          - fishing_lake
+          - fishing_river
+          - fishing_swamp
+          - gaptooth_breach
+          - great_plains
+          - grizzlies_west
+          - grizzlies_wolf
+          - headshot
+          - heartlands
+          - hennigans_stead_cougar
+          - horse_posse
+          - horseback
+          - hunting
+          - longarm
+          - moving_team
+          - sidearm
+          - standard
+          - standard_hat
+          - tall_trees_elk
+      description: A singular FME item, representing one event timeslot.
+    NazarResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        startTime:
+          type: integer
+          description: The epoch timestamp today's Nazar location started.
+          example: 1620518400
+        endTime:
+          type: integer
+          description: The epoch timestamp today's Nazar location will end.
+          example: 1620518400
+        id:
+          type: string
+          description: An identifier for the current Madam Nazar location.
+          example: MPSW_LOCATION_05
+          enum:
+          - MPSW_LOCATION_00
+          - MPSW_LOCATION_01
+          - MPSW_LOCATION_02
+          - MPSW_LOCATION_03
+          - MPSW_LOCATION_04
+          - MPSW_LOCATION_05
+          - MPSW_LOCATION_06
+          - MPSW_LOCATION_07
+          - MPSW_LOCATION_08
+          - MPSW_LOCATION_09
+          - MPSW_LOCATION_10
+          - MPSW_LOCATION_11
+        state:
+          type: string
+          description: The in-game UI key for this location's state, can be translated using map.yldb.
+          example: p_1_new_hanover
+          enum:
+          - p_1_ambarino
+          - p_1_lemoyne
+          - p_1_new_austin
+          - p_1_new_hanover
+          - p_1_west_elizabeth
+        location:
+          type: string
+          description: The in-game UI key for this location's location, can be translated using map.yldb.
+          example: p_4_emerald_ranch
+          enum:
+          - p_3_little_creek_river
+          - p_3_ocreaghs_run
+          - p_4_bolger_glade
+          - p_4_emerald_ranch
+          - p_4_manteca_falls
+          - p_4_manzanita_post
+          - p_4_plainview
+          - p_4_twin_rocks
+          - p_4_window_rock
+          - w_4_copperhead_landing
+          - w_5_black_balsam_rise
+          - w_5_limpany
+        landmark:
+          type: string
+          description: The in-game UI key for this location's nearby landmark, can be translated using map.yldb.
+          example: p_4_emerald_ranch
+          enum:
+          - p_3_ocreaghs_run
+          - p_4_armadillo
+          - p_4_benedict_point
+          - p_4_braithwaite_manor
+          - p_4_emerald_ranch
+          - p_4_flatneck_station
+          - p_4_manzanita_post
+          - p_4_thieves_landing
+          - p_4_van_horn_trading_post
+          - p_4_wallace_station
+          - p_4_window_rock
+          - p_6_annesburg
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    PatronsResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        patrons:
+          type: array
+          description: A list of the currently active Patrons.
+          items:
+            type: string
+            example: John D.
+        tiers:
+          type: array
+          description: A list of the currently active Patreon tiers.
+          items:
+            $ref: '#/components/schemas/PatronsTier'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    TranslationsResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        available:
+          type: array
+          description: A full list of currently available languages.
+          items:
+            type: string
+            example: en
+        languages:
+          $ref: '#/components/schemas/TranslationsResponse_languages'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    TranslationLanguageItem:
+      properties:
+        name:
+          type: string
+          description: A user-friendly title for this language.
+          example: English
+        emoji:
+          type: string
+          description: A unicode emoji representing the flag for this language.
+          example: 🇺🇸
+        progress:
+          type: integer
+          description: The current translation progress in whole percentages.
+          example: 100
+        translators:
+          $ref: '#/components/schemas/TranslationLanguageItem_translators'
+      description: A singular language item, representing one language.
+    PatronsTier:
+      properties:
+        amount_cents:
+          type: integer
+          description: The mimimum pledge amounts in cents (EUR).
+          example: 100
+        title:
+          type: string
+          description: A user-friendly title for this tier.
+          example: Supporter
+        url:
+          type: string
+          description: A link to pledge to this tier.
+          format: uri
+          example: https://www.patreon.com/join/mypatreon/checkout?rid=12345
+      description: A singular tier item, representing one Patreon tier.
+    TunablesResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        contents:
+          $ref: '#/components/schemas/TunablesResponse_contents'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    TunableResponse:
+      properties:
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        contents:
+          $ref: '#/components/schemas/TunablesResponse_contents'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    TunableAllResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        latest:
+          type: string
+          description: A link to the latest tunables file.
+          format: uri
+          example: /tunables/2021-11-02.json
+        all:
+          type: array
+          description: A list of all tunables files.
+          items:
+            type: string
+            format: uri
+            example: /tunables/2021-11-02.json
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    WeeklyResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        startTime:
+          type: integer
+          description: The epoch timestamp today's weekly request started.
+          example: 1620518400
+        endTime:
+          type: integer
+          description: The epoch timestamp today's weekly request will end.
+          example: 1620518400
+        id:
+          type: string
+          description: The translation key of the weekly request. Corresponds to the `global.yldb` language file.
+          example: AWARD_ROLE_COLLECTOR_SET_BELLE
+        items:
+          maxItems: 3
+          minItems: 2
+          type: array
+          description: The translation key of the request's items. Corresponds to the `global.yldb` language file.
+          items:
+            type: string
+            example: PROVISION_HRLM_COMB_BOXWOOD
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    BenefitsResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        articles:
+          type: array
+          items:
+            $ref: '#/components/schemas/BenefitsItem'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    BenefitsItem:
+      properties:
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this Benefits article.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        title:
+          type: string
+          description: The title of this Benefits article.
+          example: Lorem ipsum dolor sit amet
+        subtitle:
+          type: string
+          description: The subtitle of this Benefits article.
+          example: Lorem ipsum dolor sit amet
+        excerpt:
+          type: string
+          description: The excerpt of this Benefits article.
+          example: Lorem ipsum dolor sit amet
+        body:
+          type: string
+          description: The body of this Benefits article.
+          example: Lorem ipsum dolor sit amet
+        images:
+          $ref: '#/components/schemas/BenefitsItem_images'
+      description: A singular Benefits article, representing a single tile in the menus.
+    NewswireResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        articles:
+          type: array
+          items:
+            $ref: '#/components/schemas/NewswireItem'
+        links:
+          $ref: '#/components/schemas/NewswireResponse_links'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    NewswireItem:
+      properties:
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this Newswire article.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        id:
+          type: string
+          description: The ID of this Newswire article.
+          example: k49k781415795a
+        date:
+          type: string
+          description: The date of this Newswire article.
+          format: date-time
+          example: 2021-06-09T04:20:00Z
+        title:
+          type: string
+          description: The title of this Newswire article.
+          example: Lorem ipsum dolor sit amet
+        excerpt:
+          type: string
+          description: The excerpt of this Newswire article.
+          example: Lorem ipsum dolor sit amet
+        link:
+          type: string
+          description: The main URL of this Newswire article.
+          format: uri
+          example: https://example.com/article
+        image:
+          type: string
+          description: The main image of this Newswire article.
+          format: uri
+          example: https://example.com/image.jpg
+      description: A singular Newswire article.
+    NewswireSingleResponse:
+      properties:
+        article:
+          type: object
+          description: The mixed content of this Newswire article.
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    PatchesResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        id:
+          description: The identifier of this patches article.
+          oneOf:
+          - type: integer
+          - type: string
+        title:
+          type: string
+          description: The title of this patches article.
+          example: Lorem ipsum dolor sit amet
+        patches:
+          type: array
+          description: An array of different patches. Each line represents one day, but does not neccesarily represent an actual patch.
+          items:
+            type: array
+            items:
+              $ref: '#/components/schemas/PatchItem'
+        link:
+          type: string
+          description: The main URL of this patches article.
+          format: uri
+          example: https://example.com/patch
+        article_created:
+          type: string
+          description: The creation date of this patches article.
+          format: date-time
+          example: 2021-06-09T04:20:00Z
+        article_updated:
+          type: string
+          description: The modified date of this patches article.
+          format: date-time
+          example: 2021-06-09T04:20:00Z
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    PatchItem:
+      properties:
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this patches article.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        article:
+          type: string
+          description: The contents of this patch article. Each day contains a markdown-ified version of the corresponding patch.
+          example: |-
+            \[May 10, 2021\] – General / Miscellaneous (PC Only)**
+            •   Lorem...
+      description: A singular Patch article.
+    StampsResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        stamps:
+          type: array
+          description: A collection of stamps that are currently being displayed.
+          items:
+            $ref: '#/components/schemas/StampItem'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    StampItem:
+      properties:
+        id:
+          type: string
+          description: The internal identifier of this UI stamp's tunable.
+          example: net_playlist_race_series_cash_stamp_type
+        type:
+          type: string
+          description: The internal identifier of this UI stamp's type.
+          example: ui_stamp_icon_cash_3
+          enum:
+          - ui_stamp_icon_cash
+          - ui_stamp_icon_cash_2
+          - ui_stamp_icon_cash_3
+          - ui_stamp_icon_disc_25
+          - ui_stamp_icon_disc_50
+          - ui_stamp_icon_gold
+          - ui_stamp_icon_invalid
+          - ui_stamp_icon_lock
+          - ui_stamp_icon_locked_rank
+          - ui_stamp_icon_locked_rank_gold
+          - ui_stamp_icon_new
+          - ui_stamp_icon_unlocked_rank
+          - ui_stamp_icon_wishlist
+          - ui_stamp_icon_xp
+          - ui_stamp_icon_xp_2
+          - ui_stamp_icon_xp_3
+        icon:
+          type: string
+          description: The in-game texture key for this UI stamp, located in ui_startup_textures/elements_stamps_icons.ytd.
+          example: stamp_x3_cash
+          enum:
+          - stamp_25
+          - stamp_50
+          - stamp_cash
+          - stamp_gold
+          - stamp_lock
+          - stamp_locked_rank
+          - stamp_locked_rank_gold
+          - stamp_new
+          - stamp_unlocked_rank
+          - stamp_wishlist
+          - stamp_x2_cash
+          - stamp_x2_xp
+          - stamp_x3_cash
+          - stamp_x3_xp
+          - stamp_xp
+        text:
+          type: string
+          description: The in-game UI key for this UI stamp, can be translated using global.yldb. Will be null if there is no available in-game UI key.
+          nullable: true
+          example: nm_playlist_race
+          enum:
+          - nm_playlist_race
+          - nm_playlist_featured_001
+          - nm_playlist_adversary_small
+          - nm_playlist_adversary_medium
+          - nm_playlist_adversary_large
+          - nm_playlist_gun_rush
+          - nm_playlist_gun_rush_teams
+          - nm_playlist_elimination_small
+          - nm_playlist_elimination_medium
+          - nm_playlist_elimination_large
+          - nm_playlist_nominated
+          - nm_playlist_nominated_small
+          - nm_playlist_nominated_medium
+          - nm_playlist_nominated_large
+          - nm_playlist_shootout
+          - nm_playlist_capture
+        value:
+          type: integer
+          description: The internal value of this UI stamp's tunable.
+          example: 5
+      description: A singular UI stamp.
+    StatusResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        statuses:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/StatusItem'
+          description: Various status information about certain components.
+        has_message:
+          type: boolean
+          description: Indicates whether there is a message for any of the components.
+          example: true
+        has_problems:
+          type: boolean
+          description: Indicates whether there are any problems with any of the components.
+          example: false
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    StatusItem:
+      properties:
+        name:
+          type: string
+          description: The name of this service component.
+          example: Red Dead Online
+        status:
+          type: string
+          description: The status of this service component.
+          example: up
+        message:
+          type: string
+          description: The message of this service component.
+          example: Red Dead Online is up and running.
+        components:
+          type: array
+          description: A list of components that are part of this service component.
+          items:
+            $ref: '#/components/schemas/StatusComponentItem'
+        maintenance:
+          type: array
+          description: A list of upcoming maintenance events for this service component.
+          items:
+            $ref: '#/components/schemas/StatusMaintenanceItem'
+        incidents:
+          type: array
+          description: A list of current incidents for this service component.
+          items:
+            $ref: '#/components/schemas/StatusIncidentItem'
+        has_message:
+          type: boolean
+          description: Indicates whether there is a message for this service component.
+          example: true
+        has_problems:
+          type: boolean
+          description: Indicates whether there are any problems with this service component.
+          example: false
+      description: A singular service component's status.
+    StatusComponentItem:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        name:
+          type: string
+          description: The name of this service component.
+          example: PC
+        status:
+          type: string
+          description: The status of this service component.
+          example: up
+      description: A singular service component.
+    StatusMaintenanceItem:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+      description: A singular maintenance event.
+    StatusIncidentItem:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+      description: A singular incident.
+    ErrorResponse:
+      properties:
+        error:
+          $ref: '#/components/schemas/ErrorResponse_error'
+      description: The base response of the request.
+    ApiMeta:
+      properties:
+        documentation:
+          type: string
+          description: A link the the documentation for the current response.
+          format: uri
+          example: https://api.rdo.gg/
+        provider:
+          type: string
+          description: The provider of (some of) the data of the current response.
+          example: John Doe
+        special_thanks:
+          type: array
+          description: The people that helped make this endpoint possible by contributions of any kind and size.
+          items:
+            type: string
+            example: Jane Doe
+      description: A collection of information about the current response.
+    CyclesResponse_next_cycle_times_arrowhead:
+      type: object
+      properties:
+        cycle_1:
+          maximum: 6
+          minimum: 1
+          type: integer
+          description: The epoch timestamp this cycle will start.
+          nullable: true
+          example: 6
+      additionalProperties:
+        maximum: 6
+        minimum: 1
+        type: integer
+      description: The collection of cycles for this catagory.
+      example: null
+    CyclesResponse_next_cycle_times:
+      type: object
+      properties:
+        arrowhead:
+          $ref: '#/components/schemas/CyclesResponse_next_cycle_times_arrowhead'
+      additionalProperties:
+        type: object
+      description: |
+        Contains the next timestamps for each of the different Collectible categories and their cycles. Please note that this searches for up to the next 90 days. The time will be null if it does not appear for the next 90 days.
+      example: null
+    FmeResponse_default:
+      type: object
+      properties:
+        "00:00":
+          $ref: '#/components/schemas/FmeItem'
+      additionalProperties:
+        $ref: '#/components/schemas/FmeItem'
+      description: The time slots for the non-role Free Roam Events. Each property represents a UTC-based timeslot around which the event will start.
+      example: null
+    FmeResponse_themed:
+      type: object
+      properties:
+        "00:22":
+          $ref: '#/components/schemas/FmeItem'
+      additionalProperties:
+        $ref: '#/components/schemas/FmeItem'
+      description: The time slots for the role Free Roam Events. Each property represents a UTC-based timeslot around which the event will start.
+      example: null
+    EventsResponse_standard:
+      type: object
+      properties:
+        "00:00":
+          $ref: '#/components/schemas/EventItem'
+      additionalProperties:
+        $ref: '#/components/schemas/EventItem'
+      description: The time slots for the non-role Free Roam Events. Each property represents a UTC-based timeslot around which the event will start.
+      example: null
+    EventsResponse_themed:
+      type: object
+      properties:
+        "00:22":
+          $ref: '#/components/schemas/EventItem'
+      additionalProperties:
+        $ref: '#/components/schemas/EventItem'
+      description: The time slots for the role Free Roam Events. Each property represents a UTC-based timeslot around which the event will start.
+      example: null
+    TranslationsResponse_languages:
+      type: object
+      properties:
+        en:
+          $ref: '#/components/schemas/TranslationLanguageItem'
+      additionalProperties:
+        $ref: '#/components/schemas/TranslationLanguageItem'
+      description: A list of the currently available with its progress and translators.
+      example: null
+    TranslationLanguageItem_translators:
+      type: object
+      properties:
+        Senexis:
+          type: integer
+          description: The current word count of this translator.
+          example: 0
+      additionalProperties:
+        type: integer
+        description: The current word count of this translator.
+        example: 0
+      description: A list of the translators and their word count.
+      example: null
+    TunablesResponse_contents:
+      type: object
+      properties:
+        version:
+          type: integer
+          description: Seems to always be 1.
+          example: 1
+        format:
+          type: integer
+          description: Format 1 is encrypted, format 2 is decrypted.
+          example: 1
+        poolSize:
+          type: integer
+          description: Seems to always be 2000.
+          example: 2000
+        tunables:
+          type: object
+          additionalProperties:
+            type: object
+          description: Mixed. Inspect the response to see the format.
+      example: null
+    BenefitsItem_images:
+      type: object
+      properties:
+        main:
+          type: string
+          description: The main image of this Benefits article.
+          format: uri
+          example: https://example.com/image.jpg
+        alt:
+          type: string
+          description: The alt image of this Benefits article.
+          format: uri
+          example: https://example.com/image.jpg
+        big:
+          type: string
+          description: The big image of this Benefits article.
+          format: uri
+          example: https://example.com/image.jpg
+      description: A collection of images of this Benefits article.
+      example: null
+    NewswireResponse_links:
+      type: object
+      properties:
+        self:
+          type: string
+          description: A link to this file.
+          format: uri
+          example: /news/index.json
+        latest:
+          type: string
+          description: A link to the latest news article.
+          format: uri
+          example: /news/4k49ok51799917.json
+        all:
+          type: array
+          description: A list of all news articles.
+          items:
+            type: string
+            format: uri
+            example: /news/4k49ok51799917.json
+      example: null
+    ErrorResponse_error:
+      type: object
+      properties:
+        code:
+          type: integer
+          description: The specified error code.
+          example: 404
+        message:
+          type: string
+          description: The specified error message.
+          example: Not Found
+      description: An error object.
+      example: null
