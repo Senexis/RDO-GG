@@ -2,10 +2,12 @@ openapi: 3.0.0
 info:
   title: RDO.GG API
   description: |-
+    # Introduction
     The RDO.GG API aims to centralize any and all API endpoints that can be used to build awesome applications for the Red Dead Online community. If you know an API endpoint that is not listed below, please [join the Discord](https://rdo.gg/discord/) and report the endpoint together with some implementation details.
 
-    **Developers, developers, developers.** Please note that this API is geared towards a more advanced audience as it uses codenames over actual names. This is done to allow creativity with how the various API endpoints can be used and to limit the size of the requests. If you are not a developer, please visit other sites like  [the collector map](https://jeanropke.github.io/RDR2CollectorsMap/) and others, or use the [RDO Compendium Discord bot](https://rdo-compendium.com/).
+    Please note that this API is geared towards a more advanced audience as it uses codenames over actual names. This is done to allow creativity with how the various API endpoints can be used and to limit the size of the requests. If you are not a developer, please visit other sites like  [the collector map](https://jeanropke.github.io/RDR2CollectorsMap/) and others, or use the [RDO Compendium Discord bot](https://rdo-compendium.com/).
 
+    # Notes
     **Support the API.** While I won't send the Pinkertons after you if you don't, I'd really appreciate it if you credit this API when you use it. In the case of a different provider being mentioned, please also credit them. This API is provided for free by the RDO.GG project. Please consider [becoming a Patron](https://rdo.gg/patreon/) to help support continued development.
 
     **Don't abuse the API.** If you do, you will jeopardize the future of the API. There is no need to update your application excessively. Properties such as `endTime` are provided to save you having to make requests and save the API from having to serve those requests. If I detect extensive abuse I will make further changes to the API such as introducing API tokens. I don't want to, but I will if I have to.
@@ -36,7 +38,7 @@ paths:
     get:
       tags:
       - Social Club
-      summary: Get current Benefits articles.
+      summary: Get current Benefits articles
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
 
@@ -52,7 +54,7 @@ paths:
     get:
       tags:
       - Daily Challenges
-      summary: Get current Daily Challenges.
+      summary: Get current Daily Challenges
       description: |-
         **Provided by [Alloc8or](https://twitter.com/alloc8or).**
 
@@ -68,7 +70,7 @@ paths:
     get:
       tags:
       - Collector
-      summary: Get current Collector cycles.
+      summary: Get current Collector cycles
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to Ghost and Michal__d.**
 
@@ -84,7 +86,7 @@ paths:
     get:
       tags:
       - Free Roam Events
-      summary: "Deprecated, use /events instead."
+      summary: Get current Free Roam Events schedule
       description: "**Deprecated, use /events instead.**"
       responses:
         "200":
@@ -98,7 +100,7 @@ paths:
     get:
       tags:
       - Free Roam Events
-      summary: Get current Free Roam Events schedule.
+      summary: Get current Free Roam Events schedule
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
@@ -114,7 +116,7 @@ paths:
     get:
       tags:
       - Social Club
-      summary: Get current live events.
+      summary: Get current live events
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
 
@@ -130,7 +132,7 @@ paths:
     get:
       tags:
       - Collector
-      summary: Get current Madam Nazar location.
+      summary: Get current Madam Nazar location
       description: |-
         **Provided by [Alloc8or](https://twitter.com/alloc8or).**
 
@@ -146,7 +148,7 @@ paths:
     get:
       tags:
       - Social Club
-      summary: Get current Newswire articles.
+      summary: Get current Newswire articles
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
 
@@ -162,7 +164,7 @@ paths:
     get:
       tags:
       - Social Club
-      summary: Get specific Newswire article by ID.
+      summary: Get specific Newswire article by ID
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
 
@@ -193,7 +195,7 @@ paths:
     get:
       tags:
       - Social Club
-      summary: Get current game patches.
+      summary: Get current game patches
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
 
@@ -209,7 +211,7 @@ paths:
     get:
       tags:
       - RDO.GG
-      summary: Get current RDO.GG patrons.
+      summary: Get current RDO.GG patrons
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
 
@@ -225,7 +227,7 @@ paths:
     get:
       tags:
       - Social Club
-      summary: Get the latest Social Club photos.
+      summary: Get the latest Social Club photos
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
 
@@ -241,7 +243,7 @@ paths:
     get:
       tags:
       - Tunables
-      summary: Get current stamps displayed on in-game UIs like the Player Menu.
+      summary: Get current stamps displayed on in-game UIs like the Player Menu
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
@@ -257,7 +259,7 @@ paths:
     get:
       tags:
       - Status
-      summary: Get the service status of a service.
+      summary: Get the service status of a service
       parameters:
       - name: service
         in: path
@@ -283,7 +285,7 @@ paths:
     get:
       tags:
       - RDO.GG
-      summary: Get current translation status of RDO.GG.
+      summary: Get current translation status of RDO.GG
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
 
@@ -299,7 +301,7 @@ paths:
     get:
       tags:
       - Tunables
-      summary: Get current Tunables.
+      summary: Get current Tunables
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
@@ -345,7 +347,7 @@ paths:
     get:
       tags:
       - Tunables
-      summary: Get the full list of Tunables by hash.
+      summary: Get the full list of Tunables by hash
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
@@ -397,7 +399,7 @@ paths:
     get:
       tags:
       - Tunables
-      summary: Get specific Tunables file by SHA-1 hash.
+      summary: Get specific Tunables file by SHA-1 hash
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
@@ -458,7 +460,7 @@ paths:
     get:
       tags:
       - Collector
-      summary: Get current Weekly Collectibles Request.
+      summary: Get current Weekly Collectibles Request
       description: |-
         **Provided by [Alloc8or](https://twitter.com/alloc8or).**
 
@@ -1722,3 +1724,15 @@ components:
           example: Not Found
       description: An error object.
       example: null
+x-tagGroups:
+- name: Games
+  tags:
+  - Collector
+  - Daily Challenges
+  - Free Roam Events
+  - Tunables
+- name: Services
+  tags:
+  - Social Club
+  - Status
+  - RDO.GG
