@@ -15,7 +15,7 @@ info:
     name: RDO.GG API Support
     url: https://rdo.gg/discord/
     email: hello@rdo.gg
-  version: 1.1.0
+  version: 1.2.0
 servers:
 - url: https://api.rdo.gg
 tags:
@@ -112,6 +112,22 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/EventsResponse'
+  /live:
+    get:
+      tags:
+      - Social Club
+      summary: Get current live events.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/).**
+
+        Retrieves the full list of the current live events. These update every Tuesday at around 6 AM or 3 PM (UTC) but the update window is pretty sizeable.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LiveResponse'
   /nazar:
     get:
       tags:
@@ -207,6 +223,22 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PatronsResponse'
+  /photos:
+    get:
+      tags:
+      - Social Club
+      summary: Get the latest Social Club photos.
+      description: |-
+        **Provided by [Senexis](https://rdo.gg/).**
+
+        Retrieves a list of latest Social Club photos sorted by like count.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PhotosResponse'
   /stamps:
     get:
       tags:
@@ -240,8 +272,8 @@ paths:
           enum:
           - digital_ocean
           - discord
-          - mongodb_cloud
           - rockstar
+          - sentry
       responses:
         "200":
           description: OK
@@ -265,85 +297,45 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TranslationsResponse'
-  /tunables:
+  /tunables/{game}/{platform}/index.json:
     get:
       tags:
       - Tunables
-      summary: Get current Red Dead Online Tunables.
-      description: |-
-        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
-
-        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
-      responses:
-        "200":
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/TunablesResponse'
-  /tunables/all.json:
-    get:
-      tags:
-      - Tunables
-      summary: Get the full list of Red Dead Online Tunables by date.
-      description: |-
-        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
-
-        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
-      responses:
-        "200":
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/TunableAllResponse'
-        "404":
-          description: Not Found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-  /tunables/{hash}.json:
-    get:
-      tags:
-      - Tunables
-      summary: Get specific Red Dead Online Tunables file by SHA-1 hash.
+      summary: Get current Tunables.
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
         Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
       parameters:
-      - name: hash
+      - name: game
         in: path
-        description: A generated SHA-1 hash of this response.
+        description: The game to view tunables for.
         required: true
         style: simple
         explode: false
         schema:
           type: string
-        example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
-      responses:
-        "200":
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/TunableResponse'
-        "404":
-          description: Not Found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-  /tunables/gta:
-    get:
-      tags:
-      - Tunables
-      summary: Get current GTA Online Tunables.
-      description: |-
-        **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
-
-        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Thursday at around 9 AM (UTC) but the update window is pretty sizeable.
+          enum:
+          - rdo
+          - gta
+        example: rdo
+      - name: platform
+        in: path
+        description: The platform to view tunables for.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          enum:
+          - pcros
+          - ps3
+          - ps4
+          - ps5
+          - xbox360
+          - xboxone
+          - xboxsx
+        example: pcros
       responses:
         "200":
           description: OK
@@ -351,15 +343,45 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TunablesResponse'
-  /tunables/gta/all.json:
+  /tunables/{game}/{platform}/all.json:
     get:
       tags:
       - Tunables
-      summary: Get the full list of GTA Online Tunables by date.
+      summary: Get the full list of Tunables by hash.
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
-        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Thursday at around 9 AM (UTC) but the update window is pretty sizeable.
+        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
+      parameters:
+      - name: game
+        in: path
+        description: The game to view tunables for.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          enum:
+          - rdo
+          - gta
+        example: rdo
+      - name: platform
+        in: path
+        description: The platform to view tunables for.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          enum:
+          - pcros
+          - ps3
+          - ps4
+          - ps5
+          - xbox360
+          - xboxone
+          - xboxsx
+        example: pcros
       responses:
         "200":
           description: OK
@@ -373,16 +395,45 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-  /tunables/gta/{hash}.json:
+  /tunables/{game}/{platform}/{hash}.json:
     get:
       tags:
       - Tunables
-      summary: Get specific GTA Online Tunables file by SHA-1 hash.
+      summary: Get specific Tunables file by SHA-1 hash.
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
-        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Thursday at around 9 AM (UTC) but the update window is pretty sizeable.
+        Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
       parameters:
+      - name: game
+        in: path
+        description: The game to view tunables for.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          enum:
+          - rdo
+          - gta
+        example: rdo
+      - name: platform
+        in: path
+        description: The platform to view tunables for.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          enum:
+          - pcros
+          - ps3
+          - ps4
+          - ps5
+          - xbox360
+          - xboxone
+          - xboxsx
+        example: pcros
       - name: hash
         in: path
         description: A generated SHA-1 hash of this response.
@@ -679,6 +730,15 @@ components:
           - fme_role_wildlife_photographer
           - fme_role_wreckage
           - toast_mp_freemode_challenge
+        combat:
+          type: string
+          description: (Optional) The type of combat in this event.
+          nullable: true
+          example: pvp
+          enum:
+          - none
+          - pve
+          - pvp
         variation:
           type: string
           description: (Optional) The internal identifier for the static variation.
@@ -712,6 +772,95 @@ components:
           - standard_hat
           - tall_trees_elk
       description: "A singular FME item, representing one event timeslot."
+    LiveResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        events:
+          type: array
+          items:
+            $ref: '#/components/schemas/LiveItem'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    LiveItem:
+      properties:
+        slug:
+          type: string
+          description: The slug of this live event.
+          example: lorem-ipsum
+        headerText:
+          type: string
+          description: The header of this live event.
+          example: Lorem ipsum dolor sit amet
+        eventName:
+          type: string
+          description: The name of this live event.
+          example: Lorem ipsum dolor sit amet
+        imgUrl:
+          type: string
+          description: The main image of this live event.
+          example: https://example.com/image.jpg
+        description:
+          type: string
+          description: The description of this live event.
+          example: Lorem ipsum dolor sit amet
+        eventTypeId:
+          type: number
+          description: The identifier of this live event's type.
+          example: 1
+        eventType:
+          type: string
+          description: The type of this live event.
+          example: InGameBonus
+        startDate:
+          type: number
+          description: The epoch timestamp of when this live event will start.
+          example: 1620518400
+        endDate:
+          type: number
+          description: The epoch timestamp of when this live event will end.
+          example: 1620518400
+        isFeatured:
+          type: boolean
+          description: Whether this live event is featured.
+          example: true
+        urlHash:
+          type: string
+          description: The hash of this live event's URL.
+          example: Gr4xoExT
+        linkToUrl:
+          type: string
+          description: The relative link of this live event. Prefix with `https://socialclub.rockstargames.com/`
+            for the full URL.
+          example: events/bonuses/1
+        gameId:
+          type: string
+          description: The ID of this live event's game.
+          example: RDR2
+        isLive:
+          type: boolean
+          description: Whether this live event is available.
+          example: true
+        isPast:
+          type: boolean
+          description: Whether this live event has expired.
+          example: false
+        isComingSoon:
+          type: boolean
+          description: Whether this live event is coming soon.
+          example: false
+        tagIdentifier:
+          type: string
+          description: The identifier of this live event's tag.
+          example: live
+      description: A singular live event.
     NazarResponse:
       properties:
         updated:
@@ -817,6 +966,75 @@ components:
         meta:
           $ref: '#/components/schemas/ApiMeta'
       description: The base response of the request.
+    PhotosResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        hash:
+          type: string
+          description: A generated SHA-1 hash of this response.
+          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
+        photos:
+          type: array
+          items:
+            $ref: '#/components/schemas/PhotosItem'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
+    PhotosItem:
+      properties:
+        id:
+          type: string
+          description: The identifier of this Social Club photo.
+          example: la8KKYlmEUmmoJ_w5LG2vA
+        date:
+          type: number
+          description: The epoch timestamp of when this Social Club photo was posted.
+          example: 1620518400
+        image:
+          type: string
+          description: The direct link of this Social Club photo.
+          example: https://example.com/image.jpg
+        is_advanced_camera:
+          type: boolean
+          description: Whether this Social Club photo was taken using an Advance Camera.
+          example: true
+        is_selfie:
+          type: boolean
+          description: Whether this Social Club photo is a selfie.
+          example: true
+        is_studio_photo:
+          type: boolean
+          description: Whether this Social Club photo was taken in a Photo Studio.
+          example: false
+        has_animals:
+          type: boolean
+          description: Whether this Social Club photo contains animals.
+          example: true
+        likes:
+          type: number
+          description: The amount of likes of this Social Club photo.
+          example: 99
+        name:
+          type: string
+          description: The name of this Social Club photo.
+          example: Lorem ipsum dolor sit amet
+        platform:
+          type: string
+          description: The platform of this Social Club photo.
+          example: pc
+          enum:
+          - pc
+          - ps4
+          - xboxone
+          - stadia
+        user:
+          type: string
+          description: The user that posted this Social Club photo.
+          example: Username
+      description: A singular Social Club photo.
     TranslationsResponse:
       properties:
         updated:
@@ -832,22 +1050,44 @@ components:
           description: A full list of currently available languages.
           items:
             type: string
-            example: en
+            example: en-US
         languages:
-          $ref: '#/components/schemas/TranslationsResponse_languages'
+          type: array
+          description: A list of the currently available with its progress and translators.
+          items:
+            $ref: '#/components/schemas/TranslationLanguageItem'
         meta:
           $ref: '#/components/schemas/ApiMeta'
       description: The base response of the request.
     TranslationLanguageItem:
       properties:
+        id:
+          type: string
+          description: The identifier of this language.
+          example: en-US
         name:
           type: string
-          description: A user-friendly title for this language.
+          description: The name of this language.
           example: English
-        emoji:
+        native:
           type: string
-          description: A unicode emoji representing the flag for this language.
-          example: 🇺🇸
+          description: The native name of this language.
+          example: English
+        discord:
+          type: string
+          description: This language's corresponding Discord code.
+          example: en-US
+        font:
+          type: string
+          description: This language's corresponding font region.
+          example: EFIGS
+          enum:
+          - EFIGS
+          - JAPANESE
+          - KOREAN
+          - RUSSIAN
+          - SIMPLIFIED_CHINESE
+          - CHINESE
         progress:
           type: integer
           description: The current translation progress in whole percentages.
@@ -864,12 +1104,12 @@ components:
         title:
           type: string
           description: A user-friendly title for this tier.
-          example: Supporter
+          example: Example
         url:
           type: string
           description: A link to pledge to this tier.
           format: uri
-          example: https://www.patreon.com/join/mypatreon/checkout?rid=12345
+          example: https://example.com
       description: "A singular tier item, representing one Patreon tier."
     TunablesResponse:
       properties:
@@ -946,6 +1186,16 @@ components:
           items:
             type: string
             example: PROVISION_HRLM_COMB_BOXWOOD
+        description:
+          type: string
+          description: The translation key of the weekly request. Corresponds to the
+            `global.yldb` language file.
+          example: PM_COLLECTOR_WEEKLY_HAIRDRESSER_DESC
+        texture:
+          type: string
+          description: The translation key of the weekly request. Corresponds to a
+            weekly tile texture.
+          example: MP_COLLECTABLES_OVERVIEW_TILES_WEEKLY_011
         meta:
           $ref: '#/components/schemas/ApiMeta'
       description: The base response of the request.
@@ -1022,10 +1272,9 @@ components:
           description: The ID of this Newswire article.
           example: k49k781415795a
         date:
-          type: string
-          description: The date of this Newswire article.
-          format: date-time
-          example: 2021-06-09T04:20:00Z
+          type: number
+          description: The epoch timestamp of when this Newswire article was posted.
+          example: 1620518400
         title:
           type: string
           description: The title of this Newswire article.
@@ -1077,9 +1326,7 @@ components:
           description: "An array of different patches. Each line represents one day,\
             \ but does not neccesarily represent an actual patch."
           items:
-            type: array
-            items:
-              $ref: '#/components/schemas/PatchItem'
+            $ref: '#/components/schemas/PatchItem'
         link:
           type: string
           description: The main URL of this patches article.
@@ -1388,15 +1635,6 @@ components:
         $ref: '#/components/schemas/EventItem'
       description: The time slots for the role Free Roam Events. Each property represents
         a UTC-based timeslot around which the event will start.
-      example: null
-    TranslationsResponse_languages:
-      type: object
-      properties:
-        en:
-          $ref: '#/components/schemas/TranslationLanguageItem'
-      additionalProperties:
-        $ref: '#/components/schemas/TranslationLanguageItem'
-      description: A list of the currently available with its progress and translators.
       example: null
     TranslationLanguageItem_translators:
       type: object
