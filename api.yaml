@@ -8,9 +8,9 @@ info:
     Please note that this API is geared towards a more advanced audience as it uses codenames over actual names. This is done to allow creativity with how the various API endpoints can be used and to limit the size of the requests. If you are not a developer, please visit other sites like  [the collector map](https://jeanropke.github.io/RDR2CollectorsMap/) and others, or use the [RDO Compendium Discord bot](https://rdo-compendium.com/).
 
     # Notes
-    **Support the API.** While I won't send the Pinkertons after you if you don't, I'd really appreciate it if you credit this API when you use it. In the case of a different provider being mentioned, please also credit them. This API is provided for free by the RDO.GG project. Please consider [becoming a Patron](https://rdo.gg/patreon/) to help support continued development.
+    **Please support the API.** While I won't send the Pinkertons after you if you don't, I'd really appreciate it if you credit this API when you use it. In the case of a different provider being mentioned, please also credit them. This API is provided for free by the RDO.GG project. Please consider [becoming a Patron](https://rdo.gg/patreon/) to help support continued development.
 
-    **Don't abuse the API.** If you do, you will jeopardize the future of the API. There is no need to update your application excessively. Properties such as `endTime` are provided to save you having to make requests and save the API from having to serve those requests. If I detect extensive abuse I will make further changes to the API such as introducing API tokens. I don't want to, but I will if I have to.
+    **Please don't abuse the API.** If you do, you will jeopardize the future of the API. There is no need to update your application excessively. Properties such as `endTime` are provided to save you having to make requests and save the API from having to serve those requests. If I detect extensive abuse I will make further changes to the API such as introducing API tokens. I don't want to, but I will if I have to.
   contact:
     name: RDO.GG API Support
     url: https://rdo.gg/discord/
@@ -43,6 +43,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/).**
 
         Retrieves the full list of the current Benefits. These update every Tuesday at around 3 PM (UTC) but the update window is pretty sizeable.
+      operationId: get-benefits
       responses:
         "200":
           description: OK
@@ -59,6 +60,7 @@ paths:
         **Provided by [Alloc8or](https://twitter.com/alloc8or).**
 
         Retrieves the full list of the current daily challenges. Daily Challenges are updated every day at 6 AM (UTC), also denoted by `endTime`. There is no need to keep updating the daily challenges as they will only update after the end time has passed.
+      operationId: get-challenges
       responses:
         "200":
           description: OK
@@ -75,6 +77,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/). Special thanks to Ghost and Michal__d.**
 
         Retrieves the Collector cycles of yesterday, today, and tomorrow. Cycles change every day at 12 AM (UTC), also denoted by `endTime`. There is no need to keep updating the cycles as they will only update after the end time has passed.
+      operationId: get-cycles
       responses:
         "200":
           description: OK
@@ -88,6 +91,7 @@ paths:
       - Free Roam Events
       summary: Get current Free Roam Events schedule
       description: "**Deprecated, use /events instead.**"
+      operationId: get-fme
       responses:
         "200":
           description: OK
@@ -105,6 +109,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
         Retrieves the current Free Roam Events schedule. These are updated once a week when the tunables update. These change when Rockstar decides to do a custom schedule, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
+      operationId: get-events
       responses:
         "200":
           description: OK
@@ -121,6 +126,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/).**
 
         Retrieves the full list of the current live events. These update every Tuesday at around 6 AM or 3 PM (UTC) but the update window is pretty sizeable.
+      operationId: get-live
       responses:
         "200":
           description: OK
@@ -137,6 +143,7 @@ paths:
         **Provided by [Alloc8or](https://twitter.com/alloc8or).**
 
         Retrieves the current location of Madam Nazar. Madam Nazar's location is updated every day at 6 AM (UTC), also denoted by `endTime`. There is no need to keep updating the location as it will only update after the end time has passed.
+      operationId: get-nazar
       responses:
         "200":
           description: OK
@@ -153,6 +160,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/).**
 
         Retrieves the full list of the Newswire articles. These update every Tuesday at around 12 PM (UTC) but the update window is pretty sizeable.
+      operationId: get-news-index
       responses:
         "200":
           description: OK
@@ -169,6 +177,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/).**
 
         Retrieves a specific Newswire article by ID. These update every Tuesday at around 12 PM (UTC) but the update window is pretty sizeable.
+      operationId: get-news-article
       parameters:
       - name: id
         in: path
@@ -200,6 +209,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/).**
 
         Retrieves the full list of the game patches. These update sporadically when the game updates, or on Tuesdays when a new event week activates which adds new content previously added by the update.
+      operationId: get-patches
       responses:
         "200":
           description: OK
@@ -216,6 +226,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/).**
 
         Primarily used for RDO.GG related applications. Shows a full list of the people currently pledging to the RDO.GG Patreon. Also provides information about the currently active tiers on said Patreon. The list might not always be accurate due to Patreon API delays.
+      operationId: get-patrons
       responses:
         "200":
           description: OK
@@ -232,6 +243,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/).**
 
         Retrieves a list of latest Social Club photos sorted by like count.
+      operationId: get-photos
       responses:
         "200":
           description: OK
@@ -248,6 +260,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
         Stamps are displayed on in-game UIs like the Player Menu to display currently active bonuses in certain competitive or cooperative modes in the game. They inform the player of active XP, Cash and/or Gold bonuses of x1, x2, or x3.
+      operationId: get-stamps
       responses:
         "200":
           description: OK
@@ -260,6 +273,7 @@ paths:
       tags:
       - Status
       summary: Get the service status of a service
+      operationId: get-status
       parameters:
       - name: service
         in: path
@@ -290,6 +304,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/).**
 
         Primarily used for RDO.GG related applications. Shows a full list of available languages, namespaces (commands), and all translation progress of each language. Additionally, also lists all the users with their respective word count.
+      operationId: get-translations
       responses:
         "200":
           description: OK
@@ -306,6 +321,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
         Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
+      operationId: get-tunables-index
       parameters:
       - name: game
         in: path
@@ -352,6 +368,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
         Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
+      operationId: get-tunables-all
       parameters:
       - name: game
         in: path
@@ -404,6 +421,7 @@ paths:
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
         Tunables are used to control various internal variables within the game. Examples of this are cooldowns, limits and temporarily disabling parts of the game. These change when Rockstar decides to make tweaks, but do not change otherwise. These update every Tuesday at around 9 AM (UTC) but the update window is pretty sizeable.
+      operationId: get-tunables-hash
       parameters:
       - name: game
         in: path
@@ -465,6 +483,7 @@ paths:
         **Provided by [Alloc8or](https://twitter.com/alloc8or).**
 
         Retrieves the current Weekly Collectibles Request. Weekly Collectibles Requests is updated every Tuesday at 6 AM (UTC), also denoted by `endTime`. There is no need to keep updating the Weekly Collectibles Requests as the will only update after the end time has passed.
+      operationId: get-weekly
       responses:
         "200":
           description: OK
