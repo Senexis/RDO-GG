@@ -11,10 +11,6 @@ info:
     **Please support the API.** While I won't send the Pinkertons after you if you don't, I'd really appreciate it if you credit this API when you use it. In the case of a different provider being mentioned, please also credit them. This API is provided for free by the RDO.GG project. Please consider [becoming a Patron](https://rdo.gg/patreon/) to help support continued development.
 
     **Please don't abuse the API.** If you do, you will jeopardize the future of the API. There is no need to update your application excessively. Properties such as `endTime` are provided to save you having to make requests and save the API from having to serve those requests. If I detect extensive abuse I will make further changes to the API such as introducing API tokens. I don't want to, but I will if I have to.
-  contact:
-    name: RDO.GG API Support
-    url: https://rdo.gg/discord/
-    email: hello@rdo.gg
   version: 1.2.1
 servers:
 - url: https://api.rdo.gg
@@ -1687,9 +1683,9 @@ x-tagGroups:
   - Collector
   - Daily Challenges
   - Free Roam Events
+  - Social Club
   - Tunables
 - name: Services
   tags:
-  - Social Club
   - Status
   - RDO.GG
