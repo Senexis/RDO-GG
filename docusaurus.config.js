@@ -131,11 +131,11 @@ const config = {
         links: [
           {
             label: 'Privacy Policy',
-            to: 'wiki/privacy-policy',
+            to: 'wiki/legal/privacy-policy',
           },
           {
             label: 'Terms of Service',
-            to: 'wiki/terms-of-service',
+            to: 'wiki/legal/terms-of-service',
           }
         ],
         copyright: `
