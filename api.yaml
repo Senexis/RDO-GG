@@ -226,11 +226,11 @@ paths:
     get:
       tags:
       - social-club
-      summary: Get Social Club Photos
+      summary: Get Photos
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
 
-        Retrieves a list of latest Social Club photos sorted by like count.
+        Retrieves a list of latest photos sorted by like count.
       operationId: get-photos
       responses:
         "200":
@@ -351,7 +351,7 @@ paths:
     get:
       tags:
       - tunables
-      summary: List Tunables
+      summary: Get All Tunables
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
 
