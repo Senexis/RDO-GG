@@ -1,5 +1,9 @@
 {
   "label": "Credits",
   "position": 9998,
-  "collapsed": false
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Credits overview"
+  }
 }
