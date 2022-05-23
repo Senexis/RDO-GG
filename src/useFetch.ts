@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 
 function useFetch(url: string) {
@@ -8,16 +7,18 @@ function useFetch(url: string) {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(url)
-      .then(response => setData(response.data))
+    fetch(url)
+      .then(response => response.json())
+      .then(data => setData(data))
       .catch(error => setError(error))
       .finally(() => setLoading(false));
   }, [url]);
 
   const update = (url: string) => {
     setLoading(true);
-    axios.get(url)
-      .then(response => setData(response.data))
+    fetch(url)
+      .then(response => response.json())
+      .then(data => setData(data))
       .catch(error => setError(error))
       .finally(() => setLoading(false));
   }
