@@ -40,7 +40,7 @@ paths:
   /benefits:
     get:
       tags:
-      - Social Club
+      - social-club
       summary: Get Benefits
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
@@ -57,7 +57,7 @@ paths:
   /challenges:
     get:
       tags:
-      - Daily Challenges
+      - daily-challenges
       summary: Get Daily Challenges
       description: |-
         **Provided by [Alloc8or](https://twitter.com/alloc8or).**
@@ -74,7 +74,7 @@ paths:
   /cycles:
     get:
       tags:
-      - Collector
+      - collector
       summary: Get Collector Cycles
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to Ghost and Michal__d.**
@@ -91,7 +91,7 @@ paths:
   /events:
     get:
       tags:
-      - Free Roam Events
+      - free-roam-events
       summary: Get Free Roam Events Schedule
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
@@ -108,7 +108,7 @@ paths:
   /live:
     get:
       tags:
-      - Social Club
+      - social-club
       summary: Get Live Events
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
@@ -125,7 +125,7 @@ paths:
   /nazar:
     get:
       tags:
-      - Collector
+      - collector
       summary: Get Madam Nazar Location
       description: |-
         **Provided by [Alloc8or](https://twitter.com/alloc8or).**
@@ -142,7 +142,7 @@ paths:
   /news:
     get:
       tags:
-      - Social Club
+      - social-club
       summary: Get Newswire Articles
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
@@ -159,7 +159,7 @@ paths:
   /news/{id}.json:
     get:
       tags:
-      - Social Club
+      - social-club
       summary: Get Newswire Article
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
@@ -191,7 +191,7 @@ paths:
   /patches:
     get:
       tags:
-      - Social Club
+      - social-club
       summary: Get Game Patches
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
@@ -208,7 +208,7 @@ paths:
   /patrons:
     get:
       tags:
-      - RDO.GG
+      - rdo-gg
       summary: Get RDO.GG Patrons
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
@@ -225,7 +225,7 @@ paths:
   /photos:
     get:
       tags:
-      - Social Club
+      - social-club
       summary: Get Social Club Photos
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
@@ -242,7 +242,7 @@ paths:
   /stamps:
     get:
       tags:
-      - Tunables
+      - tunables
       summary: Get Player Menu Stamps
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
@@ -259,7 +259,7 @@ paths:
   /status/{service}.json:
     get:
       tags:
-      - Status
+      - status
       summary: Get Service Status
       operationId: get-status
       parameters:
@@ -286,7 +286,7 @@ paths:
   /translations:
     get:
       tags:
-      - RDO.GG
+      - rdo-gg
       summary: Get Translation Status
       description: |-
         **Provided by [Senexis](https://rdo.gg/).**
@@ -303,7 +303,7 @@ paths:
   /tunables/{game}/{platform}/index.json:
     get:
       tags:
-      - Tunables
+      - tunables
       summary: Get Active Tunables
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
@@ -350,7 +350,7 @@ paths:
   /tunables/{game}/{platform}/all.json:
     get:
       tags:
-      - Tunables
+      - tunables
       summary: List Tunables
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
@@ -403,7 +403,7 @@ paths:
   /tunables/{game}/{platform}/{hash}.json:
     get:
       tags:
-      - Tunables
+      - tunables
       summary: Get Tunables by Hash
       description: |-
         **Provided by [Senexis](https://rdo.gg/). Special thanks to [Alloc8or](https://twitter.com/alloc8or).**
@@ -465,7 +465,7 @@ paths:
   /weekly:
     get:
       tags:
-      - Collector
+      - collector
       summary: Get Weekly Collectibles
       description: |-
         **Provided by [Alloc8or](https://twitter.com/alloc8or).**
@@ -1687,12 +1687,12 @@ components:
 x-tagGroups:
 - name: Games
   tags:
-  - Collector
-  - Daily Challenges
-  - Free Roam Events
-  - Social Club
-  - Tunables
+  - collector
+  - daily-challenges
+  - free-roam-events
+  - social-club
+  - tunables
 - name: Services
   tags:
-  - Status
-  - RDO.GG
+  - status
+  - rdo-gg
