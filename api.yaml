@@ -15,20 +15,27 @@ info:
 servers:
 - url: https://api.rdo.gg
 tags:
-- name: Collector
+- name: collector
   description: Everything related to the Collector role.
-- name: Daily Challenges
+  x-displayName: Collector
+- name: daily-challenges
   description: Everything related to Daily Challenges.
-- name: Free Roam Events
+  x-displayName: Daily Challenges
+- name: free-roam-events
   description: Everything related to Free Roam events.
-- name: Social Club
+  x-displayName: Free Roam Events
+- name: social-club
   description: Everything related to Social Club.
-- name: Status
+  x-displayName: Social Club
+- name: status
   description: Everything related to service status.
-- name: Tunables
+  x-displayName: Status
+- name: tunables
   description: Everything related to Tunables.
-- name: RDO.GG
+  x-displayName: Tunables
+- name: rdo-gg
   description: Everything related to RDO.GG.
+  x-displayName: RDO.GG
 paths:
   /benefits:
     get:
