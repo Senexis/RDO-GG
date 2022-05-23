@@ -967,43 +967,43 @@ components:
       properties:
         id:
           type: string
-          description: The identifier of this Social Club photo.
+          description: The identifier of this photo.
           example: la8KKYlmEUmmoJ_w5LG2vA
         date:
           type: number
-          description: The epoch timestamp of when this Social Club photo was posted.
+          description: The epoch timestamp of when this photo was posted.
           example: 1620518400
         image:
           type: string
-          description: The direct link of this Social Club photo.
+          description: The direct link of this photo.
           example: https://example.com/image.jpg
         is_advanced_camera:
           type: boolean
-          description: Whether this Social Club photo was taken using an Advance Camera.
+          description: Whether this photo was taken using an Advance Camera.
           example: true
         is_selfie:
           type: boolean
-          description: Whether this Social Club photo is a selfie.
+          description: Whether this photo is a selfie.
           example: true
         is_studio_photo:
           type: boolean
-          description: Whether this Social Club photo was taken in a Photo Studio.
+          description: Whether this photo was taken in a Photo Studio.
           example: false
         has_animals:
           type: boolean
-          description: Whether this Social Club photo contains animals.
+          description: Whether this photo contains animals.
           example: true
         likes:
           type: number
-          description: The amount of likes of this Social Club photo.
+          description: The amount of likes of this photo.
           example: 99
         name:
           type: string
-          description: The name of this Social Club photo.
+          description: The name of this photo.
           example: Lorem ipsum dolor sit amet
         platform:
           type: string
-          description: The platform of this Social Club photo.
+          description: The platform of this photo.
           example: pc
           enum:
           - pc
@@ -1012,9 +1012,9 @@ components:
           - stadia
         user:
           type: string
-          description: The user that posted this Social Club photo.
+          description: The user that posted this photo.
           example: Username
-      description: A singular Social Club photo.
+      description: A singular photo.
     TranslationsResponse:
       properties:
         updated:
