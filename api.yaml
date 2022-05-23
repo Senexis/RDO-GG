@@ -54,7 +54,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BenefitsResponse'
-  /challenges:
+  /challenges/index.json:
     get:
       tags:
       - daily-challenges
@@ -71,6 +71,37 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ChallengesResponse'
+  /challenges/{difficulty}.json:
+    get:
+      tags:
+      - daily-challenges
+      summary: Get Daily Challenges by Difficulty
+      description: |-
+        **Provided by [Alloc8or](https://twitter.com/alloc8or).**
+
+        Retrieves the full list of the current daily challenges. Daily Challenges are updated every day at 6 AM (UTC), also denoted by `endTime`. There is no need to keep updating the daily challenges as they will only update after the end time has passed.
+      operationId: get-challenges-difficulty
+      parameters:
+      - name: difficulty
+        in: path
+        description: "The difficulty of the Daily Challenges: Easy difficulty: Rank\
+          \ 1-5; Med difficulty: Rank 6-14; Hard difficulty: Rank 15 onwards."
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          enum:
+          - easy
+          - med
+          - hard
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChallengesDifficultyResponse'
   /cycles:
     get:
       tags:
@@ -139,7 +170,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/NazarResponse'
-  /news:
+  /news/index.json:
     get:
       tags:
       - social-club
@@ -481,6 +512,59 @@ paths:
                 $ref: '#/components/schemas/WeeklyResponse'
 components:
   schemas:
+    ChallengesDifficultyResponse:
+      properties:
+        updated:
+          type: integer
+          description: The epoch timestamp the response was last updated.
+          example: 1620518400
+        startTime:
+          type: integer
+          description: The epoch timestamp today's challenges started.
+          example: 1620518400
+        endTime:
+          type: integer
+          description: The epoch timestamp today's challenges will end.
+          example: 1620518400
+        general:
+          maxItems: 7
+          minItems: 7
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        bounty_hunter:
+          maxItems: 3
+          minItems: 3
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        trader:
+          maxItems: 3
+          minItems: 3
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        collector:
+          maxItems: 3
+          minItems: 3
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        moonshiner:
+          maxItems: 3
+          minItems: 3
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        naturalist:
+          maxItems: 3
+          minItems: 3
+          type: array
+          items:
+            $ref: '#/components/schemas/ChallengesItem'
+        meta:
+          $ref: '#/components/schemas/ApiMeta'
+      description: The base response of the request.
     ChallengesResponse:
       properties:
         updated:
@@ -1127,14 +1211,14 @@ components:
           type: string
           description: A link to the latest tunables file.
           format: uri
-          example: /tunables/2021-11-02.json
+          example: /tunables/rdo/pcros/001B94513599AED0C3383CF81A26955041C5C80D.json
         all:
           type: array
           description: A list of all tunables files.
           items:
             type: string
             format: uri
-            example: /tunables/2021-11-02.json
+            example: /tunables/rdo/pcros/001B94513599AED0C3383CF81A26955041C5C80D.json
         meta:
           $ref: '#/components/schemas/ApiMeta'
       description: The base response of the request.
