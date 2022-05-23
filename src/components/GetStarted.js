@@ -1,14 +1,6 @@
 import React from 'react';
 import { Steps, StepsProvider, useSteps } from "react-step-builder";
 
-const GetStarted = () => {
-  return (
-    <StepsProvider>
-      <GetStartedSteps />
-    </StepsProvider>
-  );
-};
-
 const GetStartedStep = (props) => {
   const { isFirst, isLast, hasNext, next, hasPrev, prev, current, total } = useSteps();
 
@@ -132,6 +124,14 @@ const GetStartedSteps = () => {
         <p>Thank you so much for using the guide, and we hope it showed you the way to adding RDO Compendium to your server!</p>
       </GetStartedStep>
     </Steps>
+  );
+};
+
+const GetStarted = () => {
+  return (
+    <StepsProvider>
+      <GetStartedSteps />
+    </StepsProvider>
   );
 };
 

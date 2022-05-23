@@ -168,6 +168,8 @@ const config = {
           { from: '/migration', to: '/news/2022/05/20/rdo-compendium-migration' },
           { from: '/premium', to: '/wiki/guides/premium' },
           { from: '/upsale', to: '/wiki/guides/premium' },
+          { from: '/wiki/privacy-policy', to: '/wiki/legal/privacy-policy' },
+          { from: '/wiki/terms-of-service', to: '/wiki/legal/terms-of-service' },
         ],
       },
     ],

@@ -1,7 +1,3 @@
----
-sidebar_position: 9999
----
-
 # Terms of Service
 
 By accessing this Service, accessible from [rdo.gg](https://rdo.gg/) and through [Discord](https://discord.com/), you are agreeing to be bound by these Service Terms and Conditions of Use and agree

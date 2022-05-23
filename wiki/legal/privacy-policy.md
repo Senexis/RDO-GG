@@ -1,7 +1,3 @@
----
-sidebar_position: 9999
----
-
 # Privacy Policy
 
 At RDO Compendium, accessible from rdo-compendium.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and
