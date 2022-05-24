@@ -58,21 +58,19 @@ These commands are additional functionality reserved for Patrons.
 
 These commands are mostly commands that are used to find information about the bot.
 
-| Command              | Description                                                                     |
-| :------------------- | :------------------------------------------------------------------------------ |
-| /credits general     | Displays the different people that made general contributions to the bot        |
-| /credits patrons     | Displays the different people who support the bot through Patreon               |
-| /credits translators | Displays the different people that have translated the bot in various languages |
-| /feedback            | Send feedback or a bug report to the developers                                 |
-| /help                | Displays help for the available commands                                        |
-| /links               | Displays links to useful community resources                                    |
-| /notifications       | Displays notifications related to the RDO Compendium (English only)             |
-| /players list        | Lists all players currently looking for looking for a group                     |
-| /players post        | Posts your username and gamertag to other players looking for a group           |
-| /support             | Displays information about supporting the bot                                   |
-| /train close         | Closes your created Trader delivery train                                       |
-| /train lock          | Locks your created Trader delivery train                                        |
-| /train start         | Starts a Trader delivery train                                                  |
+| Command        | Description                                                              |
+| :------------- | :----------------------------------------------------------------------- |
+| /credits       | Displays the different people that made general contributions to the bot |
+| /feedback      | Send feedback or a bug report to the developers                          |
+| /help          | Displays help for the available commands                                 |
+| /links         | Displays links to useful community resources                             |
+| /notifications | Displays notifications related to the RDO Compendium (English only)      |
+| /players list  | Lists all players currently looking for looking for a group              |
+| /players post  | Posts your username and gamertag to other players looking for a group    |
+| /support       | Displays information about supporting the bot                            |
+| /train close   | Closes your created Trader delivery train                                |
+| /train lock    | Locks your created Trader delivery train                                 |
+| /train start   | Starts a Trader delivery train                                           |
 
 ## Settings
 
