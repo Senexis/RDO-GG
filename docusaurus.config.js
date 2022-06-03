@@ -105,6 +105,11 @@ const config = {
             position: 'left',
           },
           {
+            href: 'https://rdo.instatus.com',
+            label: 'Status',
+            position: 'left',
+          },
+          {
             href: 'https://rdo.gg/patreon/',
             target: '_blank',
             position: 'right',

@@ -1,16 +1,19 @@
 import React from 'react';
 import { Steps, StepsProvider, useSteps } from "react-step-builder";
 
-const GetStartedStep = (props) => {
+const GetStartedStep = ({
+  Title,
+  Children
+}) => {
   const { isFirst, isLast, hasNext, next, hasPrev, prev, current, total } = useSteps();
 
   return (
     <div className="w-full h-[70vh] overflow-hidden flex flex-col rounded-lg text-white bg-[#18191c] shadow-lg mb-8">
       <div className="flex-none px-8 h-16 flex items-center bg-[#2f3136]">
-        <h2 className="m-0">{props.title ?? `Step ${current}`}</h2>
+        <h2 className="m-0">{Title ?? `Step ${current}`}</h2>
       </div>
       <div className="grow shrink p-8 pb-4 overflow-y-auto">
-        {props.children}
+        {Children}
       </div>
       <div className="flex-none px-8 h-16 flex justify-center sm:justify-between items-center bg-[#2f3136]">
         <div className="select-none hidden sm:block text-gray-400">

@@ -2,6 +2,7 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import React from 'react';
 import { Background, Parallax } from 'react-parallax';
+import Instatus from '../components/Instatus';
 import styles from './index.module.css';
 
 export default function Home(): JSX.Element {
@@ -19,6 +20,12 @@ export default function Home(): JSX.Element {
               <Link className="button button--secondary button--lg m-2 block lg:inline-block" to="/wiki/getting-started">
                 Getting Started
               </Link>
+              <Instatus
+                Text="Status"
+                UpColor="#11ca4c"
+                HasIssuesColor="#cc0000"
+                UnderMaintenanceColor="#708090"
+              />
             </div>
           </div>
         </div>
