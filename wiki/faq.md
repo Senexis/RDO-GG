@@ -70,6 +70,12 @@ Eligible content creators include: tool creators, information gatherers, map cre
 
 This can have multiple causes. Perhaps the bot doesn't have proper permission to talk in that channel. It could also be that the bot is down briefly for some updates.
 
+### Why can't I see the bot's commands?
+
+Make sure that you have the **Use Application Commands** permission. In addition, check whether you have set up the bot's application permissions in such a way that they command you're trying to use
+is allowed to be used in the channel itself. If you need help getting that set up, please visit the
+[Discord support article](https://support.discord.com/hc/en-us/articles/4644915651095-Command-Permissions) for more information about Slash command permissions.
+
 ### Why is the bot talking in a different language?
 
 :::note
@@ -85,6 +91,15 @@ If you believe this is the case, please leave feedback using the appropriate but
 ### How come the bot doesn't detect me as Administrator?
 
 The bot determines whether you are an administrator or not by checking whether you have the Administrator permission. Please make sure you have the permission or ask your server owner for help.
+
+### Why don't emoji work when using commands?
+
+The common reason emoji don't work is because the bot doesn't have the **Use External Emoji** permission. Please make sure to add the permission to the bot's role, and make sure the channel you're
+using commands in doesn't override (deny) the permission for the bot.
+
+If you've made sure the bot has the permission, but still don't see the emoji, please check whether the `@everyone` role has the permission in the channel. A Discord quirk is that in order for
+commands to respond with emoji, both the `@everyone` role and the bot needs to have the **Use External Emoji** permission. Please note that you don't need to add the permission to the role itself,
+just adding it the the channel will do the trick.
 
 ### I'm having a different issue. How can I get help?
 
