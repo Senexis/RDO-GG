@@ -76,22 +76,6 @@ Make sure that you have the **Use Application Commands** permission. In addition
 is allowed to be used in the channel itself. If you need help getting that set up, please visit the
 [Discord support article](https://support.discord.com/hc/en-us/articles/4644915651095-Command-Permissions) for more information about Slash command permissions.
 
-### Why is the bot talking in a different language?
-
-:::note
-To learn more about languages, visit the [languages guide](./guides/languages).
-:::
-
-### Why can't the bot find something I look for?
-
-If the bot can't find something, try using slightly different keywords. Sometimes something is known differently in the game than what you're looking for.
-A common example of this is looking for `buffalo` while the actual name is `bison`. Of course, the thing you're looking for might just not be in the bot.
-If you believe this is the case, please leave feedback using the appropriate button.
-
-### How come the bot doesn't detect me as Administrator?
-
-The bot determines whether you are an administrator or not by checking whether you have the Administrator permission. Please make sure you have the permission or ask your server owner for help.
-
 ### Why don't emoji work when using commands?
 
 The common reason emoji don't work is because the bot doesn't have the **Use External Emoji** permission. Please make sure to add the permission to the bot's role, and make sure the channel you're
@@ -104,6 +88,22 @@ just adding it the the channel will do the trick.
 :::info Discord has this to say... [(link, #18)](https://time-mambo-c70.notion.site/DDevs-May-27-Q-A-17431321344b4ce7915fe7b5f83b1f41)
 We are working right now to make this more logical. There are important edge cases to be mindful of, like how moderators can control this permission when there is not a bot user in the server. But we
 know this is a pain point, and are currently addressing it.
+:::
+
+### Why can't the bot find something I look for?
+
+If the bot can't find something, try using slightly different keywords. Sometimes something is known differently in the game than what you're looking for.
+A common example of this is looking for `buffalo` while the actual name is `bison`. Of course, the thing you're looking for might just not be in the bot.
+If you believe this is the case, please leave feedback using the appropriate button.
+
+### How come the bot doesn't detect me as Administrator?
+
+The bot determines whether you are an administrator or not by checking whether you have the Administrator permission. Please make sure you have the permission or ask your server owner for help.
+
+### Why is the bot talking in a different language?
+
+:::note
+To learn more about languages, visit the [languages guide](./guides/languages).
 :::
 
 ### I'm having a different issue. How can I get help?
