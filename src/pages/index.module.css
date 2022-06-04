@@ -10,9 +10,9 @@
 }
 
 .parallaxImg {
-  filter: blur(2px);
+  filter: blur(3px);
   opacity: 0.2;
-  height: 200vh;
+  height: 250vh;
   width: 200vw;
   background-image: url('/img/header.jpg');
   background-size: cover;
