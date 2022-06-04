@@ -17,9 +17,10 @@ jobs:
           node-version: 18.x
           cache: npm
 
-      - name: Update redirects
+      - name: Run pre-build scripts
         run: |
           cd .github
+          node images.js
           node redirects.js
           cd ..
 
