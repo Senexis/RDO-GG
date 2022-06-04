@@ -1,0 +1,694 @@
+{
+  "blip": [
+    {
+      "id": "blip_event_appleseed",
+      "name": "Appleseed Timber Co.",
+      "url": "/img/toasts/blip/blip_event_appleseed.png"
+    },
+    {
+      "id": "crime_bank_robbery",
+      "name": "Bank Robbery",
+      "url": "/img/toasts/blip/crime_bank_robbery.png"
+    },
+    {
+      "id": "blip_mg_blackjack",
+      "name": "Blackjack",
+      "url": "/img/toasts/blip/blip_mg_blackjack.png"
+    },
+    {
+      "id": "blip_mission_bounty",
+      "name": "Bounty Hunting",
+      "url": "/img/toasts/blip/blip_mission_bounty.png"
+    },
+    {
+      "id": "cmpndm_parakeet",
+      "name": "Carolina Parakeet",
+      "url": "/img/toasts/blip/cmpndm_parakeet.png"
+    },
+    {
+      "id": "blip_event_castor",
+      "name": "Castor's Ridge",
+      "url": "/img/toasts/blip/blip_event_castor.png"
+    },
+    {
+      "id": "blip_event_railroad_camp",
+      "name": "Central Union Railroad Camp",
+      "url": "/img/toasts/blip/blip_event_railroad_camp.png"
+    },
+    {
+      "id": "cmpndm_top_cigarette",
+      "name": "Cigarette Cards",
+      "url": "/img/toasts/blip/cmpndm_top_cigarette.png"
+    },
+    {
+      "id": "cr_coach_to",
+      "name": "Coach Robbery",
+      "url": "/img/toasts/blip/cr_coach_to.png"
+    },
+    {
+      "id": "col_db_title",
+      "name": "Dinosaur Bones",
+      "url": "/img/toasts/blip/col_db_title.png"
+    },
+    {
+      "id": "blip_shop_doctor",
+      "name": "Doctor",
+      "url": "/img/toasts/blip/blip_shop_doctor.png"
+    },
+    {
+      "id": "blip_mg_dominoes",
+      "name": "Dominoes",
+      "url": "/img/toasts/blip/blip_mg_dominoes.png"
+    },
+    {
+      "id": "pres_set_act_fishing",
+      "name": "Fishing",
+      "url": "/img/toasts/blip/pres_set_act_fishing.png"
+    },
+    {
+      "id": "blip_mg_five_finger_fillet",
+      "name": "Five Finger Fillet",
+      "url": "/img/toasts/blip/blip_mg_five_finger_fillet.png"
+    },
+    {
+      "id": "blip_event_riggs_camp",
+      "name": "Fort Riggs",
+      "url": "/img/toasts/blip/blip_event_riggs_camp.png"
+    },
+    {
+      "id": "blip_ambient_gang_leader",
+      "name": "Gang Leader",
+      "url": "/img/toasts/blip/blip_ambient_gang_leader.png"
+    },
+    {
+      "id": "blip_robbery_home",
+      "name": "Home Robbery",
+      "url": "/img/toasts/blip/blip_robbery_home.png"
+    },
+    {
+      "id": "blip_region_hunting",
+      "name": "Hunting Ground",
+      "url": "/img/toasts/blip/blip_region_hunting.png"
+    },
+    {
+      "id": "pm_prog_collect_taxidermy",
+      "name": "Hunting Requests",
+      "url": "/img/toasts/blip/pm_prog_collect_taxidermy.png"
+    },
+    {
+      "id": "pm_prog_collect_fish",
+      "name": "Legendary Fish",
+      "url": "/img/toasts/blip/pm_prog_collect_fish.png"
+    },
+    {
+      "id": "blip_mg_poker",
+      "name": "Poker",
+      "url": "/img/toasts/blip/blip_mg_poker.png"
+    },
+    {
+      "id": "crime_robbery",
+      "name": "Robbery",
+      "url": "/img/toasts/blip/crime_robbery.png"
+    },
+    {
+      "id": "col_rc_title",
+      "name": "Rock Carvings",
+      "url": "/img/toasts/blip/col_rc_title.png"
+    },
+    {
+      "id": "pm_prog_collect_treasure",
+      "name": "Treasure Hunter",
+      "url": "/img/toasts/blip/pm_prog_collect_treasure.png"
+    }
+  ],
+  "events": [
+    {
+      "id": "fme_hot_property",
+      "name": "Cold Dead Hands",
+      "url": "/img/toasts/events/fme_hot_property.png"
+    },
+    {
+      "id": "fme_role_condor_egg",
+      "name": "Condor Egg",
+      "url": "/img/toasts/events/fme_role_condor_egg.png"
+    },
+    {
+      "id": "fme_role_greatest_bounty_hunter",
+      "name": "Day of Reckoning",
+      "url": "/img/toasts/events/fme_role_greatest_bounty_hunter.png"
+    },
+    {
+      "id": "fme_dead_drop",
+      "name": "Dispatch Rider",
+      "url": "/img/toasts/events/fme_dead_drop.png"
+    },
+    {
+      "id": "fme_golden_hat",
+      "name": "Fool's Gold",
+      "url": "/img/toasts/events/fme_golden_hat.png"
+    },
+    {
+      "id": "toast_mp_freemode_challenge",
+      "name": "Free Roam Events",
+      "url": "/img/toasts/events/toast_mp_freemode_challenge.png"
+    },
+    {
+      "id": "fme_king_of_the_castle",
+      "name": "King of the Castle",
+      "url": "/img/toasts/events/fme_king_of_the_castle.png"
+    },
+    {
+      "id": "fme_role_round_up",
+      "name": "Manhunt",
+      "url": "/img/toasts/events/fme_role_round_up.png"
+    },
+    {
+      "id": "fme_archery",
+      "name": "Master Archer",
+      "url": "/img/toasts/events/fme_archery.png"
+    },
+    {
+      "id": "fme_penned_in",
+      "name": "Posse Versus",
+      "url": "/img/toasts/events/fme_penned_in.png"
+    },
+    {
+      "id": "fme_role_protect_legendary_animal",
+      "name": "Protect Legendary Animal",
+      "url": "/img/toasts/events/fme_role_protect_legendary_animal.png"
+    },
+    {
+      "id": "fme_king_of_the_rail",
+      "name": "Railroad Baron",
+      "url": "/img/toasts/events/fme_king_of_the_rail.png"
+    },
+    {
+      "id": "fme_role_wreckage",
+      "name": "Salvage",
+      "url": "/img/toasts/events/fme_role_wreckage.png"
+    },
+    {
+      "id": "fme_role_supply_train",
+      "name": "Trade Route",
+      "url": "/img/toasts/events/fme_role_supply_train.png"
+    },
+    {
+      "id": "fme_role_animal_tagging",
+      "name": "Wild Animal Tagging",
+      "url": "/img/toasts/events/fme_role_animal_tagging.png"
+    },
+    {
+      "id": "fme_role_wildlife_photographer",
+      "name": "Wildlife Photographer",
+      "url": "/img/toasts/events/fme_role_wildlife_photographer.png"
+    }
+  ],
+  "hud": [
+    {
+      "id": "toast_mp_ability_bg",
+      "name": "Ability Cards - Background",
+      "url": "/img/toasts/hud/toast_mp_ability_bg.png"
+    },
+    {
+      "id": "toast_mp_ability_combat",
+      "name": "Ability Cards - Combat",
+      "url": "/img/toasts/hud/toast_mp_ability_combat.png"
+    },
+    {
+      "id": "toast_mp_ability_deadeye",
+      "name": "Ability Cards - Deadeye",
+      "url": "/img/toasts/hud/toast_mp_ability_deadeye.png"
+    },
+    {
+      "id": "toast_mp_ability_defense",
+      "name": "Ability Cards - Defense",
+      "url": "/img/toasts/hud/toast_mp_ability_defense.png"
+    },
+    {
+      "id": "toast_mp_ability_recovery",
+      "name": "Ability Cards - Recovery",
+      "url": "/img/toasts/hud/toast_mp_ability_recovery.png"
+    },
+    {
+      "id": "toast_bank_debt_medal_bronze",
+      "name": "Bank Debt Medal - Bronze",
+      "url": "/img/toasts/hud/toast_bank_debt_medal_bronze.png"
+    },
+    {
+      "id": "toast_bank_debt_medal_gold",
+      "name": "Bank Debt Medal - Gold",
+      "url": "/img/toasts/hud/toast_bank_debt_medal_gold.png"
+    },
+    {
+      "id": "toast_bank_debt_medal_no_award",
+      "name": "Bank Debt Medal - No Award",
+      "url": "/img/toasts/hud/toast_bank_debt_medal_no_award.png"
+    },
+    {
+      "id": "toast_bank_debt_medal_silver",
+      "name": "Bank Debt Medal - Silver",
+      "url": "/img/toasts/hud/toast_bank_debt_medal_silver.png"
+    },
+    {
+      "id": "toast_catalogue",
+      "name": "Catalogue",
+      "url": "/img/toasts/hud/toast_catalogue.png"
+    },
+    {
+      "id": "toast_player_deadeye",
+      "name": "Deadeye",
+      "url": "/img/toasts/hud/toast_player_deadeye.png"
+    },
+    {
+      "id": "toast_dreamcatcher",
+      "name": "Dreamcatchers",
+      "url": "/img/toasts/hud/toast_dreamcatcher.png"
+    },
+    {
+      "id": "toast_mp_freemode_challenge",
+      "name": "Free Roam Events",
+      "url": "/img/toasts/hud/toast_mp_freemode_challenge.png"
+    },
+    {
+      "id": "toast_gang_take_medal_bronze",
+      "name": "Gang Medal - Bronze",
+      "url": "/img/toasts/hud/toast_gang_take_medal_bronze.png"
+    },
+    {
+      "id": "toast_gang_take_medal_gold",
+      "name": "Gang Medal - Gold",
+      "url": "/img/toasts/hud/toast_gang_take_medal_gold.png"
+    },
+    {
+      "id": "toast_gang_take_medal_no_award",
+      "name": "Gang Medal - No Award",
+      "url": "/img/toasts/hud/toast_gang_take_medal_no_award.png"
+    },
+    {
+      "id": "toast_gang_take_medal_silver",
+      "name": "Gang Medal - Silver",
+      "url": "/img/toasts/hud/toast_gang_take_medal_silver.png"
+    },
+    {
+      "id": "toast_gang_savings",
+      "name": "Gang Savings",
+      "url": "/img/toasts/hud/toast_gang_savings.png"
+    },
+    {
+      "id": "toast_horse_bond",
+      "name": "Horse Bonding",
+      "url": "/img/toasts/hud/toast_horse_bond.png"
+    },
+    {
+      "id": "toast_medal_bronze",
+      "name": "Medal - Bronze",
+      "url": "/img/toasts/hud/toast_medal_bronze.png"
+    },
+    {
+      "id": "toast_medal_collectable",
+      "name": "Medal - Collectable",
+      "url": "/img/toasts/hud/toast_medal_collectable.png"
+    },
+    {
+      "id": "toast_medal_gold",
+      "name": "Medal - Gold",
+      "url": "/img/toasts/hud/toast_medal_gold.png"
+    },
+    {
+      "id": "toast_medal_no_award",
+      "name": "Medal - No Award",
+      "url": "/img/toasts/hud/toast_medal_no_award.png"
+    },
+    {
+      "id": "toast_medal_silver",
+      "name": "Medal - Silver",
+      "url": "/img/toasts/hud/toast_medal_silver.png"
+    },
+    {
+      "id": "toast_gang_savings_special",
+      "name": "Special Gang Savings",
+      "url": "/img/toasts/hud/toast_gang_savings_special.png"
+    },
+    {
+      "id": "toast_mp_status_change",
+      "name": "Status Change",
+      "url": "/img/toasts/hud/toast_mp_status_change.png"
+    }
+  ],
+  "mp_daily_objective": [
+    {
+      "id": "daily_challenge_toast_01",
+      "name": "Daily Challenges - #1",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_01.png"
+    },
+    {
+      "id": "daily_challenge_toast_10",
+      "name": "Daily Challenges - #10",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_10.png"
+    },
+    {
+      "id": "daily_challenge_toast_11",
+      "name": "Daily Challenges - #11",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_11.png"
+    },
+    {
+      "id": "daily_challenge_toast_12",
+      "name": "Daily Challenges - #12",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_12.png"
+    },
+    {
+      "id": "daily_challenge_toast_13",
+      "name": "Daily Challenges - #13",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_13.png"
+    },
+    {
+      "id": "daily_challenge_toast_14",
+      "name": "Daily Challenges - #14",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_14.png"
+    },
+    {
+      "id": "daily_challenge_toast_15",
+      "name": "Daily Challenges - #15",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_15.png"
+    },
+    {
+      "id": "daily_challenge_toast_16",
+      "name": "Daily Challenges - #16",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_16.png"
+    },
+    {
+      "id": "daily_challenge_toast_17",
+      "name": "Daily Challenges - #17",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_17.png"
+    },
+    {
+      "id": "daily_challenge_toast_18",
+      "name": "Daily Challenges - #18",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_18.png"
+    },
+    {
+      "id": "daily_challenge_toast_19",
+      "name": "Daily Challenges - #19",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_19.png"
+    },
+    {
+      "id": "daily_challenge_toast_02",
+      "name": "Daily Challenges - #2",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_02.png"
+    },
+    {
+      "id": "daily_challenge_toast_20",
+      "name": "Daily Challenges - #20",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_20.png"
+    },
+    {
+      "id": "daily_challenge_toast_21",
+      "name": "Daily Challenges - #21",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_21.png"
+    },
+    {
+      "id": "daily_challenge_toast_22",
+      "name": "Daily Challenges - #22",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_22.png"
+    },
+    {
+      "id": "daily_challenge_toast_23",
+      "name": "Daily Challenges - #23",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_23.png"
+    },
+    {
+      "id": "daily_challenge_toast_24",
+      "name": "Daily Challenges - #24",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_24.png"
+    },
+    {
+      "id": "daily_challenge_toast_25",
+      "name": "Daily Challenges - #25",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_25.png"
+    },
+    {
+      "id": "daily_challenge_toast_26",
+      "name": "Daily Challenges - #26",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_26.png"
+    },
+    {
+      "id": "daily_challenge_toast_27",
+      "name": "Daily Challenges - #27",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_27.png"
+    },
+    {
+      "id": "daily_challenge_toast_28",
+      "name": "Daily Challenges - #28",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_28.png"
+    },
+    {
+      "id": "daily_challenge_toast_29",
+      "name": "Daily Challenges - #29",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_29.png"
+    },
+    {
+      "id": "daily_challenge_toast_03",
+      "name": "Daily Challenges - #3",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_03.png"
+    },
+    {
+      "id": "daily_challenge_toast_30",
+      "name": "Daily Challenges - #30",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_30.png"
+    },
+    {
+      "id": "daily_challenge_toast_31",
+      "name": "Daily Challenges - #31",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_31.png"
+    },
+    {
+      "id": "daily_challenge_toast_04",
+      "name": "Daily Challenges - #4",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_04.png"
+    },
+    {
+      "id": "daily_challenge_toast_05",
+      "name": "Daily Challenges - #5",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_05.png"
+    },
+    {
+      "id": "daily_challenge_toast_06",
+      "name": "Daily Challenges - #6",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_06.png"
+    },
+    {
+      "id": "daily_challenge_toast_07",
+      "name": "Daily Challenges - #7",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_07.png"
+    },
+    {
+      "id": "daily_challenge_toast_08",
+      "name": "Daily Challenges - #8",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_08.png"
+    },
+    {
+      "id": "daily_challenge_toast_09",
+      "name": "Daily Challenges - #9",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_09.png"
+    },
+    {
+      "id": "daily_challenge_toast_infinity",
+      "name": "Daily Challenges - Infinity",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_infinity.png"
+    },
+    {
+      "id": "daily_challenge_toast_tick",
+      "name": "Daily Challenges - Tick",
+      "url": "/img/toasts/mp_daily_objective/daily_challenge_toast_tick.png"
+    }
+  ],
+  "mp_generic": [
+    {
+      "id": "toast_mp_animal",
+      "name": "Animals",
+      "url": "/img/toasts/mp_generic/toast_mp_animal.png"
+    },
+    {
+      "id": "toast_mp_benefits",
+      "name": "Benefits",
+      "url": "/img/toasts/mp_generic/toast_mp_benefits.png"
+    },
+    {
+      "id": "mp_roles_bounty_hunter",
+      "name": "Bounty Hunter",
+      "url": "/img/toasts/mp_generic/mp_roles_bounty_hunter.png"
+    },
+    {
+      "id": "mp_roles_bounty_hunter_tier",
+      "name": "Bounty Hunter - Detailed",
+      "url": "/img/toasts/mp_generic/mp_roles_bounty_hunter_tier.png"
+    },
+    {
+      "id": "mp_roles_collector",
+      "name": "Collector",
+      "url": "/img/toasts/mp_generic/mp_roles_collector.png"
+    },
+    {
+      "id": "mp_roles_collector_tier",
+      "name": "Collector - Detailed",
+      "url": "/img/toasts/mp_generic/mp_roles_collector_tier.png"
+    },
+    {
+      "id": "toast_mp_customer_service",
+      "name": "Customer Service",
+      "url": "/img/toasts/mp_generic/toast_mp_customer_service.png"
+    },
+    {
+      "id": "toast_mp_reward_event",
+      "name": "Event Reward",
+      "url": "/img/toasts/mp_generic/toast_mp_reward_event.png"
+    },
+    {
+      "id": "butcher_table_goods",
+      "name": "Goods",
+      "url": "/img/toasts/mp_generic/butcher_table_goods.png"
+    },
+    {
+      "id": "toast_mp_hostility",
+      "name": "Hostility",
+      "url": "/img/toasts/mp_generic/toast_mp_hostility.png"
+    },
+    {
+      "id": "toast_mp_kick",
+      "name": "Kick",
+      "url": "/img/toasts/mp_generic/toast_mp_kick.png"
+    },
+    {
+      "id": "butcher_table_raw_materials",
+      "name": "Materials",
+      "url": "/img/toasts/mp_generic/butcher_table_raw_materials.png"
+    },
+    {
+      "id": "moonshiner_workbench_moonshine",
+      "name": "Moonshine",
+      "url": "/img/toasts/mp_generic/moonshiner_workbench_moonshine.png"
+    },
+    {
+      "id": "mp_roles_moonshiner",
+      "name": "Moonshiner",
+      "url": "/img/toasts/mp_generic/mp_roles_moonshiner.png"
+    },
+    {
+      "id": "mp_roles_naturalist",
+      "name": "Naturalist",
+      "url": "/img/toasts/mp_generic/mp_roles_naturalist.png"
+    },
+    {
+      "id": "toast_mp_offers_rewards",
+      "name": "Offers & Rewards",
+      "url": "/img/toasts/mp_generic/toast_mp_offers_rewards.png"
+    },
+    {
+      "id": "butcher_table_production",
+      "name": "Production",
+      "url": "/img/toasts/mp_generic/butcher_table_production.png"
+    },
+    {
+      "id": "toast_mp_quickstart_guide",
+      "name": "Quickstart Guide",
+      "url": "/img/toasts/mp_generic/toast_mp_quickstart_guide.png"
+    },
+    {
+      "id": "mp_rank_toast",
+      "name": "Rank Shield",
+      "url": "/img/toasts/mp_generic/mp_rank_toast.png"
+    },
+    {
+      "id": "toast_mp_reward_rockstar",
+      "name": "Rockstar Reward",
+      "url": "/img/toasts/mp_generic/toast_mp_reward_rockstar.png"
+    },
+    {
+      "id": "toast_mp_season_reward",
+      "name": "Season Reward",
+      "url": "/img/toasts/mp_generic/toast_mp_season_reward.png"
+    },
+    {
+      "id": "toast_mp_standalone_sp",
+      "name": "Singleplayer Standalone",
+      "url": "/img/toasts/mp_generic/toast_mp_standalone_sp.png"
+    },
+    {
+      "id": "mp_roles_trader",
+      "name": "Trader",
+      "url": "/img/toasts/mp_generic/mp_roles_trader.png"
+    },
+    {
+      "id": "mp_roles_trader_tier",
+      "name": "Trader - Detailed",
+      "url": "/img/toasts/mp_generic/mp_roles_trader_tier.png"
+    },
+    {
+      "id": "toast_mp_season_reward_seasonal",
+      "name": "VIP Season Reward",
+      "url": "/img/toasts/mp_generic/toast_mp_season_reward_seasonal.png"
+    }
+  ],
+  "mp_roles": [
+    {
+      "id": "butcher_table_goods",
+      "name": "Goods",
+      "url": "/img/toasts/mp_roles/butcher_table_goods.png"
+    },
+    {
+      "id": "butcher_table_raw_materials",
+      "name": "Materials",
+      "url": "/img/toasts/mp_roles/butcher_table_raw_materials.png"
+    },
+    {
+      "id": "moonshiner_workbench_moonshine",
+      "name": "Moonshine",
+      "url": "/img/toasts/mp_roles/moonshiner_workbench_moonshine.png"
+    },
+    {
+      "id": "moonshiner_workbench_flavoring",
+      "name": "Moonshine Flavoring",
+      "url": "/img/toasts/mp_roles/moonshiner_workbench_flavoring.png"
+    },
+    {
+      "id": "moonshiner_workbench_flavoring_quality_02",
+      "name": "Moonshine Flavoring - Good",
+      "url": "/img/toasts/mp_roles/moonshiner_workbench_flavoring_quality_02.png"
+    },
+    {
+      "id": "moonshiner_workbench_flavoring_quality_03",
+      "name": "Moonshine Flavoring - Perfect",
+      "url": "/img/toasts/mp_roles/moonshiner_workbench_flavoring_quality_03.png"
+    },
+    {
+      "id": "moonshiner_workbench_flavoring_quality_01",
+      "name": "Moonshine Flavoring - Poor",
+      "url": "/img/toasts/mp_roles/moonshiner_workbench_flavoring_quality_01.png"
+    },
+    {
+      "id": "moonshiner_workbench_still_average",
+      "name": "Moonshine Still - Average",
+      "url": "/img/toasts/mp_roles/moonshiner_workbench_still_average.png"
+    },
+    {
+      "id": "moonshiner_workbench_still_empty",
+      "name": "Moonshine Still - Empty",
+      "url": "/img/toasts/mp_roles/moonshiner_workbench_still_empty.png"
+    },
+    {
+      "id": "moonshiner_workbench_still_strong",
+      "name": "Moonshine Still - Strong",
+      "url": "/img/toasts/mp_roles/moonshiner_workbench_still_strong.png"
+    },
+    {
+      "id": "moonshiner_workbench_still_weak",
+      "name": "Moonshine Still - Weak",
+      "url": "/img/toasts/mp_roles/moonshiner_workbench_still_weak.png"
+    },
+    {
+      "id": "butcher_table_production",
+      "name": "Production",
+      "url": "/img/toasts/mp_roles/butcher_table_production.png"
+    }
+  ]
+}
