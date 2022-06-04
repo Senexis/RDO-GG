@@ -34,11 +34,12 @@ The following settings are available for free to any guild.
 
 The following settings are available to Premium-activated guilds.
 
-| Setting              | Description                                        |
-| :------------------- | :------------------------------------------------- |
-| Colorize Toast Icons | Whether to colorize the icons of toasts.           |
-| Prefer Images        | Whether to post images by default instead of text. |
-| Show Providers       | Whether to show the "Provided by" text in embeds.  |
+| Setting              | Description                                            |
+| :------------------- | :----------------------------------------------------- |
+| Colorize Toast Icons | Whether to colorize the icons of toasts.               |
+| Delete Old Messages  | Whether to delete old messages when a new one is sent. |
+| Prefer Images        | Whether to post images by default instead of text.     |
+| Show Providers       | Whether to show the "Provided by" text in embeds.      |
 
 ### Colors
 
