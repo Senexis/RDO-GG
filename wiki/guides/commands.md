@@ -12,19 +12,20 @@ If you ever get stuck, feel free to reach out on the bot's Discord server for ad
 
 These are the commands that let you find in-game content that's available in the game.
 
-| Command      | Description                                               |
-| :----------- | :-------------------------------------------------------- |
-| /cycles      | Displays today's Collectible cycles                       |
-| /daily       | Displays today's Daily Challenges                         |
-| /events list | Displays a list of upcoming Free Roam Events              |
-| /events next | Displays the next Free Roam Event and when it'll start    |
-| /find        | Displays information about anything in the Compendium     |
-| /list        | Displays a list of Compendium items in a category         |
-| /nazar       | Displays Madam Nazar's current location                   |
-| /ranks       | Displays the unlocks for certain ranks                    |
-| /times       | Displays various in-game times and timers                 |
-| /trader      | Displays Trader information based on your amount of Goods |
-| /weekly      | Displays this week's Weekly Collectible Request           |
+| Command          | Description                                               |
+| :--------------- | :-------------------------------------------------------- |
+| /cycles          | Displays today's Collectible cycles                       |
+| /daily           | Displays today's Daily Challenges                         |
+| /events list     | Displays a list of upcoming Free Roam Events              |
+| /events next     | Displays the next Free Roam Event and when it'll start    |
+| /events schedule | Displays a full schedule of Free Roam Events              |
+| /find            | Displays information about anything in the Compendium     |
+| /list            | Displays a list of Compendium items in a category         |
+| /nazar           | Displays Madam Nazar's current location                   |
+| /ranks           | Displays the unlocks for certain ranks                    |
+| /times           | Displays various in-game times and timers                 |
+| /trader          | Displays Trader information based on your amount of Goods |
+| /weekly          | Displays this week's Weekly Collectible Request           |
 
 ## Rockstar
 
