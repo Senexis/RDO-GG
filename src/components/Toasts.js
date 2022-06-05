@@ -36,7 +36,9 @@ const Toasts = () => {
   if (loading || error || !data) return <ToastsPlaceholder />;
 
   const categories = {
+    awards: 'Awards',
     blip: 'Blips',
+    challenges: 'Challenges',
     events: 'Free Roam Events',
     hud: 'UI/HUD',
     mp_daily_objective: 'Daily Challenges',

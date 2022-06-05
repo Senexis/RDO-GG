@@ -1,7 +1,7 @@
 {
   "label": "Lists",
   "position": 4,
-  "collapsed": true,
+  "collapsed": false,
   "link": {
     "type": "generated-index",
     "title": "Lists"
