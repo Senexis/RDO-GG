@@ -49,8 +49,11 @@ const Toasts = () => {
   return (
     <>
       {Object.keys(data).map(category => (
-        <section>
-          <h2>{categories[category] ?? category}</h2>
+        <section key={category}>
+          <h2 className="anchor anchorWithStickyNavbar_node_modules-@docusaurus-theme-classic-lib-theme-Heading-styles-module" id={category}>
+            {categories[category] ?? category}
+            <a className="hash-link" href={`#${category}`} title="Direct link to heading">​</a>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
             {data[category].map(item => (
               <div key={item.id} className="overflow-hidden text-center bg-gray-700 shadow-sm p-2 rounded">

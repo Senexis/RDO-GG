@@ -11,20 +11,44 @@ const languageFile = require(path.join(__dirname, 'images.json'));
 const toasts = {};
 fs.readdirSync(toastsPath).forEach(category => {
   const categoryPath = path.join(toastsPath, category);
-  toasts[category] = [];
-  fs.readdirSync(categoryPath).forEach(toast => {
-    const toastPath = path.join(categoryPath, toast);
-    const toastName = path.basename(toastPath, '.png');
 
-    toasts[category].push({
-      id: toastName,
-      name: languageFile.toasts[toastName],
-      url: `/img/toasts/${category}/${toastName}.png`,
+  if (['awards', 'challenges'].includes(category)) {
+    toasts[category] = {};
+
+    fs.readdirSync(categoryPath).forEach(toast => {
+      const toastPath = path.join(categoryPath, toast);
+      const toastName = path.basename(toastPath, '.png');
+
+      const parts = toast.split('_');
+      const subcategory = parts.slice(1, parts.length - 1).join('_');
+      if (!toasts[category][subcategory]) toasts[category][subcategory] = [];
+
+      toasts[category][subcategory].push({
+        id: toastName,
+        name: languageFile.toasts[toastName],
+        url: `/img/toasts/${category}/${toastName}.png`,
+      });
+
+      toasts[category][subcategory].sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' }));
     });
-  });
-  toasts[category].sort((a, b) => a.name.localeCompare(b.name));
+  } else {
+    toasts[category] = [];
+
+    fs.readdirSync(categoryPath).forEach(toast => {
+      const toastPath = path.join(categoryPath, toast);
+      const toastName = path.basename(toastPath, '.png');
+
+      toasts[category].push({
+        id: toastName,
+        name: languageFile.toasts[toastName],
+        url: `/img/toasts/${category}/${toastName}.png`,
+      });
+    });
+
+    toasts[category].sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' }));
+  }
 });
-fs.writeFileSync(path.join(staticPath, 'json', 'toasts.json'), JSON.stringify(toasts, null, 2));
+fs.writeFileSync(path.join(staticPath, 'json', 'toasts.json'), JSON.stringify(toasts));
 
 const locations = {};
 fs.readdirSync(locationsPath).forEach(location => {
@@ -41,4 +65,4 @@ fs.readdirSync(locationsPath).forEach(location => {
   });
   locations[category].sort((a, b) => a.name.localeCompare(b.name));
 });
-fs.writeFileSync(path.join(staticPath, 'json', 'locations.json'), JSON.stringify(locations, null, 2));
+fs.writeFileSync(path.join(staticPath, 'json', 'locations.json'), JSON.stringify(locations));
