@@ -163,6 +163,7 @@ const config = {
       {
         fromExtensions: ['html', 'htm'],
         redirects: [
+          { from: '/bot', to: '/' },
           { from: '/deprecation', to: '/news/2022/03/01/message-command-deprecation' },
           { from: '/guides', to: '/wiki/category/guides' },
           { from: '/help', to: '/wiki/guides/commands' },
