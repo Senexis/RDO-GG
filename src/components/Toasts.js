@@ -16,13 +16,34 @@ const ToastsPlaceholder = () => {
         })}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
-        {[...Array(9)].map((_, i) => {
+        {[...Array(11)].map((_, i) => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
             <div key={i} className="animate-pulse flex flex-row items-center bg-gray-700 shadow-sm p-2 rounded">
-              <div className="inline-block w-10 h-10 bg-gray-400 rounded mr-2"></div>
-              <div className={clsx(width, 'inline-block h-2 bg-[#ebedf0] rounded mr-2')}></div>
+              <div className="flex-none w-10 h-10 bg-gray-400 rounded mr-2"></div>
+              <div className={clsx(width, 'flex-1 h-2 bg-[#ebedf0] rounded mr-2')}></div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="animate-pulse mb-4">
+        {[...Array(2)].map((_, i) => {
+          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
+          const width = items[Math.floor(Math.random() * items.length)];
+          return (
+            <div key={i} className={clsx(width, 'inline-block h-6 bg-[#ebedf0] rounded mr-2')}></div>
+          );
+        })}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
+        {[...Array(12)].map((_, i) => {
+          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
+          const width = items[Math.floor(Math.random() * items.length)];
+          return (
+            <div key={i} className="animate-pulse flex flex-row items-center bg-gray-700 shadow-sm p-2 rounded">
+              <div className="flex-none w-10 h-10 bg-gray-400 rounded mr-2"></div>
+              <div className={clsx(width, 'flex-1 h-2 bg-[#ebedf0] rounded mr-2')}></div>
             </div>
           );
         })}
@@ -94,8 +115,8 @@ const Toasts = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
               {data[category].map(item => (
                 <div key={item.id} className="overflow-hidden flex flex-row items-center bg-gray-700 shadow-sm p-2 rounded">
-                  <Image img={require(`../../static${item.url}`)} className="inline-block w-10 h-10 mr-2 object-cover" alt={item.name} />
-                  <div className="leading-snug text-white">{item.name}</div>
+                  <Image img={require(`../../static${item.url}`)} className="flex-none w-10 h-10 mr-2" alt={item.name} />
+                  <div className="flex-1 leading-snug text-white">{item.name}</div>
                 </div>
               ))}
             </div>
@@ -117,8 +138,8 @@ const Toasts = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
                 {data[category][subcategory].map(item => (
                   <div key={item.id} className="overflow-hidden flex flex-row items-center bg-gray-700 shadow-sm p-2 rounded">
-                    <Image img={require(`../../static${item.url}`)} className="inline-block w-10 h-10 mr-2 object-cover" alt={item.name} />
-                    <div className="leading-snug text-white">{item.name}</div>
+                    <Image img={require(`../../static${item.url}`)} className="flex-none w-10 h-10 mr-2" alt={item.name} />
+                    <div className="flex-1 leading-snug text-white">{item.name}</div>
                   </div>
                 ))}
               </div>
