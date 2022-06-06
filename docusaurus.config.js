@@ -145,7 +145,7 @@ const config = {
         ],
         copyright: `
           © ${new Date().getFullYear()} - RDO.GG<br>
-          <small className="opacity-60">
+          <small class="opacity-60">
             Red Dead Redemption, Red Dead Online, RDR and RDO are registered trademarks by Rockstar Games.<br>
             This site and bot are not endorsed, recognised, sponsored, or approved by Rockstar Games.
           </small>
