@@ -115,7 +115,7 @@ const Toasts = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
               {data[category].map(item => (
                 <div key={item.id} className="overflow-hidden flex flex-row items-center bg-gray-700 shadow-sm p-2 rounded">
-                  <Image img={require(`../../static${item.url}`)} className="flex-none w-10 h-10 mr-2" alt={item.name} />
+                  <Image img={require(`../../static${item.url}`)} className="overflow-hidden flex-none w-10 h-10 mr-2" alt={item.name} />
                   <div className="flex-1 leading-snug text-white">{item.name}</div>
                 </div>
               ))}
@@ -138,7 +138,7 @@ const Toasts = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
                 {data[category][subcategory].map(item => (
                   <div key={item.id} className="overflow-hidden flex flex-row items-center bg-gray-700 shadow-sm p-2 rounded">
-                    <Image img={require(`../../static${item.url}`)} className="flex-none w-10 h-10 mr-2" alt={item.name} />
+                    <Image img={require(`../../static${item.url}`)} className="overflow-hidden flex-none w-10 h-10 mr-2" alt={item.name} />
                     <div className="flex-1 leading-snug text-white">{item.name}</div>
                   </div>
                 ))}

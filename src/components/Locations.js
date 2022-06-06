@@ -79,7 +79,7 @@ const Toasts = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
             {data[category].map(item => (
               <div key={item.id} className="overflow-hidden text-center bg-gray-700 shadow-sm p-2 rounded">
-                <Image img={require(`../../static${item.url}`)} className="block w-full h-auto object-cover mb-1" alt={item.name} />
+                <Image img={require(`../../static${item.url}`)} className="overflow-hidden block w-full h-auto object-cover mb-1" alt={item.name} />
                 <div className="text-white">{item.name}</div>
               </div>
             ))}
