@@ -52,5 +52,6 @@ for (const [from, to] of Object.entries(redirects)) {
     </html>
   `;
 
+  fs.writeFileSync(path.join(redirectsPath, `${from}.html`), file.trim());
   fs.writeFileSync(path.join(redirectPath, 'index.html'), file.trim());
 }
