@@ -5,8 +5,8 @@ import React from 'react';
 import { Background, Parallax } from 'react-parallax';
 import Instatus from '../components/Instatus';
 
-import headerLogo from '/img/header-logo.png';
-import header from '/img/header.jpg';
+import logo from '/img/logo.png';
+import parallax from '/img/parallax.jpg';
 import pic034 from '/img/stock/pic034.jpg';
 import pic059 from '/img/stock/pic059.jpg';
 import pic076 from '/img/stock/pic076.jpg';
@@ -19,7 +19,7 @@ export default function Home(): JSX.Element {
       <Parallax strength={500}>
         <div className="container mx-auto flex px-5 py-24 lg:py-36 items-center justify-center flex-col">
           <div className="w-full md:w-5/6 lg:w-3/4 2xl:w-2/3 text-center">
-            <Image img={headerLogo} shouldAutoDownload={() => true} className="inline-block w-2/3 lg:w-1/2 mb-8" />
+            <Image img={logo} shouldAutoDownload={() => true} className="inline-block w-2/3 lg:w-1/2 mb-8" />
             <p className="leading-relaxed mb-8">Welcome! Here you can find various links regarding everything that has to do with RDO.GG and RDO Compendium. You'll be able to find information and quick access to various resources on this page.</p>
             <div className="text-center">
               <Link className="button button--secondary button--lg m-2 block lg:inline-block" to="https://rdo.gg/invite/">
@@ -119,7 +119,7 @@ export default function Home(): JSX.Element {
         </div>
 
         <Background className="parallax-wrapper">
-          <Image img={header} shouldAutoDownload={() => true} className="parallax-img"></Image>
+          <Image img={parallax} shouldAutoDownload={() => true} className="parallax-img"></Image>
         </Background>
       </Parallax>
     </Layout>

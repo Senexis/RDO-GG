@@ -82,10 +82,9 @@ const config = {
       //   isCloseable: true,
       // },
       navbar: {
-        title: 'RDO.GG',
         logo: {
-          alt: 'RDO.GG Logo',
-          src: 'img/logo.png',
+          alt: 'RDO.GG',
+          src: 'img/menu.png',
         },
         items: [
           {
