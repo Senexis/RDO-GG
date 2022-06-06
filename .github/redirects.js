@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const basePath = path.join(__dirname, '..');
-const redirectsPath = path.join(basePath, 'static');
+const redirectsPath = path.join(basePath, 'build');
 
 // Ensure path exists
 if (!fs.existsSync(redirectsPath)) fs.mkdirSync(redirectsPath);
