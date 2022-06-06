@@ -39,7 +39,7 @@ const config = {
         ],
         theme: {
           primaryColor: '#cc0000',
-          options: { 
+          options: {
             disableSearch: true,
             expandResponses: '200',
             hideDownloadButton: true,
@@ -79,7 +79,7 @@ const config = {
       //   content: 'Welcome to the new RDO.GG. Pardon the dust while we finish the documentation. 🧹',
       //   textColor: 'var(--ifm-font-color-base)',
       //   backgroundColor: 'var(--ifm-footer-background-color)',
-      //   isCloseable: false,
+      //   isCloseable: true,
       // },
       navbar: {
         title: 'RDO.GG',
@@ -145,7 +145,7 @@ const config = {
         ],
         copyright: `
           © ${new Date().getFullYear()} - RDO.GG<br>
-          <small class="opacity-60">
+          <small className="opacity-60">
             Red Dead Redemption, Red Dead Online, RDR and RDO are registered trademarks by Rockstar Games.<br>
             This site and bot are not endorsed, recognised, sponsored, or approved by Rockstar Games.
           </small>
@@ -180,6 +180,13 @@ const config = {
           { from: '/wiki/privacy-policy', to: '/wiki/legal/privacy-policy' },
           { from: '/wiki/terms-of-service', to: '/wiki/legal/terms-of-service' },
         ],
+      },
+    ],
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        max: 1920,
+        disableInDev: false,
       },
     ],
     async function docusaurusTailwindcss() {

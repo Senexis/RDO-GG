@@ -130,21 +130,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  @apply font-normal;
   font-family: "Rdr-lino", "Times New Roman", Times, serif;
 }
 
 h2 > a {
-  color: inherit;
+  @apply text-inherit;
 }
 
 h2 > a:hover {
-  text-decoration: none;
+  @apply no-underline;
 }
 
 button {
-  border: none;
-  outline: none;
+  @apply border-none outline-none;
   font-family: "Hapna", "Times New Roman", Times, serif;
 }
 
@@ -158,4 +157,26 @@ button {
 
 .fa-twitter {
   color: #1da1f2;
+}
+
+.home-link-block, .home-link-block img, .parallax-img img {
+  @apply block !w-full !h-full object-cover object-center;
+}
+
+.parallax {
+  height: 75vh;
+  min-height: 30em;
+  max-height: 50em;
+}
+
+.parallax-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.parallax-img {
+  filter: blur(3px);
+  opacity: 0.2;
+  height: 250vh;
+  width: 200vw;
 }

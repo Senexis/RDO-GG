@@ -1,3 +1,4 @@
+import Image from '@theme/IdealImage';
 import clsx from 'clsx';
 import React from 'react';
 import useFetch from '../useFetch';
@@ -93,7 +94,7 @@ const Toasts = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
               {data[category].map(item => (
                 <div key={item.id} className="overflow-hidden flex flex-row items-center bg-gray-700 shadow-sm p-2 rounded">
-                  <img loading="lazy" className="inline-block w-10 h-10 mr-2 object-cover" src={item.url} alt={item.name} />
+                  <Image img={require(`../../static${item.url}`)} className="inline-block w-10 h-10 mr-2 object-cover" alt={item.name} />
                   <div className="leading-snug text-white">{item.name}</div>
                 </div>
               ))}
@@ -116,7 +117,7 @@ const Toasts = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
                 {data[category][subcategory].map(item => (
                   <div key={item.id} className="overflow-hidden flex flex-row items-center bg-gray-700 shadow-sm p-2 rounded">
-                    <img loading="lazy" className="inline-block w-10 h-10 mr-2 object-cover" src={item.url} alt={item.name} />
+                    <Image img={require(`../../static${item.url}`)} className="inline-block w-10 h-10 mr-2 object-cover" alt={item.name} />
                     <div className="leading-snug text-white">{item.name}</div>
                   </div>
                 ))}

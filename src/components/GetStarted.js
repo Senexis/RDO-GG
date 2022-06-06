@@ -1,5 +1,14 @@
+import Image from '@theme/IdealImage';
 import React from 'react';
 import { Steps, StepsProvider, useSteps } from "react-step-builder";
+
+import getStarted1 from '/img/wiki/get-started-1.png';
+import getStarted2 from '/img/wiki/get-started-2.png';
+import getStarted3 from '/img/wiki/get-started-3.png';
+import getStarted4 from '/img/wiki/get-started-4.png';
+import getStarted5 from '/img/wiki/get-started-5.png';
+import getStarted6 from '/img/wiki/get-started-6.png';
+import getStarted7 from '/img/wiki/get-started-7.png';
 
 const GetStartedStep = (props) => {
   const { isFirst, isLast, hasNext, next, hasPrev, prev, current, total } = useSteps();
@@ -47,7 +56,7 @@ const GetStartedSteps = () => {
       <GetStartedStep title="First things first">
         <p>To get started, you'll need to add the bot to your server. To do this, <a href="https://rdo.gg/invite/" target="_blank">visit the bot invite page</a>. Once you're on the page you should see something like this:</p>
         <div className="mb-4 text-center">
-          <img src="/img/wiki/get-started-1.png" alt="A screenshot showing Discord's external application invitation screen." />
+          <Image img={getStarted1} className="inline-block" alt="A screenshot showing Discord's external application invitation screen." />
         </div>
         <p>Pfew, that's a bit of information. What it's actually telling you is that you're about to add the RDO Compendium bot to one of your servers. It mentions that it will be able to create commands, and that's exactly what we want! What Discord means with being able to create commands is that the bot will be able to show commands like <code className="text-black">/find</code> to the users in your server.</p>
         <p>Let's go ahead and add the bot! Click Continue.</p>
@@ -55,7 +64,7 @@ const GetStartedSteps = () => {
       <GetStartedStep title="Select your server">
         <p>Now that we're a little familiar with the page, you'll notice that there's a box on it:</p>
         <div className="mb-4 text-center">
-          <img src="/img/wiki/get-started-2.png" alt="A screenshot showing Discord's external application invitation screen. The 'Add to server' dropdown is highlighted." />
+          <Image img={getStarted2} className="inline-block" alt="A screenshot showing Discord's external application invitation screen. The 'Add to server' dropdown is highlighted." />
         </div>
         <p>If you click this box, you'll select the server you'll add the bot to. Maybe you have more than one server to add the bot to. If that's the case, pick one now! If you want to add the bot to multiple servers, you can always repeat these steps later.</p>
         <p>Click Continue when you've picked a server.</p>
@@ -63,21 +72,21 @@ const GetStartedSteps = () => {
       <GetStartedStep title="Moving on">
         <p>This step is extremely simple. Once you've picked your server, you'll notice that the "Continue" button will become bright blue!</p>
         <div className="mb-4 text-center">
-          <img src="/img/wiki/get-started-3.png" alt="A screenshot showing Discord's external application invitation screen. The 'Continue' button is highlighted." />
+          <Image img={getStarted3} className="inline-block" alt="A screenshot showing Discord's external application invitation screen. The 'Continue' button is highlighted." />
         </div>
         <p>Simply click it to move on, and then click Continue here as well!</p>
       </GetStartedStep>
       <GetStartedStep title="Permissions o' plenty">
         <p>Now that we've moved on, we'll find a scary-looking page like this staring us down:</p>
         <div className="mb-4 text-center">
-          <img src="/img/wiki/get-started-4.png" alt="A screenshot showing Discord's external application permissions confirmation screen." />
+          <Image img={getStarted4} className="inline-block" alt="A screenshot showing Discord's external application permissions confirmation screen." />
         </div>
         <p>We've got this. There's a little bit of explaining to do about this page, so let's hit Continue and get to it.</p>
       </GetStartedStep>
       <GetStartedStep title="What are permissions?">
         <p>Let's closely look at the page. There's a whole bunch of check boxes and a list of permissions it's asking you to grant to RDO Compendium:</p>
         <div className="mb-4 text-center">
-          <img src="/img/wiki/get-started-5.png" alt="A screenshot showing Discord's external application permissions confirmation screen. The section listing the permissions is highlighted." />
+          <Image img={getStarted5} className="inline-block" alt="A screenshot showing Discord's external application permissions confirmation screen. The section listing the permissions is highlighted." />
         </div>
         <p>To make the bot work like it's supposed to, there's several things the bot needs to be able to do. The bot asks for those things right here. While you can find a more detailed explanation on the next page, the gist of these permissions is that the bot needs to be able to respond to your commands. To accomplish responding, it'll need to be able to. That's what you're granting here; the ability for the bot to effectively respond.</p>
         <p>Let's dive in on these permissions one by one, click Continue.</p>
@@ -102,7 +111,7 @@ const GetStartedSteps = () => {
       <GetStartedStep title="Almost there...">
         <p>Are you ready to get started with the bot? All you need to do is click the "Authorize" button:</p>
         <div className="mb-4 text-center">
-          <img src="/img/wiki/get-started-6.png" alt="A screenshot showing Discord's external application permissions confirmation screen. The 'Authorize' button is highlighted." />
+          <Image img={getStarted6} className="inline-block" alt="A screenshot showing Discord's external application permissions confirmation screen. The 'Authorize' button is highlighted." />
         </div>
         <p>If you need to make changes to the permissions, feel free to do so now, though do note that if you disable too much, the bot may not be able to respond to you properly. If that's the case, you can always re-do these steps later by kicking the bot and following these steps again!</p>
         <p>Now, for the grand finale, click Continue.</p>
@@ -110,7 +119,7 @@ const GetStartedSteps = () => {
       <GetStartedStep title="All done!">
         <p>That's it! You're done! The bot will now have joined your server, and you're ready to get started with RDO Compendium. Try out some commands and enjoy!</p>
         <div className="mb-4 text-center">
-          <img src="/img/wiki/get-started-7.png" alt="A screenshot showing Discord's external application authorized confirmation screen. It reads 'Authorized, you may now close this page'." />
+          <Image img={getStarted7} className="inline-block" alt="A screenshot showing Discord's external application authorized confirmation screen. It reads 'Authorized, you may now close this page'." />
         </div>
         <h3>Next steps</h3>
         <p>Now that you've added the bot, there's several things you can. Of course, you can start using commands right away, but if you need some pointers, try the following:</p>
