@@ -174,6 +174,8 @@ const config = {
           { from: '/migration', to: '/news/2022/05/20/rdo-compendium-migration' },
           { from: '/patrons', to: '/wiki/credits/patrons' },
           { from: '/premium', to: '/wiki/guides/premium' },
+          { from: '/privacy', to: '/wiki/legal/privacy-policy' },
+          { from: '/terms', to: '/wiki/legal/terms-of-service' },
           { from: '/translators', to: '/wiki/credits/translators' },
           { from: '/upsale', to: '/wiki/guides/premium' },
           { from: '/wiki/privacy-policy', to: '/wiki/legal/privacy-policy' },
