@@ -102,7 +102,6 @@ const GetStartedSteps = () => {
           <li>Embed Links: Used to show previews of links, and to be able to post fancy-looking messages. RDO Compendium uses embeds for responses to any of your commands.</li>
           <li>Attach Files: Used to be able to upload media in channels the bot has access to. RDO Compendium uses this to be able to post images of for the location of Bears.</li>
           <li>Read Message History: Used to be able to read posted messages. RDO Compendium uses this to respond to your commands.</li>
-          <li>Add Reactions: Used to be able to react to messages using emoji. RDO Compendium uses this to let you know the bot has seen your message.</li>
           <li>Use External Emojis: Used to be able to use emojis from other servers. RDO Compendium uses this to display custom graphics made specifically for RDO content.</li>
         </ul>
         <p>That was a lot of reading. I don't blame you if you skipped some or all of it. In general, all you need to know is that with these permissions the bot can't kick or ban users, delete your channels, or do anything scary.</p>
