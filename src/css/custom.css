@@ -1,4 +1,4 @@
-@import url("/node_modules/@fortawesome/fontawesome-free/css/brands.css");
+@import url("/node_modules/@fortawesome/fontawesome-free/css/all.css");
 
 @tailwind base;
 @tailwind components;
@@ -177,6 +177,6 @@ button {
 .parallax-img {
   filter: blur(3px);
   opacity: 0.2;
-  height: 250vh;
+  height: 300vh;
   width: 200vw;
 }
