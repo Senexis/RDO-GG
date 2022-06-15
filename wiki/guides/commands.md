@@ -59,19 +59,23 @@ These commands are additional functionality reserved for Patrons.
 
 These commands are mostly commands that are used to find information about the bot.
 
-| Command        | Description                                                              |
-| :------------- | :----------------------------------------------------------------------- |
-| /credits       | Displays the different people that made general contributions to the bot |
-| /feedback      | Send feedback or a bug report to the developers                          |
-| /help          | Displays help for the available commands                                 |
-| /links         | Displays links to useful community resources                             |
-| /notifications | Displays notifications related to the RDO Compendium (English only)      |
-| /players list  | Lists all players currently looking for looking for a group              |
-| /players post  | Posts your username and gamertag to other players looking for a group    |
-| /support       | Displays information about supporting the bot                            |
-| /train close   | Closes your created Trader delivery train                                |
-| /train lock    | Locks your created Trader delivery train                                 |
-| /train start   | Starts a Trader delivery train                                           |
+| Command            | Description                                                              |
+| :----------------- | :----------------------------------------------------------------------- |
+| /bot notifications | Displays notifications related to RDO Compendium (English only)          |
+| /bot updates       | Displays the most recent changes to RDO Compendium (English only)        |
+| /credits           | Displays the different people that made general contributions to the bot |
+| /delivery close    | Closes your created Trader delivery                                      |
+| /delivery lock     | Locks your created Trader delivery                                       |
+| /delivery start    | Starts a Trader delivery                                                 |
+| /feedback          | Send feedback or a bug report to the developers                          |
+| /help              | Displays help for the available commands                                 |
+| /links             | Displays links to useful community resources                             |
+| /players list      | Lists all players currently looking for looking for a group              |
+| /players post      | Posts your username and gamertag to other players looking for a group    |
+| /posse close       | Closes your created posse                                                |
+| /posse lock        | Locks your created posse                                                 |
+| /posse start       | Starts a posse                                                           |
+| /support           | Displays information about supporting the bot                            |
 
 ## Settings
 

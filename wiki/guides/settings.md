@@ -26,20 +26,25 @@ you will need to configure the bot on all the different guilds you administrate.
 
 The following settings are available for free to any guild.
 
-| Setting                  | Description                                             |
-| :----------------------- | :------------------------------------------------------ |
-| Show Communities         | Whether to show links to communities in /links.         |
-| Show Deprecation Message | Whether to show the deprecation message.                |
-| Show Feedback Buttons    | Whether to show feedback buttons in certain situations. |
+| Setting                       | Description                                             |
+| :---------------------------- | :------------------------------------------------------ |
+| Show Communities              | Whether to show links to communities in `/links`.       |
+| Show Deprecation Message      | Whether to show the deprecation message.                |
+| Show Feedback Buttons         | Whether to show feedback buttons in certain situations. |
+| Show News Bot Notifications   | Whether to show news notifications.                     |
+| Show Reboot Bot Notifications | Whether to show reboot notifications.                   |
+| Show Update Bot Notifications | Whether to show update notifications.                   |
 
 The following settings are available to Premium-activated guilds.
 
-| Setting              | Description                                            |
-| :------------------- | :----------------------------------------------------- |
-| Colorize Toast Icons | Whether to colorize the icons of toasts.               |
-| Delete Old Messages  | Whether to delete old messages when a new one is sent. |
-| Prefer Images        | Whether to post images by default instead of text.     |
-| Show Providers       | Whether to show the "Provided by" text in embeds.      |
+| Setting                  | Description                                                                        |
+| :----------------------- | :--------------------------------------------------------------------------------- |
+| Colorize Toast Icons     | Whether to colorize the icons of toasts.                                           |
+| Delete Old Messages      | Whether to delete old messages when a new one is sent.                             |
+| Delivery Private Threads | Whether to create Private Threads instead of Public Threads for Trader deliveries. |
+| Posse Private Threads    | Whether to create Private Threads instead of Public Threads for lobbies.           |
+| Prefer Images            | Whether to post images by default instead of text.                                 |
+| Show Providers           | Whether to show the "Provided by" text in embeds.                                  |
 
 ### Colors
 
@@ -77,6 +82,7 @@ The following settings are available to Premium-activated guilds.
 | Benefits                    | Ping when the in-game Benefits screen updates.      |
 | Collector Cycles            | Ping when the Collector item cycles change.         |
 | Daily Challenges            | Ping when the Daily Challenges update.              |
+| Free Roam Events Schedule   | Ping when the Free Roam Event schedule is updated.  |
 | Live Events                 | Ping when the Live Events have changed.             |
 | Madam Nazar                 | Ping when Madam Nazar moves to a new location.      |
 | Newswire Articles           | Ping when a new Newswire article is posted.         |
@@ -89,6 +95,7 @@ The following settings are available to Premium-activated guilds.
 
 The following settings are available for free to any guild.
 
-| Setting            | Description                                      |
-| :----------------- | :----------------------------------------------- |
-| Train Mention Role | The role to mention when a new train is started. |
+| Setting               | Description                                                |
+| :-------------------- | :--------------------------------------------------------- |
+| Delivery Mention Role | The role to mention when a new Trader delivery is started. |
+| Posse Mention Role    | The role to mention when a new lobby is started.           |
