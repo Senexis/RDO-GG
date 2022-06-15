@@ -11,7 +11,7 @@ const ToastsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className={clsx(width, 'inline-block h-6 bg-[#ebedf0] rounded mr-2')}></div>
+            <div key={i} className={clsx(width, 'inline-block h-6 bg-gray-600 dark:bg-gray-400 rounded mr-2')}></div>
           );
         })}
       </div>
@@ -20,9 +20,9 @@ const ToastsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className="animate-pulse text-center bg-gray-700 shadow-sm p-2 rounded">
-              <div className="w-full h-12 bg-gray-400 rounded mb-1"></div>
-              <div className={clsx(width, 'inline-block h-2 bg-[#ebedf0] rounded')}></div>
+            <div key={i} className="animate-pulse text-center bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
+              <div className="w-full h-12 bg-gray-600 dark:bg-gray-400 rounded mb-1"></div>
+              <div className={clsx(width, 'inline-block h-2 bg-gray-600 dark:bg-gray-400 rounded')}></div>
             </div>
           );
         })}
@@ -32,7 +32,7 @@ const ToastsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className={clsx(width, 'inline-block h-6 bg-[#ebedf0] rounded mr-2')}></div>
+            <div key={i} className={clsx(width, 'inline-block h-6 bg-gray-600 dark:bg-gray-400 rounded mr-2')}></div>
           );
         })}
       </div>
@@ -41,9 +41,9 @@ const ToastsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className="animate-pulse text-center bg-gray-700 shadow-sm p-2 rounded">
-              <div className="w-full h-12 bg-gray-400 rounded mb-1"></div>
-              <div className={clsx(width, 'inline-block h-2 bg-[#ebedf0] rounded')}></div>
+            <div key={i} className="animate-pulse text-center bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
+              <div className="w-full h-12 bg-gray-600 dark:bg-gray-400 rounded mb-1"></div>
+              <div className={clsx(width, 'inline-block h-2 bg-gray-600 dark:bg-gray-400 rounded')}></div>
             </div>
           );
         })}
@@ -78,9 +78,9 @@ const Toasts = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
             {data[category].map(item => (
-              <div key={item.id} className="overflow-hidden text-center bg-gray-700 shadow-sm p-2 rounded">
+              <div key={item.id} className="overflow-hidden text-center bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
                 <Image img={require(`../../static${item.url}`)} className="overflow-hidden block w-full h-auto object-cover mb-1" alt={item.name} />
-                <div className="text-white">{item.name}</div>
+                <div className="text-black dark:text-white">{item.name}</div>
               </div>
             ))}
           </div>

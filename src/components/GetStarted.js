@@ -14,15 +14,15 @@ const GetStartedStep = (props) => {
   const { isFirst, isLast, hasNext, next, hasPrev, prev, current, total } = useSteps();
 
   return (
-    <div className="w-full h-[70vh] overflow-hidden flex flex-col rounded-lg text-white bg-[#18191c] shadow-lg mb-8">
-      <div className="flex-none px-8 h-16 flex items-center bg-[#2f3136]">
+    <div className="w-full h-[70vh] overflow-hidden flex flex-col rounded-lg text-black dark:text-white bg-white dark:bg-[#18191c] shadow-lg mb-8">
+      <div className="flex-none px-8 h-16 flex items-center bg-[#e3e5e8] dark:bg-[#2f3136]">
         <h2 className="m-0">{props.title ?? `Step ${current}`}</h2>
       </div>
       <div className="grow shrink p-8 pb-4 overflow-y-auto">
         {props.children}
       </div>
-      <div className="flex-none px-8 h-16 flex justify-center sm:justify-between items-center bg-[#2f3136]">
-        <div className="select-none hidden sm:block text-gray-400">
+      <div className="flex-none px-8 h-16 flex justify-center sm:justify-between items-center bg-[#e3e5e8] dark:bg-[#2f3136]">
+        <div className="select-none hidden sm:block text-gray-600 dark:text-gray-400">
           {!isLast ? (
             <small>You are on step {current} of {total}</small>
           ) : (
@@ -31,7 +31,7 @@ const GetStartedStep = (props) => {
         </div>
         <div className="select-none whitespace-nowrap">
           {!isFirst && (
-            <button disabled={!hasPrev} onClick={prev} className="text-sm mr-2 px-4 py-2 rounded transition-colors text-white cursor-pointer bg-transparent hover:bg-[#4f545c] disabled:opacity-75 disabled:hover:bg-transparent disabled:cursor-not-allowed">Back</button>
+            <button disabled={!hasPrev} onClick={prev} className="text-sm mr-2 px-4 py-2 rounded transition-colors text-black dark:text-white cursor-pointer bg-transparent hover:text-white hover:bg-[#4f545c] disabled:opacity-75 disabled:hover:bg-transparent disabled:cursor-not-allowed">Back</button>
           )}
           {!isLast ? (
             <button disabled={!hasNext} onClick={next} className="text-sm px-4 py-2 rounded transition-colors text-white cursor-pointer bg-[#5865f2] hover:bg-[#4752c4] disabled:opacity-75 disabled:hover:bg-[#5865f2] disabled:cursor-not-allowed">Continue</button>
@@ -58,7 +58,7 @@ const GetStartedSteps = () => {
         <div className="mb-4 text-center">
           <Image img={getStarted1} className="inline-block" alt="A screenshot showing Discord's external application invitation screen." />
         </div>
-        <p>Pfew, that's a bit of information. What it's actually telling you is that you're about to add the RDO Compendium bot to one of your servers. It mentions that it will be able to create commands, and that's exactly what we want! What Discord means with being able to create commands is that the bot will be able to show commands like <code className="text-black">/find</code> to the users in your server.</p>
+        <p>Pfew, that's a bit of information. What it's actually telling you is that you're about to add the RDO Compendium bot to one of your servers. It mentions that it will be able to create commands, and that's exactly what we want! What Discord means with being able to create commands is that the bot will be able to show commands like <code className="text-black dark:text-white">/find</code> to the users in your server.</p>
         <p>Let's go ahead and add the bot! Click Continue.</p>
       </GetStartedStep>
       <GetStartedStep title="Select your server">
@@ -96,9 +96,9 @@ const GetStartedSteps = () => {
         <ul>
           <li>Manage Webhooks: Used to create, update and delete webhooks. Webhooks are a way for bots to send messages to your channels. RDO Compendium uses these for automated pings, like for Madam Nazar's new location.</li>
           <li>Send Messages: Used to send messages in channels the bot has access to. RDO Compendium uses this to occasionally send a message to respond to you, or to notify you of any changes in the bot.</li>
-          <li>Send Messages in Threads: Used to send messages in threads specifically. RDO Compendium uses this in the <code className="text-black">/train</code> commands to update the group about the status of the train.</li>
-          <li>Create Public Threads: Used to be able to create public threads. RDO Compendium uses this to create threads for <code className="text-black">/train</code> groups.</li>
-          <li>Create Private Threads: Used to be able to create private threads. RDO Compendium uses this to create threads for <code className="text-black">/train</code> groups.</li>
+          <li>Send Messages in Threads: Used to send messages in threads specifically. RDO Compendium uses this in the <code className="text-black dark:text-white">/train</code> commands to update the group about the status of the train.</li>
+          <li>Create Public Threads: Used to be able to create public threads. RDO Compendium uses this to create threads for <code className="text-black dark:text-white">/train</code> groups.</li>
+          <li>Create Private Threads: Used to be able to create private threads. RDO Compendium uses this to create threads for <code className="text-black dark:text-white">/train</code> groups.</li>
           <li>Embed Links: Used to show previews of links, and to be able to post fancy-looking messages. RDO Compendium uses embeds for responses to any of your commands.</li>
           <li>Attach Files: Used to be able to upload media in channels the bot has access to. RDO Compendium uses this to be able to post images of for the location of Bears.</li>
           <li>Read Message History: Used to be able to read posted messages. RDO Compendium uses this to respond to your commands.</li>
