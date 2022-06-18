@@ -5,7 +5,7 @@ info:
     # Introduction
     The RDO.GG API aims to centralize any and all API endpoints that can be used to build awesome applications for the Red Dead Online community. If you know an API endpoint that is not listed below, please [join the Discord](https://rdo.gg/discord/) and report the endpoint together with some implementation details.
 
-    Please note that this API is geared towards a more advanced audience as it uses codenames over actual names. This is done to allow creativity with how the various API endpoints can be used and to limit the size of the requests. If you are not a developer, please visit other sites like  [the collector map](https://jeanropke.github.io/RDR2CollectorsMap/) and others, or use the [RDO Compendium Discord bot](https://rdo-compendium.com/).
+    Please note that this API is geared towards a more advanced audience as it uses codenames over actual names. This is done to allow creativity with how the various API endpoints can be used and to limit the size of the requests. If you are not a developer, please visit other sites like  [the collector map](https://jeanropke.github.io/RDR2CollectorsMap/) and others, or use the [RDO Compendium Discord bot](https://rdo.gg/).
 
     # Notes
     **Please support the API.** While I won't send the Pinkertons after you if you don't, I'd really appreciate it if you credit this API when you use it. In the case of a different provider being mentioned, please also credit them. This API is provided for free by the RDO.GG project. Please consider [becoming a Patron](https://rdo.gg/patreon/) to help support continued development.
