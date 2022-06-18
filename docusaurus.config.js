@@ -164,7 +164,10 @@ const config = {
         redirects: [
           { from: '/bot', to: '/' },
           { from: '/deprecation', to: '/news/2022/03/01/message-command-deprecation' },
+          { from: '/faq', to: '/wiki/faq' },
           { from: '/guides', to: '/wiki/category/guides' },
+          { from: '/guides/basics', to: '/wiki/guides/commands' },
+          { from: '/guides/settings', to: '/wiki/guides/settings' },
           { from: '/help', to: '/wiki/guides/commands' },
           { from: '/knowledge-base', to: '/wiki/getting-started' },
           { from: '/knowledge-base/all-about-premium', to: '/wiki/guides/premium' },
@@ -176,6 +179,7 @@ const config = {
           { from: '/premium', to: '/wiki/guides/premium' },
           { from: '/privacy', to: '/wiki/legal/privacy-policy' },
           { from: '/terms', to: '/wiki/legal/terms-of-service' },
+          { from: '/toasts', to: '/wiki/lists/toasts' },
           { from: '/translators', to: '/wiki/credits/translators' },
           { from: '/upsale', to: '/wiki/guides/premium' },
           { from: '/wiki/privacy-policy', to: '/wiki/legal/privacy-policy' },
