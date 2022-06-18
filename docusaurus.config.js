@@ -99,11 +99,6 @@ const config = {
             position: 'left',
           },
           {
-            to: '/api',
-            label: 'API',
-            position: 'left',
-          },
-          {
             href: 'https://rdo.instatus.com',
             label: 'Status',
             position: 'left',
@@ -113,6 +108,7 @@ const config = {
             target: '_blank',
             position: 'right',
             className: 'fa-brands fa-patreon',
+            title: 'Support the bot on Patreon',
             'aria-label': 'Support the bot on Patreon',
           },
           {
@@ -120,6 +116,7 @@ const config = {
             target: '_blank',
             position: 'right',
             className: 'fa-brands fa-twitter',
+            title: 'Visit @RDOCompendium on Twitter',
             'aria-label': 'Visit @RDOCompendium on Twitter',
           },
           {
@@ -127,7 +124,15 @@ const config = {
             target: '_blank',
             position: 'right',
             className: 'fa-brands fa-discord',
+            title: 'Join the support Discord',
             'aria-label': 'Join the support Discord',
+          },
+          {
+            to: '/api',
+            position: 'right',
+            className: 'fa-solid fa-code',
+            title: 'Learn how to use the API',
+            'aria-label': 'Learn how to use the API',
           },
         ],
       },

@@ -43,7 +43,7 @@ export default function Home(): JSX.Element {
           <div className="w-full md:w-5/6 lg:w-3/4 2xl:w-2/3 mx-auto">
             <div className="flex flex-wrap -mx-2">
               <div className="p-2 w-full">
-                <Link to="https://rdo.gg/invite/" className="min-h-[30vh] lg:min-h-[40vh] flex flex-wrap w-full py-32 px-10 relative">
+                <Link to="https://rdo.gg/invite" className="min-h-[30vh] lg:min-h-[40vh] flex flex-wrap w-full py-32 px-10 relative">
                   <div className="absolute inset-0 overflow-hidden">
                     <Image img={pic155} shouldAutoDownload={() => true} className="home-link-block" />
                   </div>
@@ -89,7 +89,7 @@ export default function Home(): JSX.Element {
             </div>
             <div className="flex flex-wrap -mx-2">
               <div className="p-2 w-full lg:w-1/2">
-                <Link to="https://rdo.gg/discord/" className="min-h-[30vh] flex flex-wrap w-full sm:py-24 py-16 sm:px-10 px-6 relative">
+                <Link to="https://rdo.gg/discord" className="min-h-[30vh] flex flex-wrap w-full sm:py-24 py-16 sm:px-10 px-6 relative">
                   <div className="absolute inset-0 overflow-hidden">
                     <Image img={pic150} shouldAutoDownload={() => true} className="home-link-block" />
                   </div>
@@ -103,7 +103,7 @@ export default function Home(): JSX.Element {
                 </Link>
               </div>
               <div className="p-2 w-full lg:w-1/2">
-                <Link to="https://rdo.gg/patreon/" className="min-h-[30vh] flex flex-wrap w-full sm:py-24 py-16 sm:px-10 px-6 relative">
+                <Link to="https://rdo.gg/patreon" className="min-h-[30vh] flex flex-wrap w-full sm:py-24 py-16 sm:px-10 px-6 relative">
                   <div className="absolute inset-0 overflow-hidden">
                     <Image img={pic059} shouldAutoDownload={() => true} className="home-link-block" />
                   </div>
@@ -119,7 +119,7 @@ export default function Home(): JSX.Element {
             </div>
             <div className="flex flex-wrap -mx-2">
               <div className="p-2 w-full lg:w-1/2">
-                <Link to="https://rdo.gg/twitter/" className="min-h-[30vh] flex flex-wrap w-full sm:py-24 py-16 sm:px-10 px-6 relative">
+                <Link to="https://rdo.gg/twitter" className="min-h-[30vh] flex flex-wrap w-full sm:py-24 py-16 sm:px-10 px-6 relative">
                   <div className="absolute inset-0 overflow-hidden">
                     <Image img={pic076} shouldAutoDownload={() => true} className="home-link-block" />
                   </div>
@@ -133,7 +133,7 @@ export default function Home(): JSX.Element {
                 </Link>
               </div>
               <div className="p-2 w-full lg:w-1/2">
-                <Link to="https://rdo.gg/api/" className="min-h-[30vh] flex flex-wrap w-full sm:py-24 py-16 sm:px-10 px-6 relative">
+                <Link to="/api" className="min-h-[30vh] flex flex-wrap w-full sm:py-24 py-16 sm:px-10 px-6 relative">
                   <div className="absolute inset-0 overflow-hidden">
                     <Image img={pic034} shouldAutoDownload={() => true} className="home-link-block" />
                   </div>

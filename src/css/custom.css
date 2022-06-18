@@ -159,6 +159,46 @@ button {
   color: #1da1f2;
 }
 
+@media (max-width: 996px) {
+  .navbar__items--right {
+    @apply hidden;
+  }
+
+  .menu__list-item .fa-code,
+  .menu__list-item .fa-discord,
+  .menu__list-item .fa-patreon,
+  .menu__list-item .fa-twitter {
+    width: 100%;
+  }
+
+  .menu__list-item .fa-code::after,
+  .menu__list-item .fa-discord::after,
+  .menu__list-item .fa-patreon::after,
+  .menu__list-item .fa-twitter::after {
+    flex: 1;
+    margin-left: 0.5rem;
+    font: var(--ifm-font-size-base) / var(--ifm-line-height-base) var(--ifm-font-family-base);
+    color: var(--ifm-menu-color);
+    line-height: 1.25;
+  }
+
+  .menu__list-item .fa-code::after {
+    content: 'RDO.GG API';
+  }
+
+  .menu__list-item .fa-discord::after {
+    content: 'Discord';
+  }
+
+  .menu__list-item .fa-patreon::after {
+    content: 'Patreon';
+  }
+
+  .menu__list-item .fa-twitter::after {
+    content: 'Twitter';
+  }
+}
+
 .home-link-block, .home-link-block img, .parallax-img img {
   @apply block !w-full !h-full object-cover object-center;
 }
