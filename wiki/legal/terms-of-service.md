@@ -1,6 +1,6 @@
 # Terms of Service
 
-At RDO.GG and its Services, accessible from [rdo.gg](https://rdo.gg/) and through [Discord](https://discord.com/), you are agreeing to be bound by these Service Terms and Conditions of Use and agree
+By using RDO.GG and its Services, accessible from [rdo.gg](https://rdo.gg/) and through [Discord](https://discord.com/), you are agreeing to be bound by these Service Terms and Conditions of Use and agree
 that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this
 Service are protected by copyright and trade mark law.
 
