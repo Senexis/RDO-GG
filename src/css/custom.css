@@ -175,11 +175,9 @@ button {
   .menu__list-item .fa-discord::after,
   .menu__list-item .fa-patreon::after,
   .menu__list-item .fa-twitter::after {
-    flex: 1;
     margin-left: 0.5rem;
-    font: var(--ifm-font-size-base) / var(--ifm-line-height-base) var(--ifm-font-family-base);
+    font-family: var(--ifm-font-family-base);
     color: var(--ifm-menu-color);
-    line-height: 1.25;
   }
 
   .menu__list-item .fa-code::after {

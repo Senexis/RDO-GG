@@ -8,9 +8,14 @@ const Instatus = ({
   HasIssuesColor,
   UnderMaintenanceColor
 }) => {
-  const { data } = useFetch('https://rdo.instatus.com/summary.json');
-  const color = data?.page?.status === 'UP' ? UpColor : data?.page?.status === 'HASISSUES' ? HasIssuesColor : UnderMaintenanceColor;
+  const { data, loading, error } = useFetch('https://rdo.instatus.com/summary.json');
+  if (loading || error || !data) return (
+    <>
+      <Link className="relative button button--secondary button--lg m-2 block lg:inline-block" to="https://rdo.instatus.com">{Text}</Link>
+    </>
+  );
 
+  const color = data.page?.status === 'UP' ? UpColor : data.page?.status === 'HASISSUES' ? HasIssuesColor : UnderMaintenanceColor;
   return (
     <>
       <Link className="relative button button--secondary button--lg m-2 block lg:inline-block" to="https://rdo.instatus.com">
