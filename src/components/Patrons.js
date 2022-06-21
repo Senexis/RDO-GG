@@ -42,19 +42,19 @@ const PatronsPlaceholder = () => {
 const Patrons = () => {
   const { data, loading, error } = useFetch('https://api.rdo.gg/patrons/');
 
-  if (loading || error) return <PatronsPlaceholder />;
+  if (loading || error || !data) return <PatronsPlaceholder />;
 
   return (
     <>
       <div>
-        {data?.tiers.map(tier => (
+        {data.tiers.map(tier => (
           <a key={tier.title} href={tier.url} target="_blank" className="button button--secondary m-2 block lg:inline-block">{tier.title} for €{tier.amount_cents / 100}/mo</a>
         ))}
       </div>
       <h2>Patrons</h2>
-      <p>Thank you so much to the {data?.patrons?.length} patrons that help support the bot:</p>
+      <p>Thank you so much to the {data.patrons?.length} patrons that help support the bot:</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
-        {data?.patrons?.map(patron => (
+        {data.patrons?.map(patron => (
           <div key={patron} className="flex flex-row items-center justify-between bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
             <div className="text-black dark:text-white truncate">{patron}</div>
           </div>

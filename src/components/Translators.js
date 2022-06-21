@@ -42,11 +42,11 @@ const TranslatorsPlaceholder = () => {
 const Translators = () => {
   const { data, loading, error } = useFetch('https://api.rdo.gg/translations/');
 
-  if (loading || error) return <TranslatorsPlaceholder />;
+  if (loading || error || !data) return <TranslatorsPlaceholder />;
 
   return (
     <>
-      {data?.languages?.map(language => {
+      {data.languages?.map(language => {
         return (
           <div key={language?.id} className={clsx(Object.keys(language?.translators).length ? '' : 'hidden')}>
             <h2>{language?.name} ({language?.native})</h2>
