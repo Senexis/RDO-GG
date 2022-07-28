@@ -75,13 +75,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: 'announcement-bar-vacation',
-        content: '🏖️ Please note there may be reduced support between July 19th and July 27th due to vacation.',
-        textColor: 'var(--ifm-font-color-base)',
-        backgroundColor: 'var(--ifm-footer-background-color)',
-        isCloseable: true,
-      },
+      // announcementBar: {
+      //   id: 'announcement-bar-vacation',
+      //   content: '🏖️ Please note there may be reduced support between July 19th and July 27th due to vacation.',
+      //   textColor: 'var(--ifm-font-color-base)',
+      //   backgroundColor: 'var(--ifm-footer-background-color)',
+      //   isCloseable: true,
+      // },
       navbar: {
         logo: {
           alt: 'RDO.GG',
