@@ -85,9 +85,13 @@ If you've made sure the bot has the permission, but still don't see the emoji, p
 commands to respond with emoji, both the `@everyone` role and the bot needs to have the **Use External Emoji** permission. Please note that you don't need to add the permission to the role itself,
 just adding it the the channel will do the trick.
 
-:::info Discord has this to say... [(link, #18)](https://time-mambo-c70.notion.site/DDevs-May-27-Q-A-17431321344b4ce7915fe7b5f83b1f41)
-We are working right now to make this more logical. There are important edge cases to be mindful of, like how moderators can control this permission when there is not a bot user in the server. But we
-know this is a pain point, and are currently addressing it.
+:::info
+Regarding the Discord quirk, here's what Discord has to say:
+
+> We are working right now to make this more logical. There are important edge cases to be mindful of, like how moderators can control this permission when there is not a bot user in the server. But we
+> know this is a pain point, and are currently addressing it.
+
+You can read more about this [here (question no. 18)](https://time-mambo-c70.notion.site/DDevs-May-27-Q-A-17431321344b4ce7915fe7b5f83b1f41).
 :::
 
 ### Why can't the bot find something I look for?
