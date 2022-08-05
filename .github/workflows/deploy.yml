@@ -18,7 +18,7 @@ jobs:
           cache: npm
 
       - name: Cache dependencies
-        uses: actions/cache@v3.0.5
+        uses: actions/cache@v3.0.6
         with:
           path: ~/.npm
           key: npm-${{ hashFiles('package-lock.json') }}
