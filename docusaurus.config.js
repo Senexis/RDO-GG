@@ -169,6 +169,7 @@ const config = {
         fromExtensions: ['html', 'htm'],
         redirects: [
           { from: '/bot', to: '/' },
+          { from: '/credits', to: '/wiki/category/credits' },
           { from: '/deprecation', to: '/news/2022/03/01/message-command-deprecation' },
           { from: '/faq', to: '/wiki/faq' },
           { from: '/guides', to: '/wiki/category/guides' },
@@ -180,6 +181,7 @@ const config = {
           { from: '/knowledge-base/message-command-deprecation', to: '/news/2022/03/01/message-command-deprecation' },
           { from: '/knowledge-base/privacy-policy', to: '/wiki/legal/privacy-policy' },
           { from: '/knowledge-base/terms-of-service', to: '/wiki/legal/terms-of-service' },
+          { from: '/lists', to: '/wiki/category/lists' },
           { from: '/migration', to: '/news/2022/05/20/rdo-compendium-migration' },
           { from: '/patrons', to: '/wiki/credits/patrons' },
           { from: '/premium', to: '/wiki/guides/premium' },
