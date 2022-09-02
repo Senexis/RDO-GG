@@ -29,7 +29,6 @@ The following settings are available for free to any guild.
 | Setting                       | Description                                             |
 | :---------------------------- | :------------------------------------------------------ |
 | Show Communities              | Whether to show links to communities in `/links`.       |
-| Show Deprecation Message      | Whether to show the deprecation message.                |
 | Show Feedback Buttons         | Whether to show feedback buttons in certain situations. |
 | Show News Bot Notifications   | Whether to show news notifications.                     |
 | Show Reboot Bot Notifications | Whether to show reboot notifications.                   |
