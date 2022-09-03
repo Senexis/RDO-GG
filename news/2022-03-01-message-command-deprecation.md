@@ -5,15 +5,9 @@ prefix set by the guild, but will instead only use commands that start with a `/
 
 <!--truncate-->
 
-This change has been made since Discord will be limiting access to messages to verified bots after August 31st 2022 for privacy reasons. As RDO Compendium does not need access to your messages, we
-will not be applying to get explicit access to your messages after that date and instead migrated to Slash Commands. For a more detailed explanation, feel free to
+This change has been made since Discord has been limiting access to messages to verified bots since September 1st 2022 for privacy reasons. As RDO Compendium does not need access to your messages, we
+did not apply to get explicit access to your messages and instead migrated to Slash Commands. For a more detailed explanation, feel free to
 [read this support article](https://support-dev.discord.com/hc/en-us/articles/4404772028055).
-
-Attempting to use a message command in any RDO.GG bot will result in a deprecation notice being displayed.
-
-:::tip
-You can use the `/settings set boolean` command to disable this deprecation notice. If you choose not to disable to deprecation notice, it will automatically be removed after August 31st 2022.
-:::
 
 ## Benefits
 
