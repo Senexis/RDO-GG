@@ -147,6 +147,10 @@ button {
   font-family: "Hapna", "Times New Roman", Times, serif;
 }
 
+nav.navbar.navbar--fixed-top {
+  @apply lg:backdrop-blur-md lg:backdrop-saturate-150 lg:bg-neutral-200/75 lg:dark:bg-neutral-800/75;
+}
+
 .fa-discord {
   color: #5865f2;
 }

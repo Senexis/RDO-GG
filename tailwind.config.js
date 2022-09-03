@@ -5,6 +5,13 @@ module.exports = {
   ],
   darkMode: ['class', '[data-theme="dark"]'],
   theme: {
+    screens: {
+      'sm': '576px',
+      'md': '768px',
+      'lg': '997px',
+      'xl': '1280px',
+      '2xl': '1440px',
+    },
     extend: {
       colors: {
         'primary': '#CC0000',
