@@ -24,35 +24,42 @@ you will need to configure the bot on all the different guilds you administrate.
 
 ### Booleans
 
-The following settings are available for free to any guild.
+Boolean settings are Yes/No settings, otherwise known as toggles. They can be set to either `True` (Yes) or `False` (No).
 
-| Setting                       | Description                                             |
-| :---------------------------- | :------------------------------------------------------ |
-| Show Communities              | Whether to show links to communities in `/links`.       |
-| Show Feedback Buttons         | Whether to show feedback buttons in certain situations. |
-| Show News Bot Notifications   | Whether to show news notifications.                     |
-| Show Reboot Bot Notifications | Whether to show reboot notifications.                   |
-| Show Update Bot Notifications | Whether to show update notifications.                   |
-
-The following settings are available to Premium-activated guilds.
-
-| Setting                  | Description                                                                        |
-| :----------------------- | :--------------------------------------------------------------------------------- |
-| Colorize Toast Icons     | Whether to colorize the icons of toasts.                                           |
-| Delete Old Messages      | Whether to delete old messages when a new one is sent.                             |
-| Delivery Private Threads | Whether to create Private Threads instead of Public Threads for Trader deliveries. |
-| Posse Private Threads    | Whether to create Private Threads instead of Public Threads for lobbies.           |
-| Prefer Images            | Whether to post images by default instead of text.                                 |
-| Show Providers           | Whether to show the "Provided by" text in embeds.                                  |
+| Setting                       | Description                                                                                                               | Premium |
+| :---------------------------- | :------------------------------------------------------------------------------------------------------------------------ | :-----: |
+| Colorize Toast Icons          | Whether to colorize the icons of toasts.                                                                                  |   ✅    |
+| Delete Old Messages           | Whether to delete old messages when a new one is sent.                                                                    |   ✅    |
+| Delivery Private Threads      | Whether to create Private Threads instead of Public Threads for Trader deliveries.                                        |   ✅    |
+| Posse Private Threads         | Whether to create Private Threads instead of Public Threads for lobbies.                                                  |   ✅    |
+| Prefer Images                 | Whether to post images by default instead of text.                                                                        |   ✅    |
+| Show Communities              | Whether to show links to communities in `/links`.                                                                         |         |
+| Show Feedback Buttons         | Whether to show feedback buttons in certain situations.                                                                   |         |
+| Show News Bot Notifications   | Whether to show news notifications. Requires the `Bot Notifications` [ping setting](./settings#pings) to be configured.   |         |
+| Show Providers                | Whether to show the "Provided by" text in embeds.                                                                         |   ✅    |
+| Show Reboot Bot Notifications | Whether to show reboot notifications. Requires the `Bot Notifications` [ping setting](./settings#pings) to be configured. |         |
+| Show Update Bot Notifications | Whether to show update notifications. Requires the `Bot Notifications` [ping setting](./settings#pings) to be configured. |         |
 
 ### Colors
 
-The following settings are available to Premium-activated guilds.
+Color settings control some visual aspects of the bot, such as the color of embeds. They can be set to various formats of colors. The following color formats are supported:
 
-| Setting     | Description                                                |
-| :---------- | :--------------------------------------------------------- |
-| Embed Color | Change the color of embeds for the bot.                    |
-| Toast Color | Change the color of toast titles and/or icons for the bot. |
+- [CSS color keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color#value), for example `red`.
+- HEX format, for example `#CC0000`.
+- HSL format, for example `hsl(0, 100%, 40%)`.
+- HWB format, for example `hwb(0, 0%, 20%)`.
+- RGB format, for example `rgb(204, 0, 0)`.
+
+:::tip Did you know?
+Some common examples of Red Dead Online colors are: <code style={{ backgroundColor: '#605e69', color: 'white' }}>#605E69</code>, <code style={{ backgroundColor: '#7a988e', color: 'black' }}>#7A988E</code>, <code style={{ backgroundColor: '#7f4f3a', color: 'white' }}>#7F4F3A</code>, <code style={{ backgroundColor: '#aca8a6', color: 'black' }}>#ACA8A6</code>, <code style={{ backgroundColor: '#f9c804', color: 'black' }}>#F9C804</code>, <code style={{ backgroundColor: '#7b66af', color: 'white' }}>#7B66AF</code>, and <code style={{ backgroundColor: '#cc0000', color: 'white' }}>#CC0000</code>.
+:::
+
+You can search the web for "Color Picker" to find tools that allow you to pick colors. In addition, most common imaging programs also allows you to pick and choose colors.
+
+| Setting     | Description                                                                                                                                | Premium |
+| :---------- | :----------------------------------------------------------------------------------------------------------------------------------------- | :-----: |
+| Embed Color | Change the color of embeds for the bot, which are displayed to the left of sent embeds.                                                    |   ✅    |
+| Toast Color | Change the color of toast titles and/or icons for the bot, depending on the `Colorize Toast Icons` [boolean setting](./settings#booleans). |   ✅    |
 
 ### Events
 
@@ -68,33 +75,28 @@ To learn more about using and configuring languages, visit the [languages guide]
 
 ### Pings
 
-The following settings are available for free to any guild.
+Ping settings allow you to configure the bot to automatically post messages to various channels in your Discord servers.
 
-| Setting           | Description                                                  |
-| :---------------- | :----------------------------------------------------------- |
-| Bot Notifications | Ping when the developers of the bot post a new notification. |
-
-The following settings are available to Premium-activated guilds.
-
-| Setting                     | Description                                         |
-| :-------------------------- | :-------------------------------------------------- |
-| Benefits                    | Ping when the in-game Benefits screen updates.      |
-| Collector Cycles            | Ping when the Collector item cycles change.         |
-| Daily Challenges            | Ping when the Daily Challenges update.              |
-| Free Roam Events Schedule   | Ping when the Free Roam Event schedule is updated.  |
-| Live Events                 | Ping when the Live Events have changed.             |
-| Madam Nazar                 | Ping when Madam Nazar moves to a new location.      |
-| Newswire Articles           | Ping when a new Newswire article is posted.         |
-| Patch Notes                 | Ping when new patch notes are available.            |
-| Rockstar Service Status     | Ping when the Rockstar Service status changes.      |
-| Tunables                    | Ping when sales and other tunable modifiers change. |
-| Weekly Collectible Requests | Ping when the Weekly Collectible Request changes.   |
+| Setting                     | Description                                                  | Premium |
+| :-------------------------- | :----------------------------------------------------------- | :-----: |
+| Benefits                    | Ping when the in-game Benefits screen updates.               |   ✅    |
+| Bot Notifications           | Ping when the developers of the bot post a new notification. |         |
+| Collector Cycles            | Ping when the Collector item cycles change.                  |   ✅    |
+| Daily Challenges            | Ping when the Daily Challenges update.                       |   ✅    |
+| Free Roam Events Schedule   | Ping when the Free Roam Event schedule is updated.           |   ✅    |
+| Live Events                 | Ping when the Live Events have changed.                      |   ✅    |
+| Madam Nazar                 | Ping when Madam Nazar moves to a new location.               |   ✅    |
+| Newswire Articles           | Ping when a new Newswire article is posted.                  |   ✅    |
+| Patch Notes                 | Ping when new patch notes are available.                     |   ✅    |
+| Rockstar Service Status     | Ping when the Rockstar Service status changes.               |   ✅    |
+| Tunables                    | Ping when sales and other tunable modifiers change.          |   ✅    |
+| Weekly Collectible Requests | Ping when the Weekly Collectible Request changes.            |   ✅    |
 
 ### Roles
 
-The following settings are available for free to any guild.
+Role settings are used in specific features of the bot, and allow you to select a User Role to use in those features.
 
-| Setting               | Description                                                |
-| :-------------------- | :--------------------------------------------------------- |
-| Delivery Mention Role | The role to mention when a new Trader delivery is started. |
-| Posse Mention Role    | The role to mention when a new lobby is started.           |
+| Setting               | Description                                                | Premium |
+| :-------------------- | :--------------------------------------------------------- | :-----: |
+| Delivery Mention Role | The role to mention when a new Trader delivery is started. |         |
+| Posse Mention Role    | The role to mention when a new lobby is started.           |         |
