@@ -51,7 +51,7 @@ Color settings control some visual aspects of the bot, such as the color of embe
 - RGB format, for example `rgb(204, 0, 0)`.
 
 :::tip Did you know?
-Some common examples of Red Dead Online colors are: <code style={{ backgroundColor: '#605e69', color: 'white' }}>#605E69</code>, <code style={{ backgroundColor: '#7a988e', color: 'black' }}>#7A988E</code>, <code style={{ backgroundColor: '#7f4f3a', color: 'white' }}>#7F4F3A</code>, <code style={{ backgroundColor: '#aca8a6', color: 'black' }}>#ACA8A6</code>, <code style={{ backgroundColor: '#f9c804', color: 'black' }}>#F9C804</code>, <code style={{ backgroundColor: '#7b66af', color: 'white' }}>#7B66AF</code>, and <code style={{ backgroundColor: '#cc0000', color: 'white' }}>#CC0000</code>.
+You can find a full list of Red Dead Online colors on the [colors page](/wiki/lists/colors)!
 :::
 
 You can search the web for "Color Picker" to find tools that allow you to pick colors. In addition, most common imaging programs also allows you to pick and choose colors.
