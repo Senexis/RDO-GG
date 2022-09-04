@@ -3,6 +3,10 @@
 Here's a list of all the colors used in Red Dead Online. The colors below are used in various elements of the game. Together with the individual colors, you can also find the color-blind
 alternatives for the colors. You can use any of these colors as value in the [color settings](/wiki/guides/settings#colors).
 
+:::tip Did you know?
+You can switch the theme between light and dark using the button in the navigation menu at the top of the page to see how the colors look in the respective theme.
+:::
+
 These colors have been obtained from the game files. Duplicate colors have been removed, which may cause gaps in the names. Some of the colors below may not actually appear in the game due to them
 being unused. Since the bot does not support transparent colors, colors with transparency have been removed.
 
