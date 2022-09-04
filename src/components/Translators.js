@@ -47,10 +47,11 @@ const Translators = () => {
   return (
     <>
       {data.languages?.map(language => {
+        const progress = language?.progress || 1;
         return (
           <div key={language?.id} className={clsx(Object.keys(language?.translators).length ? '' : 'hidden')}>
             <h2>{language?.name} ({language?.native})</h2>
-            <p>This language is {language?.progress}% translated thanks to:</p>
+            <p>This language is {progress}% translated thanks to:</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
               {Object.entries(language?.translators).map(([translator, count]) => (
                 <div key={translator} className="flex flex-row items-center justify-between bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
