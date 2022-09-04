@@ -27,21 +27,21 @@ General Events are Free Roam Events that are generally available to everyone wit
 
 | Event                       | Player vs. Environment | Player vs. Player |
 | :-------------------------- | :--------------------- | :---------------- |
-| Bow Kills Challenge         | No                     | Yes               |
-| Cold Dead Hands             | No                     | Yes               |
-| Dispatch Rider              | No                     | Yes               |
-| Fool's Gold                 | No                     | Yes               |
-| Headshot Kills Challenge    | No                     | Yes               |
-| Horseback Kills Challenge   | No                     | Yes               |
-| King of the Castle          | No                     | Yes               |
-| Lake Fishing Challenge      | No                     | No                |
-| Longarm Kills Challenge     | No                     | Yes               |
-| Master Archer               | Yes                    | No                |
-| Railroad Baron              | No                     | Yes               |
-| River Fishing Challenge     | No                     | No                |
-| Sidearm Kills Challenge     | No                     | Yes               |
-| Swamp Fishing Challenge     | No                     | No                |
-| Wild Animal Kills Challenge | Yes                    | No                |
+| Bow Kills Challenge         |                        | ✅                |
+| Cold Dead Hands             |                        | ✅                |
+| Dispatch Rider              |                        | ✅                |
+| Fool's Gold                 |                        | ✅                |
+| Headshot Kills Challenge    |                        | ✅                |
+| Horseback Kills Challenge   |                        | ✅                |
+| King of the Castle          |                        | ✅                |
+| Lake Fishing Challenge      |                        |                   |
+| Longarm Kills Challenge     |                        | ✅                |
+| Master Archer               | ✅                     |                   |
+| Railroad Baron              |                        | ✅                |
+| River Fishing Challenge     |                        |                   |
+| Sidearm Kills Challenge     |                        | ✅                |
+| Swamp Fishing Challenge     |                        |                   |
+| Wild Animal Kills Challenge | ✅                     |                   |
 
 ## Role Events
 
@@ -49,11 +49,11 @@ Role Events are Free Roam Events that may require a specific Role requirement to
 
 | Event                    | Player vs. Environment | Player vs. Player |
 | :----------------------- | :--------------------- | :---------------- |
-| Condor Egg               | Yes                    | No                |
-| Day of Reckoning         | No                     | Yes               |
-| Manhunt                  | Yes                    | No                |
-| Protect Legendary Animal | Yes                    | No                |
-| Salvage                  | Yes                    | No                |
-| Trade Route              | Yes                    | No                |
-| Wild Animal Tagging      | No                     | No                |
-| Wildlife Photographer    | No                     | No                |
+| Condor Egg               | ✅                     |                   |
+| Day of Reckoning         |                        | ✅                |
+| Manhunt                  | ✅                     |                   |
+| Protect Legendary Animal | ✅                     |                   |
+| Salvage                  | ✅                     |                   |
+| Trade Route              | ✅                     |                   |
+| Wild Animal Tagging      |                        |                   |
+| Wildlife Photographer    |                        |                   |
