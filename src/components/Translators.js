@@ -10,7 +10,7 @@ const TranslatorsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className={clsx(width, 'inline-block h-6 bg-gray-600 dark:bg-gray-400 rounded mr-2')}></div>
+            <div key={i} className={clsx(width, 'inline-block h-6 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
           );
         })}
       </div>
@@ -19,7 +19,7 @@ const TranslatorsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className={clsx(width, 'inline-block h-2 bg-gray-600 dark:bg-gray-400 rounded mr-2')}></div>
+            <div key={i} className={clsx(width, 'inline-block h-2 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
           );
         })}
       </div>
@@ -28,9 +28,9 @@ const TranslatorsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className="animate-pulse flex flex-row items-center justify-between h-10 bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
-              <div className={clsx(width, 'inline-block h-2 bg-gray-600 dark:bg-gray-400 rounded mr-2')}></div>
-              <div className="inline-block w-8 h-2 bg-gray-600 dark:bg-gray-400 rounded mr-2"></div>
+            <div key={i} className="animate-pulse flex flex-row items-center justify-between h-10 bg-neutral-300 dark:bg-neutral-700 shadow-sm p-2 rounded">
+              <div className={clsx(width, 'inline-block h-2 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
+              <div className="inline-block w-8 h-2 bg-neutral-600 dark:bg-neutral-400 rounded mr-2"></div>
             </div>
           );
         })}
@@ -54,9 +54,9 @@ const Translators = () => {
             <p>This language is {progress}% translated thanks to:</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
               {Object.entries(language?.translators).map(([translator, count]) => (
-                <div key={translator} className="flex flex-row items-center justify-between bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
+                <div key={translator} className="flex flex-row items-center justify-between bg-neutral-300 dark:bg-neutral-700 shadow-sm p-2 rounded">
                   <div className="text-black dark:text-white truncate">{translator}</div>
-                  <div className="text-sm text-gray-500 ml-2">{new Intl.NumberFormat().format(count)}</div>
+                  <div className="text-sm text-neutral-500 ml-2">{new Intl.NumberFormat().format(count)}</div>
                 </div>
               ))}
             </div>

@@ -11,7 +11,7 @@ const ToastsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className={clsx(width, 'inline-block h-6 bg-gray-600 dark:bg-gray-400 rounded mr-2')}></div>
+            <div key={i} className={clsx(width, 'inline-block h-6 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
           );
         })}
       </div>
@@ -20,9 +20,9 @@ const ToastsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className="animate-pulse flex flex-row items-center bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
-              <div className="flex-none w-10 h-10 bg-gray-600 dark:bg-gray-400 rounded mr-2"></div>
-              <div className={clsx(width, 'flex-1 h-2 bg-gray-600 dark:bg-gray-400 rounded mr-2')}></div>
+            <div key={i} className="animate-pulse flex flex-row items-center bg-neutral-300 dark:bg-neutral-700 shadow-sm p-2 rounded">
+              <div className="flex-none w-10 h-10 bg-neutral-600 dark:bg-neutral-400 rounded mr-2"></div>
+              <div className={clsx(width, 'flex-1 h-2 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
             </div>
           );
         })}
@@ -32,7 +32,7 @@ const ToastsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className={clsx(width, 'inline-block h-6 bg-gray-600 dark:bg-gray-400 rounded mr-2')}></div>
+            <div key={i} className={clsx(width, 'inline-block h-6 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
           );
         })}
       </div>
@@ -41,9 +41,9 @@ const ToastsPlaceholder = () => {
           const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
           const width = items[Math.floor(Math.random() * items.length)];
           return (
-            <div key={i} className="animate-pulse flex flex-row items-center bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
-              <div className="flex-none w-10 h-10 bg-gray-600 dark:bg-gray-400 rounded mr-2"></div>
-              <div className={clsx(width, 'flex-1 h-2 bg-gray-600 dark:bg-gray-400 rounded mr-2')}></div>
+            <div key={i} className="animate-pulse flex flex-row items-center bg-neutral-300 dark:bg-neutral-700 shadow-sm p-2 rounded">
+              <div className="flex-none w-10 h-10 bg-neutral-600 dark:bg-neutral-400 rounded mr-2"></div>
+              <div className={clsx(width, 'flex-1 h-2 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
             </div>
           );
         })}
@@ -114,7 +114,7 @@ const Toasts = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
               {data[category].map(item => (
-                <div key={item.id} className="overflow-hidden flex flex-row items-center bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
+                <div key={item.id} className="overflow-hidden flex flex-row items-center bg-neutral-300 dark:bg-neutral-700 shadow-sm p-2 rounded">
                   <Image img={require(`../../static${item.url}`)} className="overflow-hidden flex-none w-10 h-10 mr-2" alt={item.name} />
                   <div className="flex-1 leading-snug text-black dark:text-white">{item.name}</div>
                 </div>
@@ -137,7 +137,7 @@ const Toasts = () => {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
                 {data[category][subcategory].map(item => (
-                  <div key={item.id} className="overflow-hidden flex flex-row items-center bg-gray-300 dark:bg-gray-700 shadow-sm p-2 rounded">
+                  <div key={item.id} className="overflow-hidden flex flex-row items-center bg-neutral-300 dark:bg-neutral-700 shadow-sm p-2 rounded">
                     <Image img={require(`../../static${item.url}`)} className="overflow-hidden flex-none w-10 h-10 mr-2" alt={item.name} />
                     <div className="flex-1 leading-snug text-black dark:text-white">{item.name}</div>
                   </div>

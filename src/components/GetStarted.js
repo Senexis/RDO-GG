@@ -22,7 +22,7 @@ const GetStartedStep = (props) => {
         {props.children}
       </div>
       <div className="flex-none px-8 h-16 flex justify-center sm:justify-between items-center bg-[#e3e5e8] dark:bg-[#2f3136]">
-        <div className="select-none hidden sm:block text-gray-600 dark:text-gray-400">
+        <div className="select-none hidden sm:block text-neutral-600 dark:text-neutral-400">
           {!isLast ? (
             <small>You are on step {current} of {total}</small>
           ) : (
