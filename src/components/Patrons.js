@@ -47,9 +47,20 @@ const Patrons = () => {
   return (
     <>
       <div>
-        {data.tiers.map(tier => (
+        {data.tiers.filter(tier => !tier.limit).map(tier => (
           <a key={tier.title} href={tier.url} target="_blank" className="button button--secondary m-2 block lg:inline-block">{tier.title} for €{tier.amount_cents / 100}/mo</a>
         ))}
+        {data.tiers.filter(tier => tier.limit).map(tier => {
+          if (tier.limit.count !== tier.limit.max) {
+            return (
+              <a key={tier.title} href={tier.url} target="_blank" className="button button--secondary m-2 block lg:inline-block">{tier.title} for €{tier.amount_cents / 100}/mo</a>
+            );
+          } else {
+            return (
+              <button disabled key={tier.title} className="button button--secondary m-2 block lg:inline-block bg-transparent" style={{ color: 'var(--ifm-font-color-base)' }}>{tier.title} (Sold out)</button>
+            )
+          }
+        })}
       </div>
       <h2>Patrons</h2>
       <p>Thank you so much to the {data.patrons?.length} patrons that help support the bot:</p>
