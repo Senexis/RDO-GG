@@ -47,11 +47,8 @@ const Patrons = () => {
   return (
     <>
       <div>
-        {data.tiers.filter(tier => !tier.limit).map(tier => (
-          <a key={tier.title} href={tier.url} target="_blank" className="button button--secondary m-2 block lg:inline-block">{tier.title} for €{tier.amount_cents / 100}/mo</a>
-        ))}
-        {data.tiers.filter(tier => tier.limit).map(tier => {
-          if (tier.limit.count !== tier.limit.max) {
+        {data.tiers.map(tier => {
+          if (!tier.limit || tier.limit.count !== tier.limit.max) {
             return (
               <a key={tier.title} href={tier.url} target="_blank" className="button button--secondary m-2 block lg:inline-block">{tier.title} for €{tier.amount_cents / 100}/mo</a>
             );
