@@ -70,8 +70,6 @@ These commands are mostly commands that are used to find information about the b
 | /feedback          | Send feedback or a bug report to the developers                          |
 | /help              | Displays help for the available commands                                 |
 | /links             | Displays links to useful community resources                             |
-| /players list      | Lists all players currently looking for looking for a group              |
-| /players post      | Posts your username and gamertag to other players looking for a group    |
 | /posse close       | Closes your created posse                                                |
 | /posse lock        | Locks your created posse                                                 |
 | /posse start       | Starts a posse                                                           |
