@@ -54,7 +54,7 @@ const GetStartedSteps = () => {
         <p>Why don't you click the Continue button to get started?</p>
       </GetStartedStep>
       <GetStartedStep title="First things first">
-        <p>To get started, you'll need to add the bot to your server. To do this, <a href="https://rdo.gg/invite/" target="_blank">visit the bot invite page</a>. Once you're on the page you should see something like this:</p>
+        <p>To get started, you'll need to add the bot to your server. To do this, head to the <a href="https://rdo.gg/invite/" target="_blank">bot invite page</a>. Once you're on the page you should see something like this:</p>
         <div className="mb-4 text-center">
           <Image img={getStarted1} className="inline-block" alt="A screenshot showing Discord's external application invitation screen." />
         </div>

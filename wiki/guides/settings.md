@@ -63,15 +63,11 @@ You can search the web for "Color Picker" to find tools that allow you to pick c
 
 ### Events
 
-:::note
-To learn more about using and configuring Free Roam Event pings, visit the [events guide](./events).
-:::
+To learn more about using and configuring Free Roam Event pings, please visit the [events guide](./events).
 
 ### Languages
 
-:::note
-To learn more about using and configuring languages, visit the [languages guide](./languages).
-:::
+To learn more about using and configuring languages, please visit the [languages guide](./languages).
 
 ### Pings
 

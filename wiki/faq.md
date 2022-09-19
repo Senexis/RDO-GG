@@ -7,7 +7,7 @@ sidebar_position: 2
 If you're reading this page, you're probably looking for an answer for some question. To help get you going and back to Discord, here's a list of questions that are frequently asked.
 Please note that a [commands guide](./guides/commands) and a [settings guide](./guides/settings) are available, so if you're looking for a list of commands, those are available over there.
 
-:::note
+:::info
 Is something missing from this FAQ? Let us know in the support server or use `/feedback` in a guild with RDO Compendium.
 :::
 
@@ -46,9 +46,7 @@ Premium members get access to a selection of Premium-only commands and access to
 
 ### How do I activate Premium?
 
-:::note
-To learn more about the Premium activation process, visit the [premium guide](./guides/premium).
-:::
+To learn more about the Premium activation process, please visit the [premium guide](./guides/premium).
 
 ### Do I need to keep paying for Premium?
 
@@ -106,9 +104,7 @@ The bot determines whether you are an administrator or not by checking whether y
 
 ### Why is the bot talking in a different language?
 
-:::note
-To learn more about languages, visit the [languages guide](./guides/languages).
-:::
+To learn more about languages, please visit the [languages guide](./guides/languages).
 
 ### I'm having a different issue. How can I get help?
 

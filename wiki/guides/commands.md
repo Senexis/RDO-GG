@@ -77,6 +77,4 @@ These commands are mostly commands that are used to find information about the b
 
 ## Settings
 
-:::note
-To learn more about settings command, visit the [settings guide](./settings).
-:::
+To learn more about `/settings` command, please visit the [settings guide](./settings).

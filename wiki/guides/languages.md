@@ -12,8 +12,8 @@ In certain circumstances, you may encounter content that's not been translated. 
 - The content is from an external source such as a news article of a notification, or;
 - The content is sent in a direct message.
 
-:::note
-If you notice content that's not been translated yet, visit the [translation page](https://rdo.gg/translate/) to help translate it.
+:::info Want to help out?
+If you notice content that's not been translated yet, consider visiting the [translation page](https://rdo.gg/translate/) to help translate it.
 :::
 
 To see a list of available languages included in the bot, use the `/settings set language` command or visit the [translator credits page](/wiki/credits/translators). If you do decide to help

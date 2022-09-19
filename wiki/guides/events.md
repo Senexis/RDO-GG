@@ -17,13 +17,10 @@ by reading the description. In addition, for combat options, the type of combat 
 | Events without combat                     | Pings Free Roam Events without either PVE or PVP combat.                                                                                                                                                                   |
 | Random Challenge                          | Pings Free Roam Events which do not fit into any category as they are randomized. Random events include Horseback Kills, Headshot Kills, Bow Kills, Longarm Kills, Sidearm Kills, Wild Animal Kills or Fishing Challenges. |
 
-:::note
-Please note that a Player vs. Player Free Roam Event may still include Player vs. Environment combat. For configuration purposes, only the dominant combat type is used.
-:::
-
 ## General Events
 
-General Events are Free Roam Events that are generally available to everyone without roles.
+General Events are Free Roam Events that are generally available to everyone without roles. Note that Player vs. Player Free Roam Events may still include Player vs. Environment combat. The table
+below is intended for bot configuration only and is not accurate for gameplay purposes.
 
 | Event                       | Player vs. Environment | Player vs. Player |
 | :-------------------------- | :--------------------- | :---------------- |
@@ -45,7 +42,8 @@ General Events are Free Roam Events that are generally available to everyone wit
 
 ## Role Events
 
-Role Events are Free Roam Events that may require a specific Role requirement to unlock, or which were added by Roles.
+Role Events are Free Roam Events that may require a specific Role requirement to unlock, or which were added by Roles. Note that Player vs. Player Free Roam Events may still include Player vs.
+Environment combat. The table below is intended for bot configuration only and is not accurate for gameplay purposes.
 
 | Event                    | Player vs. Environment | Player vs. Player |
 | :----------------------- | :--------------------- | :---------------- |
