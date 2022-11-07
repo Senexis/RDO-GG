@@ -222,3 +222,7 @@ nav.navbar.navbar--fixed-top {
   height: 300vh;
   width: 200vw;
 }
+
+.redocusaurus .menu-content div div:first-of-type {
+  @apply hidden;
+}

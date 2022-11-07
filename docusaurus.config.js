@@ -45,6 +45,8 @@ const config = {
             hideDownloadButton: true,
             hideSchemaTitles: true,
             sortEnumValuesAlphabetically: true,
+            sortOperationsAlphabetically: true,
+            sortTagsAlphabetically: true,
           },
         },
       },
