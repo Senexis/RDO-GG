@@ -15,7 +15,7 @@ const Instatus = ({
   const color = data?.page?.status === 'UP' ? UpColor : data?.page?.status === 'HASISSUES' ? HasIssuesColor : UnderMaintenanceColor;
   return (
     <>
-      <Link className="relative button button--secondary button--lg m-2 block lg:inline-block" to="https://rdo.instatus.com">
+      <Link className="relative button button--secondary button--lg m-2 block lg:inline-block" to="https://status.rdo.gg">
         {Text}
         <span className={clsx(opacity, 'flex absolute h-4 w-4 top-0 right-0 -mt-2 -mr-2 transition-opacity')}>
           <span className={clsx(animatePing, 'absolute inline-flex h-full w-full rounded-full opacity-75')} style={{ backgroundColor: color }}></span>

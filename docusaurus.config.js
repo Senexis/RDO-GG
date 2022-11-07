@@ -100,7 +100,7 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://rdo.instatus.com',
+            href: 'https://status.rdo.gg',
             label: 'Status',
             position: 'left',
           },
