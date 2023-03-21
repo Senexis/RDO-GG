@@ -15,11 +15,11 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.2.0",
-    "@docusaurus/plugin-client-redirects": "^2.2.0",
-    "@docusaurus/plugin-ideal-image": "^2.2.0",
-    "@docusaurus/preset-classic": "^2.2.0",
-    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@docusaurus/core": "^2.3.1",
+    "@docusaurus/plugin-client-redirects": "^2.3.1",
+    "@docusaurus/plugin-ideal-image": "^2.3.1",
+    "@docusaurus/preset-classic": "^2.3.1",
+    "@fortawesome/fontawesome-free": "^6.3.0",
     "@mdx-js/react": "^1.6.22",
     "@tailwindcss/line-clamp": "^0.4.2",
     "clsx": "^1.2.1",
@@ -28,15 +28,15 @@
     "react-dom": "^17.0.2",
     "react-parallax": "^3.5.1",
     "react-step-builder": "^3.0.6",
-    "redocusaurus": "^1.4.0"
+    "redocusaurus": "^1.6.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.2.0",
-    "@tsconfig/docusaurus": "^1.0.6",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.2",
-    "typescript": "^4.8.4"
+    "@docusaurus/module-type-aliases": "^2.3.1",
+    "@tsconfig/docusaurus": "^1.0.7",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^5.0.2"
   },
   "browserslist": {
     "production": [
