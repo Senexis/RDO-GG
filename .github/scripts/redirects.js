@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const basePath = path.join(__dirname, '..');
+const basePath = path.join(__dirname, '..', '..');
 const redirectsPath = path.join(basePath, 'build');
 
 // Ensure path exists

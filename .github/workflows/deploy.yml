@@ -34,21 +34,15 @@ jobs:
       - name: Install packages
         run: npm install
       - name: Run pre-build scripts
-        run: |
-          cd .github
-          node images.js
-          cd ..
+        run: npm run build:images
       - name: Build website
         run: npm run build
       - name: Run post-build scripts
-        run: |
-          cd .github
-          node redirects.js
-          cd ..
+        run: npm run build:redirects
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: dist
+          path: build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2

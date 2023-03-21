@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const basePath = path.join(__dirname, '..');
+const basePath = path.join(__dirname, '..', '..');
 const staticPath = path.join(basePath, 'static');
 const toastsPath = path.join(staticPath, 'img', 'toasts');
 const locationsPath = path.join(staticPath, 'img', 'locations');
