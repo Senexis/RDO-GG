@@ -13,8 +13,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "build:images": "node .github/scripts/images.js",
-    "build:redirects": "node .github/scripts/redirects.js"
+    "build:pre": "node .github/scripts/images.js",
+    "build:post": "node .github/scripts/redirects.js"
   },
   "dependencies": {
     "@docusaurus/core": "^2.3.1",

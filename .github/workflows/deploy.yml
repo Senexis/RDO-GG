@@ -34,11 +34,11 @@ jobs:
       - name: Install packages
         run: npm install
       - name: Run pre-build scripts
-        run: npm run build:images
+        run: npm run build:pre
       - name: Build website
         run: npm run build
       - name: Run post-build scripts
-        run: npm run build:redirects
+        run: npm run build:post
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
