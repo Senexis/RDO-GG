@@ -3,16 +3,17 @@ import clsx from 'clsx';
 import React from 'react';
 import useFetch from '../useFetch';
 
-const Instatus = ({
+const StatusButton = ({
   Text,
-  UpColor,
-  HasIssuesColor,
-  UnderMaintenanceColor
+  OperationalColor,
+  DowntimeColor,
+  DegradedColor
 }) => {
-  const { data, loading, error } = useFetch('https://rdo.instatus.com/summary.json');
+  const { data, loading, error } = useFetch('https://api.rdo.gg/bot/status.json');
   const opacity = (loading || error || !data) ? 'opacity-0' : 'opacity-100';
   const animatePing = (loading || error || !data) ? '' : 'animate-ping';
-  const color = data?.page?.status === 'UP' ? UpColor : data?.page?.status === 'HASISSUES' ? HasIssuesColor : UnderMaintenanceColor;
+  const color = data?.state === 'operational' ? OperationalColor : data?.state === 'degraded' ? DegradedColor : DowntimeColor;
+
   return (
     <>
       <Link className="relative button button--secondary button--lg m-2 block lg:inline-block" to="https://status.rdo.gg">
@@ -26,4 +27,4 @@ const Instatus = ({
   )
 }
 
-export default Instatus;
+export default StatusButton;

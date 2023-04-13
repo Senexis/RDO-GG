@@ -3,7 +3,7 @@ import Image from '@theme/IdealImage';
 import Layout from '@theme/Layout';
 import React from 'react';
 import { Background, Parallax } from 'react-parallax';
-import Instatus from '../components/Instatus';
+import StatusButton from '../components/StatusButton';
 
 import logo from '/img/logo.png';
 import parallax from '/img/parallax.jpg';
@@ -30,11 +30,11 @@ export default function Home(): JSX.Element {
               <Link className="button button--secondary button--lg m-2 block lg:inline-block" to="/wiki/getting-started">
                 Getting Started
               </Link>
-              <Instatus
+              <StatusButton
                 Text="Status"
-                UpColor="#11ca4c"
-                HasIssuesColor="#cc0000"
-                UnderMaintenanceColor="#708090"
+                OperationalColor="#11ca4c"
+                DegradedColor="#708090"
+                DowntimeColor="#cc0000"
               />
             </div>
           </div>
