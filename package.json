@@ -29,7 +29,7 @@
     "react-dom": "^17.0.2",
     "react-parallax": "^3.5.1",
     "react-step-builder": "^3.0.6",
-    "redocusaurus": "^1.6.1"
+    "redocusaurus": "^1.6.3"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.4.0",
