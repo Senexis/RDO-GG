@@ -3,7 +3,6 @@ import Image from '@theme/IdealImage';
 import Layout from '@theme/Layout';
 import React from 'react';
 import { Background, Parallax } from 'react-parallax';
-import StatusButton from '../components/StatusButton';
 
 import logo from '/img/logo.png';
 import parallax from '/img/parallax.jpg';
@@ -12,6 +11,7 @@ import pic057 from '/img/stock/pic057.jpg';
 import pic059 from '/img/stock/pic059.jpg';
 import pic076 from '/img/stock/pic076.jpg';
 import pic077 from '/img/stock/pic077.jpg';
+import pic148 from '/img/stock/pic148.jpg';
 import pic150 from '/img/stock/pic150.jpg';
 import pic155 from '/img/stock/pic155.jpg';
 
@@ -30,12 +30,9 @@ export default function Home(): JSX.Element {
               <Link className="button button--secondary button--lg m-2 block lg:inline-block" to="/wiki/getting-started">
                 Getting Started
               </Link>
-              <StatusButton
-                Text="Status"
-                OperationalColor="#11ca4c"
-                DegradedColor="#708090"
-                DowntimeColor="#cc0000"
-              />
+              <Link className="button button--secondary button--lg m-2 block lg:inline-block" to="https://rdo.gg/status/">
+                Status
+              </Link>
             </div>
           </div>
         </div>
@@ -82,6 +79,22 @@ export default function Home(): JSX.Element {
                       <h2 className="mb-2"><span className="mr-2 fa-solid fa-newspaper"></span> News &amp; Updates</h2>
                       <hr className="my-4" />
                       <p className="leading-relaxed line-clamp-3 md:line-clamp-2 mb-0">Read all about the latest news regarding the RDO Compendium bot, as well as general updates.</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-wrap -mx-2">
+              <div className="p-2 w-full">
+                <Link to="https://tunables.rdo.gg/" className="min-h-[30vh] lg:min-h-[40vh] flex flex-wrap w-full py-32 px-10 relative">
+                  <div className="absolute inset-0 overflow-hidden">
+                    <Image img={pic148} shouldAutoDownload={() => true} className="home-link-block" />
+                  </div>
+                  <div className="absolute inset-0 p-8 lg:p-16 bg-[#9725] hover:bg-transparent flex justify-center items-center transition-colors">
+                    <div className="w-full text-white">
+                      <h2 className="mb-2"><span className="mr-2 fa-solid fa-wrench"></span> RDO.GG Tunables</h2>
+                      <hr className="my-4" />
+                      <p className="leading-relaxed line-clamp-3 md:line-clamp-2 mb-0">RDO.GG Tunables is a useful tool that allows you to follow and compare the latest changes to the in-game tunables for both Red Dead Online and GTA Online. It allows you to see at a glance what's changed and what the latest sales are.</p>
                     </div>
                   </div>
                 </Link>

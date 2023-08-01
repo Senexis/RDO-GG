@@ -102,7 +102,12 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://status.rdo.gg',
+            href: 'https://tunables.rdo.gg/',
+            label: 'Tunables',
+            position: 'left',
+          },
+          {
+            href: 'https://rdo.gg/status/',
             label: 'Status',
             position: 'left',
           },
@@ -119,8 +124,8 @@ const config = {
             target: '_blank',
             position: 'right',
             className: 'fa-brands fa-twitter',
-            title: 'Visit @RDOCompendium on Twitter',
-            'aria-label': 'Visit @RDOCompendium on Twitter',
+            title: 'Visit @rdo_gg on Twitter',
+            'aria-label': 'Visit @rdo_gg on Twitter',
           },
           {
             href: 'https://rdo.gg/discord/',
