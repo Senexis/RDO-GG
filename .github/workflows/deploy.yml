@@ -40,7 +40,7 @@ jobs:
       - name: Run post-build scripts
         run: npm run build:post
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: build
       - name: Deploy to GitHub Pages
