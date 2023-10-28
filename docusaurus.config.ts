@@ -172,15 +172,6 @@ const config: Config = {
       },
     ],
     [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'weekly',
-        priority: 0.5,
-        ignorePatterns: ['/tags/**'],
-        filename: 'sitemap.xml',
-      },
-    ],
-    [
       '@docusaurus/plugin-ideal-image',
       {
         max: 1920,
