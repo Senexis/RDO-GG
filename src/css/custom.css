@@ -223,6 +223,10 @@ nav.navbar.navbar--fixed-top {
   width: 200vw;
 }
 
-.redocusaurus .menu-content div div:first-of-type {
+.redoc-wrap {
+  @apply bg-white;
+}
+
+.redoc-wrap .menu-content div div:first-of-type {
   @apply hidden;
 }

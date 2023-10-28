@@ -15,7 +15,7 @@ import pic148 from '/img/stock/pic148.jpg';
 import pic150 from '/img/stock/pic150.jpg';
 import pic155 from '/img/stock/pic155.jpg';
 
-export default function Home(): JSX.Element {
+export default function Home(): React.JSX.Element {
   return (
     <Layout title='Home'>
       <Parallax strength={500}>
