@@ -222,11 +222,3 @@ nav.navbar.navbar--fixed-top {
   height: 300vh;
   width: 200vw;
 }
-
-.redoc-wrap {
-  @apply bg-white;
-}
-
-.redoc-wrap .menu-content div div:first-of-type {
-  @apply hidden;
-}

@@ -29,7 +29,9 @@ const options: RedocRawOptions = {
 export default function Api(): React.JSX.Element {
     return (
         <Layout title="API">
-            <RedocStandalone spec={openapi} options={options} />
+            <div className="redoc-parent">
+                <RedocStandalone spec={openapi} options={options} />
+            </div>
         </Layout>
     );
 }

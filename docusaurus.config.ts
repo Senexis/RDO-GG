@@ -39,7 +39,10 @@ const config: Config = {
           blogSidebarTitle: 'Recent articles',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            './src/css/styles.css',
+            './src/css/redoc.css',
+          ],
         },
       } satisfies Preset.Options,
     ],
