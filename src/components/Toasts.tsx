@@ -1,64 +1,64 @@
 // @ts-expect-error ts(2307)
-import Image from '@theme/IdealImage'
+import Image from '@theme/IdealImage';
 
-import { type ToastsResponse } from '@site/types'
-import clsx from 'clsx'
-import React from 'react'
-import { useFetch } from 'usehooks-ts'
+import { type ToastsResponse } from '@site/types';
+import clsx from 'clsx';
+import React from 'react';
+import { useFetch } from 'usehooks-ts';
 
-function ToastsPlaceholder (): React.JSX.Element {
+function ToastsPlaceholder(): React.JSX.Element {
   return (
     <>
       <div className="animate-pulse mb-4">
         {[...Array(3)].map((_, i) => {
-          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32']
-          const width = items[Math.floor(Math.random() * items.length)]
+          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
+          const width = items[Math.floor(Math.random() * items.length)];
           return (
             <div key={i} className={clsx(width, 'inline-block h-6 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
-          )
+          );
         })}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
         {[...Array(11)].map((_, i) => {
-          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24']
-          const width = items[Math.floor(Math.random() * items.length)]
+          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
+          const width = items[Math.floor(Math.random() * items.length)];
           return (
             <div key={i} className="animate-pulse flex flex-row items-center bg-neutral-300 dark:bg-neutral-700 shadow-sm p-2 rounded">
               <div className="flex-none w-10 h-10 bg-neutral-600 dark:bg-neutral-400 rounded mr-2"></div>
               <div className={clsx(width, 'flex-1 h-2 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
             </div>
-          )
+          );
         })}
       </div>
       <div className="animate-pulse mb-4">
         {[...Array(2)].map((_, i) => {
-          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32']
-          const width = items[Math.floor(Math.random() * items.length)]
+          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
+          const width = items[Math.floor(Math.random() * items.length)];
           return (
             <div key={i} className={clsx(width, 'inline-block h-6 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
-          )
+          );
         })}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
         {[...Array(12)].map((_, i) => {
-          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24']
-          const width = items[Math.floor(Math.random() * items.length)]
+          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
+          const width = items[Math.floor(Math.random() * items.length)];
           return (
             <div key={i} className="animate-pulse flex flex-row items-center bg-neutral-300 dark:bg-neutral-700 shadow-sm p-2 rounded">
               <div className="flex-none w-10 h-10 bg-neutral-600 dark:bg-neutral-400 rounded mr-2"></div>
               <div className={clsx(width, 'flex-1 h-2 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
             </div>
-          )
+          );
         })}
       </div>
     </>
-  )
+  );
 }
 
-function Toasts (): React.JSX.Element {
-  const { data } = useFetch<ToastsResponse>('/json/toasts.json')
+function Toasts(): React.JSX.Element {
+  const { data } = useFetch<ToastsResponse>('/json/toasts.json');
 
-  if (data === undefined) return <ToastsPlaceholder />
+  if (data === undefined) return <ToastsPlaceholder />;
 
   const categories = {
     awards: 'Awards',
@@ -68,8 +68,8 @@ function Toasts (): React.JSX.Element {
     hud: 'UI/HUD',
     mp_daily_objective: 'Daily Challenges',
     mp_generic: 'Generic',
-    mp_roles: 'Roles'
-  }
+    mp_roles: 'Roles',
+  };
 
   const subcategories = {
     set_a: 'Sharpshooter',
@@ -98,14 +98,14 @@ function Toasts (): React.JSX.Element {
     master_hunter: 'Master Hunter',
     sharpshooter: 'Sharpshooter',
     survivalist: 'Survivalist',
-    weapons_expert: 'Weapons Expert'
-  }
+    weapons_expert: 'Weapons Expert',
+  };
 
-  const results: Array<{ id: string, name: string, element: JSX.Element }> = []
+  const results: Array<{ id: string, name: string, element: JSX.Element }> = [];
 
   for (const category in data) {
     if (Array.isArray(data[category])) {
-      const name = categories[category] ?? category
+      const name = categories[category] ?? category;
       results.push({
         id: category,
         name,
@@ -124,11 +124,11 @@ function Toasts (): React.JSX.Element {
               ))}
             </div>
           </>
-        )
-      })
+        ),
+      });
     } else {
       for (const subcategory in data[category]) {
-        const name = `${categories[category] ?? category} - ${subcategories[subcategory] ?? subcategory}`
+        const name = `${categories[category] ?? category} - ${subcategories[subcategory] ?? subcategory}`;
         results.push({
           id: subcategory,
           name,
@@ -147,13 +147,13 @@ function Toasts (): React.JSX.Element {
                 ))}
               </div>
             </>
-          )
-        })
+          ),
+        });
       }
     }
   }
 
-  return (<>{results.sort((a, b) => a.name.localeCompare(b.name)).map(item => (<section key={item.id}>{item.element}</section>))}</>)
+  return (<>{results.sort((a, b) => a.name.localeCompare(b.name)).map(item => (<section key={item.id}>{item.element}</section>))}</>);
 }
 
-export default Toasts
+export default Toasts;

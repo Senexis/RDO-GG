@@ -1,35 +1,35 @@
 /* eslint-disable import/no-absolute-path */
 
 // @ts-expect-error ts(2307)
-import Image from '@theme/IdealImage'
+import Image from '@theme/IdealImage';
 
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Steps, StepsProvider, useSteps } from 'react-step-builder'
-
-// @ts-expect-error ts(2307)
-import getStarted1 from '/img/wiki/get-started-1.png'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Steps, StepsProvider, useSteps } from 'react-step-builder';
 
 // @ts-expect-error ts(2307)
-import getStarted2 from '/img/wiki/get-started-2.png'
+import getStarted1 from '/img/wiki/get-started-1.png';
 
 // @ts-expect-error ts(2307)
-import getStarted3 from '/img/wiki/get-started-3.png'
+import getStarted2 from '/img/wiki/get-started-2.png';
 
 // @ts-expect-error ts(2307)
-import getStarted4 from '/img/wiki/get-started-4.png'
+import getStarted3 from '/img/wiki/get-started-3.png';
 
 // @ts-expect-error ts(2307)
-import getStarted5 from '/img/wiki/get-started-5.png'
+import getStarted4 from '/img/wiki/get-started-4.png';
 
 // @ts-expect-error ts(2307)
-import getStarted6 from '/img/wiki/get-started-6.png'
+import getStarted5 from '/img/wiki/get-started-5.png';
 
 // @ts-expect-error ts(2307)
-import getStarted7 from '/img/wiki/get-started-7.png'
+import getStarted6 from '/img/wiki/get-started-6.png';
 
-function GetStartedStep ({ title, children }): React.JSX.Element {
-  const { isFirst, isLast, hasNext, next, hasPrev, prev, current, total } = useSteps()
+// @ts-expect-error ts(2307)
+import getStarted7 from '/img/wiki/get-started-7.png';
+
+function GetStartedStep({ title, children }): React.JSX.Element {
+  const { isFirst, isLast, hasNext, next, hasPrev, prev, current, total } = useSteps();
 
   return (
     <div className="w-full h-[70vh] overflow-hidden flex flex-col rounded-lg text-black dark:text-white bg-white dark:bg-[#18191c] shadow-lg mb-8">
@@ -63,15 +63,15 @@ function GetStartedStep ({ title, children }): React.JSX.Element {
         </div>
       </div>
     </div >
-  )
+  );
 }
 
 GetStartedStep.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.node
-}
+  children: PropTypes.node,
+};
 
-function GetStartedSteps (): React.JSX.Element {
+function GetStartedSteps(): React.JSX.Element {
   return (
     <Steps>
       <GetStartedStep title="Welcome!">
@@ -159,15 +159,15 @@ function GetStartedSteps (): React.JSX.Element {
         <p>Thank you so much for using the guide, and we hope it showed you the way to adding RDO Compendium to your server!</p>
       </GetStartedStep>
     </Steps>
-  )
+  );
 }
 
-function GetStarted (): React.JSX.Element {
+function GetStarted(): React.JSX.Element {
   return (
     <StepsProvider>
       <GetStartedSteps />
     </StepsProvider>
-  )
+  );
 }
 
-export default GetStarted
+export default GetStarted;

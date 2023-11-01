@@ -15,8 +15,8 @@
     "typecheck": "tsc",
     "build:pre": "node .github/scripts/images.js",
     "build:post": "node .github/scripts/redirects.js",
-    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint src --fix --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@docusaurus/core": "^3.0.0",

@@ -1,8 +1,8 @@
 export interface Toast { id: string, name: string, url: string }
-export type ToastsResponse = Record<string, Toast[] | Record<string, Toast[]>>
+export type ToastsResponse = Record<string, Toast[] | Record<string, Toast[]>>;
 
 export interface Location { id: string, name: string, url: string }
-export type LocationResponse = Record<string, Location[]>
+export type LocationResponse = Record<string, Location[]>;
 
 export interface TierLimit { count: number, max: number }
 export interface Tier { amount_cents: number, title: string, description: string, url: string, image_url: string, limit: TierLimit | null }

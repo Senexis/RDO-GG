@@ -1,4 +1,6 @@
+import autoprefixer from 'autoprefixer';
 import { themes as prismThemes } from 'prism-react-renderer';
+import tailwindcss from 'tailwindcss';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
@@ -64,13 +66,18 @@ const config: Config = {
       items: [
         {
           type: 'doc',
-          label: 'Information & Guides',
+          label: 'Wiki',
           position: 'left',
           docId: 'getting-started',
         },
         {
           to: '/news',
-          label: 'News & Updates',
+          label: 'News',
+          position: 'left',
+        },
+        {
+          to: '/api',
+          label: 'API',
           position: 'left',
         },
         {
@@ -107,13 +114,6 @@ const config: Config = {
           title: 'Visit @rdo_gg on X',
           'aria-label': 'Visit @rdo_gg on X',
         },
-        {
-          to: '/api',
-          position: 'right',
-          className: 'fa-solid fa-code',
-          title: 'Learn how to use the API',
-          'aria-label': 'Learn how to use the API',
-        },
       ],
     },
     footer: {
@@ -125,7 +125,7 @@ const config: Config = {
         {
           label: 'Terms of Service',
           to: 'wiki/legal/terms-of-service',
-        }
+        },
       ],
       copyright: `
         © ${new Date().getFullYear()} - RDO.GG<br>
@@ -184,8 +184,8 @@ const config: Config = {
     () => ({
       name: 'tailwind',
       configurePostCss(postcssOptions) {
-        postcssOptions.plugins.push(require('tailwindcss'));
-        postcssOptions.plugins.push(require('autoprefixer'));
+        postcssOptions.plugins.push(tailwindcss);
+        postcssOptions.plugins.push(autoprefixer);
         return postcssOptions;
       },
     }),
@@ -200,7 +200,7 @@ const config: Config = {
                 test: /\.ya?ml$/,
                 use: 'yaml-loader',
               },
-            ]
+            ],
           },
         };
       },

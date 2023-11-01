@@ -1,44 +1,44 @@
 /* eslint-disable import/no-absolute-path */
 
 // @ts-expect-error ts(2307)
-import Image from '@theme/IdealImage'
+import Image from '@theme/IdealImage';
 
-import Link from '@docusaurus/Link'
-import Layout from '@theme/Layout'
-import React from 'react'
-import { Background, Parallax } from 'react-parallax'
-
-// @ts-expect-error ts(2307)
-import logo from '/img/logo.png'
+import Link from '@docusaurus/Link';
+import Layout from '@theme/Layout';
+import React from 'react';
+import { Background, Parallax } from 'react-parallax';
 
 // @ts-expect-error ts(2307)
-import parallax from '/img/parallax.jpg'
+import logo from '/img/logo.png';
 
 // @ts-expect-error ts(2307)
-import pic034 from '/img/stock/pic034.jpg'
+import parallax from '/img/parallax.jpg';
 
 // @ts-expect-error ts(2307)
-import pic057 from '/img/stock/pic057.jpg'
+import pic034 from '/img/stock/pic034.jpg';
 
 // @ts-expect-error ts(2307)
-import pic059 from '/img/stock/pic059.jpg'
+import pic057 from '/img/stock/pic057.jpg';
 
 // @ts-expect-error ts(2307)
-import pic076 from '/img/stock/pic076.jpg'
+import pic059 from '/img/stock/pic059.jpg';
 
 // @ts-expect-error ts(2307)
-import pic077 from '/img/stock/pic077.jpg'
+import pic076 from '/img/stock/pic076.jpg';
 
 // @ts-expect-error ts(2307)
-import pic148 from '/img/stock/pic148.jpg'
+import pic077 from '/img/stock/pic077.jpg';
 
 // @ts-expect-error ts(2307)
-import pic150 from '/img/stock/pic150.jpg'
+import pic148 from '/img/stock/pic148.jpg';
 
 // @ts-expect-error ts(2307)
-import pic155 from '/img/stock/pic155.jpg'
+import pic150 from '/img/stock/pic150.jpg';
 
-export default function Home (): React.JSX.Element {
+// @ts-expect-error ts(2307)
+import pic155 from '/img/stock/pic155.jpg';
+
+export default function Home(): React.JSX.Element {
   return (
     <Layout title='Home'>
       <Parallax strength={500}>
@@ -191,5 +191,5 @@ export default function Home (): React.JSX.Element {
         </Background>
       </Parallax>
     </Layout>
-  )
+  );
 }

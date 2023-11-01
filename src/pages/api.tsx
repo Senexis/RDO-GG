@@ -1,10 +1,10 @@
 /* eslint-disable import/no-absolute-path */
 
-import Layout from '@theme/Layout'
-import { RedocStandalone, type RedocRawOptions } from 'redoc'
-import React from 'react'
+import Layout from '@theme/Layout';
+import { type RedocRawOptions, RedocStandalone } from 'redoc';
+import React from 'react';
 
-import openapi from '/openapi.yaml'
+import openapi from '/openapi.yaml';
 
 const options: RedocRawOptions = {
   disableSearch: true,
@@ -16,25 +16,25 @@ const options: RedocRawOptions = {
   sortTagsAlphabetically: true,
   theme: {
     colors: {
-      primary: { main: '#CC0000' }
+      primary: { main: '#CC0000' },
     },
     typography: {
       fontFamily: '"Hapna", "Times New Roman", Times, serif',
       fontSize: '18px',
       headings: {
         fontFamily: '"Hapna", "Times New Roman", Times, serif',
-        fontWeight: 'normal'
-      }
-    }
-  }
-}
+        fontWeight: 'normal',
+      },
+    },
+  },
+};
 
-export default function Api (): React.JSX.Element {
+export default function Api(): React.JSX.Element {
   return (
         <Layout title="API">
             <div className="redoc-parent">
                 <RedocStandalone spec={openapi} options={options} />
             </div>
         </Layout>
-  )
+  );
 }

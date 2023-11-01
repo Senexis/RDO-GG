@@ -151,12 +151,34 @@ nav.navbar.navbar--fixed-top {
   @apply lg:backdrop-blur-md lg:backdrop-saturate-150 lg:bg-neutral-200/75 lg:dark:bg-neutral-800/75;
 }
 
-.fa-discord {
-  color: #5865f2;
+a.navbar__link.fa-solid:hover,
+a.navbar__link.fa-brands:hover {
+  background: var(--ifm-color-emphasis-200);
+  color: inherit;
 }
 
-.fa-patreon {
-  color: #ff424d;
+a.navbar__link.fa-solid,
+a.navbar__link.fa-brands {
+  -webkit-tap-highlight-color: transparent;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: background var(--ifm-transition-fast);
+  margin-right: 0.5rem;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.navbar-sidebar .navbar__brand {
+  margin-right: auto;
+}
+
+.navbar-sidebar .navbar-sidebar__close {
+  margin-left: unset;
 }
 
 @media (max-width: 996px) {
@@ -164,17 +186,13 @@ nav.navbar.navbar--fixed-top {
     @apply hidden;
   }
 
-  .menu__list-item .fa-code,
-  .menu__list-item .fa-discord,
-  .menu__list-item .fa-patreon,
-  .menu__list-item .fa-x-twitter {
+  .menu__list-item .fa-solid,
+  .menu__list-item .fa-brands {
     width: 100%;
   }
 
-  .menu__list-item .fa-code::after,
-  .menu__list-item .fa-discord::after,
-  .menu__list-item .fa-patreon::after,
-  .menu__list-item .fa-x-twitter::after {
+  .menu__list-item .fa-solid::after,
+  .menu__list-item .fa-brands::after {
     margin-left: 0.5rem;
     font-family: var(--ifm-font-family-base);
     color: var(--ifm-menu-color);
