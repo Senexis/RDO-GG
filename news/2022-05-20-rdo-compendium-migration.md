@@ -7,6 +7,11 @@ were migrated automatically, ones that couldn't be automatically migrated and re
 
 <!--truncate-->
 
+:::warning This article may contain outdated information
+This is an old article which although kept for archival reasons does not represent the current version of RDO Compendium and any steps outlined in this article may be inaccurate. Please
+visit the [documentation pages](/wiki/faq) for more accurate information.
+:::
+
 ## Premium
 
 Unfortunately it is not possible to migrate your guild's Premium status to the next version of the bot. Therefor the bot will be asking you to re-activate your Premium status.
@@ -24,7 +29,7 @@ If for whatever reason you can't activate your guild, reach out to us either in 
 
 The following settings require you to run `/settings fix` in order to get them working correctly again:
 
-:::caution
+:::warning
 If you don't run `/settings fix`, the bot will not send out messages for the ping settings. To ensure everything is working fine, set the `test` option to `True` to get a test confirmation message.
 :::
 

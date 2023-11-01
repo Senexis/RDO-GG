@@ -5,6 +5,11 @@ prefix set by the guild, but will instead only use commands that start with a `/
 
 <!--truncate-->
 
+:::warning This article may contain outdated information
+This is an old article which although kept for archival reasons does not represent the current version of RDO Compendium and any steps outlined in this article may be inaccurate. Please
+visit the [documentation pages](/wiki/faq) for more accurate information.
+:::
+
 This change has been made since Discord has been limiting access to messages to verified bots since September 1st 2022 for privacy reasons. As RDO Compendium does not need access to your messages, we
 did not apply to get explicit access to your messages and instead migrated to Slash Commands. For a more detailed explanation, feel free to
 [read this support article](https://support-dev.discord.com/hc/en-us/articles/4404772028055).
