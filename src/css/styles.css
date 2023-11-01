@@ -159,10 +159,6 @@ nav.navbar.navbar--fixed-top {
   color: #ff424d;
 }
 
-.fa-twitter {
-  color: #1da1f2;
-}
-
 @media (max-width: 996px) {
   .navbar__items--right {
     @apply hidden;
@@ -171,14 +167,14 @@ nav.navbar.navbar--fixed-top {
   .menu__list-item .fa-code,
   .menu__list-item .fa-discord,
   .menu__list-item .fa-patreon,
-  .menu__list-item .fa-twitter {
+  .menu__list-item .fa-x-twitter {
     width: 100%;
   }
 
   .menu__list-item .fa-code::after,
   .menu__list-item .fa-discord::after,
   .menu__list-item .fa-patreon::after,
-  .menu__list-item .fa-twitter::after {
+  .menu__list-item .fa-x-twitter::after {
     margin-left: 0.5rem;
     font-family: var(--ifm-font-family-base);
     color: var(--ifm-menu-color);
@@ -196,8 +192,8 @@ nav.navbar.navbar--fixed-top {
     content: 'Patreon';
   }
 
-  .menu__list-item .fa-twitter::after {
-    content: 'Twitter';
+  .menu__list-item .fa-x-twitter::after {
+    content: 'X';
   }
 }
 

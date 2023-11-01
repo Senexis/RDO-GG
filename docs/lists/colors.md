@@ -8,7 +8,7 @@ You can switch the theme between light and dark using the button in the navigati
 :::
 
 These colors have been obtained from the game files. Duplicate colors have been removed, which may cause gaps in the names. Some of the colors below may not actually appear in the game due to them
-being unused. Since the bot does not support transparent colors, colors with transparency have been removed.
+being unused. Since RDO Compendium does not support transparent colors, colors with transparency have been removed.
 
 | Name                              |                                    Normal                                     |                         Deuteranopia<br />(Red-Green)                         |                          Protanopia<br />(Red-Green)                          |                         Tritanopia<br />(Yellow-Blue)                         |
 | :-------------------------------- | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |

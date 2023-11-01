@@ -1,61 +1,64 @@
-import Image from '@theme/IdealImage';
-import clsx from 'clsx';
-import React from 'react';
-import useFetch from '../useFetch';
+// @ts-expect-error ts(2307)
+import Image from '@theme/IdealImage'
 
-const ToastsPlaceholder = () => {
+import { type LocationResponse } from '@site/types'
+import clsx from 'clsx'
+import React from 'react'
+import { useFetch } from 'usehooks-ts'
+
+function ToastsPlaceholder (): React.JSX.Element {
   return (
     <>
       <div className="animate-pulse mb-4">
         {[...Array(2)].map((_, i) => {
-          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
-          const width = items[Math.floor(Math.random() * items.length)];
+          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32']
+          const width = items[Math.floor(Math.random() * items.length)]
           return (
             <div key={i} className={clsx(width, 'inline-block h-6 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
-          );
+          )
         })}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
         {[...Array(15)].map((_, i) => {
-          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
-          const width = items[Math.floor(Math.random() * items.length)];
+          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24']
+          const width = items[Math.floor(Math.random() * items.length)]
           return (
             <div key={i} className="animate-pulse text-center bg-neutral-300 dark:bg-neutral-700 shadow-sm p-2 rounded">
               <div className="w-full h-12 bg-neutral-600 dark:bg-neutral-400 rounded mb-1"></div>
               <div className={clsx(width, 'inline-block h-2 bg-neutral-600 dark:bg-neutral-400 rounded')}></div>
             </div>
-          );
+          )
         })}
       </div>
       <div className="animate-pulse mb-4">
         {[...Array(2)].map((_, i) => {
-          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32'];
-          const width = items[Math.floor(Math.random() * items.length)];
+          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32']
+          const width = items[Math.floor(Math.random() * items.length)]
           return (
             <div key={i} className={clsx(width, 'inline-block h-6 bg-neutral-600 dark:bg-neutral-400 rounded mr-2')}></div>
-          );
+          )
         })}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
         {[...Array(11)].map((_, i) => {
-          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24'];
-          const width = items[Math.floor(Math.random() * items.length)];
+          const items = ['w-8', 'w-10', 'w-12', 'w-14', 'w-16', 'w-20', 'w-24']
+          const width = items[Math.floor(Math.random() * items.length)]
           return (
             <div key={i} className="animate-pulse text-center bg-neutral-300 dark:bg-neutral-700 shadow-sm p-2 rounded">
               <div className="w-full h-12 bg-neutral-600 dark:bg-neutral-400 rounded mb-1"></div>
               <div className={clsx(width, 'inline-block h-2 bg-neutral-600 dark:bg-neutral-400 rounded')}></div>
             </div>
-          );
+          )
         })}
       </div>
     </>
-  );
-};
+  )
+}
 
-const Toasts = () => {
-  const { data, loading, error } = useFetch('/json/locations.json');
+function Toasts (): React.JSX.Element {
+  const { data } = useFetch<LocationResponse>('/json/locations.json')
 
-  if (loading || error || !data) return <ToastsPlaceholder />;
+  if (data === undefined) return <ToastsPlaceholder />
 
   const categories = {
     district: 'Districts',
@@ -65,7 +68,7 @@ const Toasts = () => {
     settlement: 'Settlements',
     state: 'States',
     town: 'Towns',
-    water: 'Bodies of Water',
+    water: 'Bodies of Water'
   }
 
   return (
@@ -74,7 +77,7 @@ const Toasts = () => {
         <section key={category}>
           <h2 className="anchor anchorWithStickyNavbar_node_modules-@docusaurus-theme-classic-lib-theme-Heading-styles-module" id={category}>
             {categories[category] ?? category}
-            <a className="hash-link" href={`#${category}`} title="Direct link to heading">​</a>
+            <a className="hash-link" href={`#${category}`} title="Direct link to heading">&nbsp;</a>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 mb-8">
             {data[category].map(item => (
@@ -87,7 +90,7 @@ const Toasts = () => {
         </section>
       ))}
     </>
-  );
-};
+  )
+}
 
-export default Toasts;
+export default Toasts

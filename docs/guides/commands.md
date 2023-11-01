@@ -1,12 +1,12 @@
 # Commands
 
-Starting out, the bot may seem a bit intimidating to you. However, fret not since this page will help you to get started with the bot by explaining the different commands,
+Starting out, RDO Compendium may seem a bit intimidating to you. However, fret not since this page will help you to get started with RDO Compendium by explaining the different commands,
 and giving you tips and tricks on finding whatever it is you want to find within Red Dead Redemption 2 and Red Dead Online.
 
-Commands are how you control the bot. If you type `/help` in a channel the bot is in, it will reply to you with a list of all commands available within the bot for example.
+Commands are how you control RDO Compendium. If you type `/help` in a channel RDO Compendium is in, it will reply to you with a list of all commands available within RDO Compendium for example.
 Some commands may require you to provide more information, such as the `/find` command, which is used by typing `/find bear` to search for a bear, for example.
 
-If you ever get stuck, feel free to reach out on the bot's Discord server for additional support.
+If you ever get stuck, feel free to reach out on RDO Compendium's Discord server for additional support.
 
 ## Compendium
 
@@ -49,21 +49,21 @@ These commands are additional functionality reserved for Patrons.
 | Command   | Description                                                                                    |
 | :-------- | :--------------------------------------------------------------------------------------------- |
 | /audio    | Sends a random audio clip from the game                                                        |
-| /feed     | Generates an RDO-styled feed<br />![Feed example](/img/wiki/feed-example.png)                  |
+| /feed     | Generates an RDO-styled feed<br /><details><summary>Show example</summary> ![Feed example](/img/wiki/feed-example.png)</details>                  |
 | /loading  | Sends a random loading screen from the game                                                    |
-| /location | Generates an RDO-styled location card<br />![Location example](/img/wiki/location-example.png) |
-| /title    | Generates an RDO-styled title<br />![Title example](/img/wiki/title-example.png)               |
-| /toast    | Generates an RDO-styled toast<br />![Toast example](/img/wiki/toast-example.png)               |
+| /location | Generates an RDO-styled location card<br /><details><summary>Show example</summary> ![Location example](/img/wiki/location-example.png)</details>  |
+| /title    | Generates an RDO-styled title<br /><details><summary>Show example</summary> ![Title example](/img/wiki/title-example.png)</details>                |
+| /toast    | Generates an RDO-styled toast<br /><details><summary>Show example</summary> ![Toast example](/img/wiki/toast-example.png)</details>                |
 
 ## Miscellaneous
 
-These commands are mostly commands that are used to find information about the bot.
+These commands are mostly commands that are used to find information about RDO Compendium.
 
 | Command            | Description                                                              |
 | :----------------- | :----------------------------------------------------------------------- |
 | /bot notifications | Displays notifications related to RDO Compendium (English only)          |
 | /bot updates       | Displays the most recent changes to RDO Compendium (English only)        |
-| /credits           | Displays the different people that made general contributions to the bot |
+| /credits           | Displays the different people that made general contributions to RDO Compendium |
 | /delivery close    | Closes your created Trader delivery                                      |
 | /delivery lock     | Locks your created Trader delivery                                       |
 | /delivery start    | Starts a Trader delivery                                                 |
@@ -73,7 +73,7 @@ These commands are mostly commands that are used to find information about the b
 | /posse close       | Closes your created posse                                                |
 | /posse lock        | Locks your created posse                                                 |
 | /posse start       | Starts a posse                                                           |
-| /support           | Displays information about supporting the bot                            |
+| /support           | Displays information about supporting RDO Compendium                            |
 
 ## Settings
 

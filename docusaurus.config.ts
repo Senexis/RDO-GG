@@ -88,16 +88,8 @@ const config: Config = {
           target: '_blank',
           position: 'right',
           className: 'fa-brands fa-patreon',
-          title: 'Support the bot on Patreon',
-          'aria-label': 'Support the bot on Patreon',
-        },
-        {
-          href: 'https://rdo.gg/twitter/',
-          target: '_blank',
-          position: 'right',
-          className: 'fa-brands fa-twitter',
-          title: 'Visit @rdo_gg on Twitter',
-          'aria-label': 'Visit @rdo_gg on Twitter',
+          title: 'Support RDO.GG on Patreon',
+          'aria-label': 'Support RDO.GG on Patreon',
         },
         {
           href: 'https://rdo.gg/discord/',
@@ -106,6 +98,14 @@ const config: Config = {
           className: 'fa-brands fa-discord',
           title: 'Join the support Discord',
           'aria-label': 'Join the support Discord',
+        },
+        {
+          href: 'https://rdo.gg/x/',
+          target: '_blank',
+          position: 'right',
+          className: 'fa-brands fa-x-twitter',
+          title: 'Visit @rdo_gg on X',
+          'aria-label': 'Visit @rdo_gg on X',
         },
         {
           to: '/api',

@@ -11,34 +11,34 @@ Please note that a [commands guide](./guides/commands) and a [settings guide](./
 Is something missing from this FAQ? Let us know in the support server or use `/feedback` in a guild with RDO Compendium.
 :::
 
-## Bot
+## General
 
-### When did the bot get started?
+### When did RDO Compendium get started?
 
-The bot got started in June of 2020. At that time the bot started to get a few basic functionalities.
+RDO Compendium got started in June of 2020. At that time RDO Compendium only offered a few basic functionalities, but it got expanded over time through years of updates.
 
-### Who made the bot?
+### Who made RDO Compendium?
 
-The bot was developed by Senexis. He is currently the only developer for the bot. A full list of all contributors can be found by using the `/credits` command.
+RDO Compendium was developed by Senexis. He is currently the only developer for RDO Compendium. A full list of all contributors can be found by using the `/credits` command.
 
-### How often does the bot get an update?
+### How often does RDO Compendium get an update?
 
-Content that is added in a game update gets added to the bot as soon as possible, usually with some information that isn't widely known yet.
+Content that is added in a game update gets added to RDO Compendium as soon as possible, usually with some information that isn't widely known yet.
 Other than content updates, bug fixes and new features get added on a regular basis.
 
-### How accurate is the bot's information?
+### How accurate is RDO Compendium's information?
 
-Most information from the bot is obtained from the game itself by way of creative data gathering. This way, the accuracy of the information can be guaranteed.
+Most information from RDO Compendium is obtained from the game itself by way of creative data gathering. This way, the accuracy of the information can be guaranteed.
 
-### How can I support the bot?
+### How can I support RDO.GG?
 
-You can support the bot monetarily by becoming a Patron, or you can spread the word about the bot. Both are greatly appreciated.
+You can support RDO.GG monetarily by becoming a Patron, or you can spread the word about RDO.GG or RDO Compendium. Both are greatly appreciated.
 
 ## Premium
 
 ### What is Premium?
 
-Supporting the bot with €3.99 or more on Patreon will enable you to automate certain notifications and create fun assets to play around with.
+Supporting RDO.GG with €3.99 or more on Patreon will enable you to automate certain notifications and create fun assets to play around with.
 
 ### What exactly do I get with Premium?
 
@@ -46,15 +46,15 @@ Premium members get access to a selection of Premium-only commands and access to
 
 ### How do I activate Premium?
 
-To learn more about the Premium activation process, please visit the [premium guide](./guides/premium).
+To learn more about the Premium activation process, please visit the [Premium guide](./guides/premium).
 
 ### Do I need to keep paying for Premium?
 
-In general, the answer to this is yes to be able to keep the bot up and running. However, exceptions can be made in certain circumstances.
+In general, the answer to this is yes to be able to keep RDO.GG up and running. However, exceptions can be made in certain circumstances.
 
 ### If I do stop, how long do I get to keep Premium?
 
-If you decide you want to stop supporting the bot for any reason, you'll lose access to Premium at the start of the next month.
+If you decide you want to stop supporting RDO.GG for any reason, you'll lose access to Premium at the start of the next month.
 So say you stop supporting at the 14th, you'll keep Premium until the 1st of the next month.
 
 ### Can I get Premium for free?
@@ -64,23 +64,23 @@ Eligible content creators include: tool creators, information gatherers, map cre
 
 ## Issues
 
-### Why doesn't the bot respond?
+### Why doesn't RDO Compendium respond?
 
-This can have multiple causes. Perhaps the bot doesn't have proper permission to talk in that channel. It could also be that the bot is down briefly for some updates.
+This can have multiple causes. Perhaps RDO Compendium doesn't have proper permission to talk in that channel. It could also be that RDO Compendium is down briefly for some updates.
 
-### Why can't I see the bot's commands?
+### Why can't I see RDO Compendium's commands?
 
-Make sure that you have the **Use Application Commands** permission. In addition, check whether you have set up the bot's application permissions in such a way that they command you're trying to use
+Make sure that you have the **Use Application Commands** permission. In addition, check whether you have set up RDO Compendium's application permissions in such a way that they command you're trying to use
 is allowed to be used in the channel itself. If you need help getting that set up, please visit the
 [Discord support article](https://support.discord.com/hc/en-us/articles/4644915651095-Command-Permissions) for more information about Slash command permissions.
 
 ### Why don't emoji work when using commands?
 
-The common reason emoji don't work is because the bot doesn't have the **Use External Emoji** permission. Please make sure to add the permission to the bot's role, and make sure the channel you're
-using commands in doesn't override (deny) the permission for the bot.
+The common reason emoji don't work is because RDO Compendium doesn't have the **Use External Emoji** permission. Please make sure to add the permission to RDO Compendium's role, and make sure the channel you're
+using commands in doesn't override (deny) the permission for RDO Compendium.
 
-If you've made sure the bot has the permission, but still don't see the emoji, please check whether the `@everyone` role has the permission in the channel. A Discord quirk is that in order for
-commands to respond with emoji, both the `@everyone` role and the bot needs to have the **Use External Emoji** permission. Please note that you don't need to add the permission to the role itself,
+If you've made sure RDO Compendium has the permission, but still don't see the emoji, please check whether the `@everyone` role has the permission in the channel. A Discord quirk is that in order for
+commands to respond with emoji, both the `@everyone` role and RDO Compendium needs to have the **Use External Emoji** permission. Please note that you don't need to add the permission to the role itself,
 just adding it the the channel will do the trick.
 
 :::info
@@ -92,17 +92,17 @@ Regarding the Discord quirk, here's what Discord has to say:
 You can read more about this [here (question no. 18)](https://time-mambo-c70.notion.site/DDevs-May-27-Q-A-17431321344b4ce7915fe7b5f83b1f41).
 :::
 
-### Why can't the bot find something I look for?
+### Why can't RDO Compendium find something I look for?
 
-If the bot can't find something, try using slightly different keywords. Sometimes something is known differently in the game than what you're looking for.
-A common example of this is looking for `buffalo` while the actual name is `bison`. Of course, the thing you're looking for might just not be in the bot.
+If RDO Compendium can't find something, try using slightly different keywords. Sometimes something is known differently in the game than what you're looking for.
+A common example of this is looking for `buffalo` while the actual name is `bison`. Of course, the thing you're looking for might just not be in RDO Compendium.
 If you believe this is the case, please leave feedback using the appropriate button.
 
-### How come the bot doesn't detect me as Administrator?
+### How come RDO Compendium doesn't detect me as Administrator?
 
-The bot determines whether you are an administrator or not by checking whether you have the Administrator permission. Please make sure you have the permission or ask your server owner for help.
+RDO Compendium determines whether you are an administrator or not by checking whether you have the Administrator permission. Please make sure you have the permission or ask your server owner for help.
 
-### Why is the bot talking in a different language?
+### Why is RDO Compendium talking in a different language?
 
 To learn more about languages, please visit the [languages guide](./guides/languages).
 

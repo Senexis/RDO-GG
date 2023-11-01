@@ -1,10 +1,10 @@
 # Settings
 
-To configure the bot, a selection of different settings are available in the bot which you can change.
+To configure RDO Compendium, a selection of different settings are available in RDO Compendium which you can change.
 This quick guide provides an in-depth look at all the different settings, what they do, and what they can be set to.
 
-Settings are divided into multiple categories in this guide. Settings are saved on a per-Discord basis, so if you add the bot to multiple servers,
-you will need to configure the bot on all the different guilds you administrate.
+Settings are divided into multiple categories in this guide. Settings are saved on a per-Discord basis, so if you add RDO Compendium to multiple servers,
+you will need to configure RDO Compendium on all the different guilds you administrate.
 
 ## Commands
 
@@ -42,7 +42,7 @@ Boolean settings are Yes/No settings, otherwise known as toggles. They can be se
 
 ### Colors
 
-Color settings control some visual aspects of the bot, such as the color of embeds. They can be set to various formats of colors. The following color formats are supported:
+Color settings control some visual aspects of RDO Compendium, such as the color of embeds. They can be set to various formats of colors. The following color formats are supported:
 
 - [CSS color keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color#value), for example `red`.
 - HEX format, for example `#CC0000`.
@@ -58,8 +58,8 @@ You can search the web for "Color Picker" to find tools that allow you to pick c
 
 | Setting     | Description                                                                                                                                | Premium |
 | :---------- | :----------------------------------------------------------------------------------------------------------------------------------------- | :-----: |
-| Embed Color | Change the color of embeds for the bot, which are displayed to the left of sent embeds.                                                    |   ✅    |
-| Toast Color | Change the color of toast titles and/or icons for the bot, depending on the `Colorize Toast Icons` [boolean setting](./settings#booleans). |   ✅    |
+| Embed Color | Change the color of embeds for RDO Compendium, which are displayed to the left of sent embeds.                                                    |   ✅    |
+| Toast Color | Change the color of toast titles and/or icons for RDO Compendium, depending on the `Colorize Toast Icons` [boolean setting](./settings#booleans). |   ✅    |
 
 ### Events
 
@@ -71,12 +71,12 @@ To learn more about using and configuring languages, please visit the [languages
 
 ### Pings
 
-Ping settings allow you to configure the bot to automatically post messages to various channels in your Discord servers.
+Ping settings allow you to configure RDO Compendium to automatically post messages to various channels in your Discord servers.
 
 | Setting                     | Description                                                  | Premium |
 | :-------------------------- | :----------------------------------------------------------- | :-----: |
 | Benefits                    | Ping when the in-game Benefits screen updates.               |   ✅    |
-| Bot Notifications           | Ping when the developers of the bot post a new notification. |         |
+| Bot Notifications           | Ping when the developers of RDO Compendium post a new notification. |         |
 | Collector Cycles            | Ping when the Collector item cycles change.                  |   ✅    |
 | Daily Challenges            | Ping when the Daily Challenges update.                       |   ✅    |
 | Free Roam Events Schedule   | Ping when the Free Roam Event schedule is updated.           |   ✅    |
@@ -90,7 +90,7 @@ Ping settings allow you to configure the bot to automatically post messages to v
 
 ### Roles
 
-Role settings are used in specific features of the bot, and allow you to select a User Role to use in those features.
+Role settings are used in specific features of RDO Compendium, and allow you to select a User Role to use in those features.
 
 | Setting               | Description                                                | Premium |
 | :-------------------- | :--------------------------------------------------------- | :-----: |
