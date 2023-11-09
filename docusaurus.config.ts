@@ -132,7 +132,10 @@ const config: Config = {
         <small class="opacity-60">
           Red Dead Redemption, Red Dead Online, RDR and RDO are registered trademarks by Rockstar Games.<br>
           This site and bot are not endorsed, recognised, sponsored, or approved by Rockstar Games.
-        </small>
+        </small><br>
+        <div class="inline-block bg-[#1c1e21] w-[250px] h-[30px] rounded mt-2 overflow-hidden opacity-80 hover:opacity-100 transition-opacity">
+          <iframe src="https://status.rdo.gg/badge?theme=dark" frameborder="0" scrolling="no" class="w-full h-full"></iframe>
+        </div>
       `,
     },
     prism: {
