@@ -213,6 +213,10 @@ a.navbar__link.fa-brands {
   .menu__list-item .fa-x-twitter::after {
     content: 'X';
   }
+
+  .menu__list-item .fa-github::after {
+    content: 'GitHub';
+  }
 }
 
 .home-link-block, .home-link-block img, .parallax-img img {

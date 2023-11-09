@@ -114,6 +114,14 @@ const config: Config = {
           title: 'Visit @rdo_gg on X',
           'aria-label': 'Visit @rdo_gg on X',
         },
+        {
+          href: 'https://github.com/Senexis/RDO-GG/',
+          target: '_blank',
+          position: 'right',
+          className: 'fa-brands fa-github',
+          title: 'Contribute to the site on GitHub',
+          'aria-label': 'Contribute to the site on GitHub',
+        },
       ],
     },
     footer: {
