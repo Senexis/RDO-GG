@@ -1,13 +1,10 @@
 # Events
 
-Free Roam Events pings are notices sent to you 10 minutes before Free Roam Events begin in the game. They can be configured using the `/settings set events` command. There are multiple options
-available to ping. You can find a list of all the different options in the lists below, as well as a description of what each option does. In the case of individual Free Roam Events, you can quickly
-see the type of combat that event entails. This is useful for knowing which Free Roam Event is included with the corresponding special options.
+Free Roam Events pings are notices sent 10 minutes before Free Roam Events begin in the game. You can configure them using the `/settings set events` command. Different options are available for pinging, and you can find them in the lists below, along with a description of each option. Individual Free Roam Events provide details about the type of combat involved.
 
 ## Special Options
 
-The following options include multiple Free Roam Events. When configuring a ping using these options, one or more Free Roam Events may be pinged. You can discover which type of event is being pinged
-by reading the description. In addition, for combat options, the type of combat included in a Free Roam Event is listed in the tables in the following sections.
+These options cover multiple Free Roam Events. When configuring a ping using these options, one or more Free Roam Events may be pinged. You can determine the type of event being pinged by reading the description. Combat types for each Free Roam Event are listed in the tables in the following sections.
 
 | Option                                    | Description                                                                                                                                                                                                                |
 | :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -15,12 +12,11 @@ by reading the description. In addition, for combat options, the type of combat 
 | Events with Player vs. Environment combat | Pings Free Roam Events with Player vs. Environment combat (PVE).                                                                                                                                                           |
 | Events with Player vs. Player combat      | Pings Free Roam Events with Player vs. Player combat (PVP).                                                                                                                                                                |
 | Events without combat                     | Pings Free Roam Events without either PVE or PVP combat.                                                                                                                                                                   |
-| Random Challenge                          | Pings Free Roam Events which do not fit into any category as they are randomized. Random events include Horseback Kills, Headshot Kills, Bow Kills, Longarm Kills, Sidearm Kills, Wild Animal Kills or Fishing Challenges. |
+| Random Challenge                          | Pings Free Roam Events that don't fit into specific categories as they are randomized. Random events include Horseback Kills, Headshot Kills, Bow Kills, Longarm Kills, Sidearm Kills, Wild Animal Kills, or Fishing Challenges. |
 
 ## General Events
 
-General Events are Free Roam Events that are generally available to everyone without roles. Note that Player vs. Player Free Roam Events may still include Player vs. Environment combat. The table
-below is intended for bot configuration only and is not accurate for gameplay purposes.
+General Events are Free Roam Events available to everyone without roles. Note that Player vs. Player Free Roam Events may still include Player vs. Environment combat. The table below is intended for bot configuration and is not accurate for gameplay purposes.
 
 | Event                       | Player vs. Environment | Player vs. Player |
 | :-------------------------- | :--------------------- | :---------------- |
@@ -42,8 +38,7 @@ below is intended for bot configuration only and is not accurate for gameplay pu
 
 ## Role Events
 
-Role Events are Free Roam Events that may require a specific Role requirement to unlock, or which were added by Roles. Note that Player vs. Player Free Roam Events may still include Player vs.
-Environment combat. The table below is intended for bot configuration only and is not accurate for gameplay purposes.
+Role Events are Free Roam Events that may require a specific Role requirement to unlock or were added by Roles. Note that Player vs. Player Free Roam Events may still include Player vs. Environment combat. The table below is intended for bot configuration and is not accurate for gameplay purposes.
 
 | Event                    | Player vs. Environment | Player vs. Player |
 | :----------------------- | :--------------------- | :---------------- |

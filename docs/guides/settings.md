@@ -1,10 +1,8 @@
 # Settings
 
-To configure RDO Compendium, a selection of different settings are available in RDO Compendium which you can change.
-This quick guide provides an in-depth look at all the different settings, what they do, and what they can be set to.
+To configure RDO Compendium, a selection of different settings is available. This quick guide provides an in-depth look at all the different settings, what they do, and what they can be set to.
 
-Settings are divided into multiple categories in this guide. Settings are saved on a per-Discord basis, so if you add RDO Compendium to multiple servers,
-you will need to configure RDO Compendium on all the different guilds you administrate.
+Settings are divided into multiple categories in this guide. Settings are saved on a per-Discord basis, so if you add RDO Compendium to multiple servers, you will need to configure it on all the different guilds you administrate.
 
 ## Commands
 
@@ -54,7 +52,7 @@ Color settings control some visual aspects of RDO Compendium, such as the color 
 You can find a full list of Red Dead Online colors on the [colors page](/wiki/lists/colors)!
 :::
 
-You can search the web for "Color Picker" to find tools that allow you to pick colors. In addition, most common imaging programs also allows you to pick and choose colors.
+You can search the web for "Color Picker" to find tools that allow you to pick colors. In addition, most common imaging programs also allow you to pick and choose colors.
 
 | Setting     | Description                                                                                                                                | Premium |
 | :---------- | :----------------------------------------------------------------------------------------------------------------------------------------- | :-----: |

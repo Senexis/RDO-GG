@@ -1,20 +1,13 @@
 # Languages
 
-RDO Compendium is available in multiple languages. Thanks to the help of the [translators](/wiki/credits/translators), RDO Compendium is available in quite a few languages. To change the language of RDO Compendium
-for your server, you are able to use the `/settings` command to change the language. To do so, you can use `/settings set language` with any one of the available languages.
+RDO Compendium is available in multiple languages, thanks to the contributions of the [translators](/wiki/credits/translators). To change the language for your server, use the `/settings` command and select a language using `/settings set language`.
 
-Once the language has been set, RDO Compendium will automatically reply to commands in the language you have set. For example, if you set the language to English, RDO Compendium will reply in English when you use
-`/help`.
+Once the language is set, RDO Compendium will automatically respond in the chosen language. For instance, if you set it to English, RDO Compendium will reply in English when you use `/help`.
 
-In certain circumstances, you may encounter content that's not been translated. This can have one of multiple causes:
-
-- The content is not yet translated into the language you have set;
-- The content is from an external source such as a news article of a notification, or;
-- The content is sent in a direct message.
+In some cases, you may encounter content that hasn't been translated. This could be due to the content not being translated yet, external sources like news articles or notifications, or if the content is sent in a direct message.
 
 :::info Want to help out?
-If you notice content that's not been translated yet, consider visiting the [translation page](https://rdo.gg/translate/) to help translate it.
+If you notice untranslated content, consider visiting the [translation page](https://rdo.gg/translate/) to contribute to the translation effort.
 :::
 
-To see a list of available languages included in RDO Compendium, use the `/settings set language` command or visit the [translator credits page](/wiki/credits/translators). If you do decide to help
-translate RDO Compendium, all you'll need is to create a Crowdin account and you're set! Thank you so much for being interested in translating RDO Compendium!
+To view a list of available languages in RDO Compendium, use the `/settings set language` command or check the [translator credits page](/wiki/credits/translators). If you decide to assist in translating RDO Compendium, creating a Crowdin account is all you need. Thank you for your interest in translating RDO Compendium!

@@ -1,16 +1,14 @@
 # Commands
 
-Starting out, RDO Compendium may seem a bit intimidating to you. However, fret not since this page will help you to get started with RDO Compendium by explaining the different commands,
-and giving you tips and tricks on finding whatever it is you want to find within Red Dead Redemption 2 and Red Dead Online.
+Starting out, RDO Compendium may seem a bit intimidating. This page will help you get started with RDO Compendium by explaining the different commands and providing tips and tricks for finding what you want within Red Dead Redemption 2 and Red Dead Online.
 
-Commands are how you control RDO Compendium. If you type `/help` in a channel RDO Compendium is in, it will reply to you with a list of all commands available within RDO Compendium for example.
-Some commands may require you to provide more information, such as the `/find` command, which is used by typing `/find bear` to search for a bear, for example.
+Commands are how you control RDO Compendium. If you type `/help` in a channel where RDO Compendium is active, it will reply with a list of all available commands. Some commands may require additional information, like the `/find` command, used by typing `/find bear` to search for a bear, for example.
 
 If you ever get stuck, feel free to reach out on RDO Compendium's Discord server for additional support.
 
 ## Compendium
 
-These are the commands that let you find in-game content that's available in the game.
+These commands help you find in-game content available in Red Dead Redemption 2.
 
 | Command          | Description                                               |
 | :--------------- | :-------------------------------------------------------- |
@@ -57,7 +55,7 @@ These commands are additional functionality reserved for Patrons.
 
 ## Miscellaneous
 
-These commands are mostly commands that are used to find information about RDO Compendium.
+These commands are mostly used to find information about RDO Compendium.
 
 | Command            | Description                                                              |
 | :----------------- | :----------------------------------------------------------------------- |

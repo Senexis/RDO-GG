@@ -27,7 +27,7 @@ function PatreonButtons(): React.JSX.Element {
   return (
     <>
       <div className="my-6">
-        {data.tiers.map(tier => {
+        {data.tiers.filter(tier => tier.amount_cents > 0).map(tier => {
           if (tier.limit === null || tier.limit.count !== tier.limit.max) {
             return (
               <a key={tier.title} href={tier.url} target="_blank" rel="noopener noreferrer" className="button button--secondary m-2 block lg:inline-block">{tier.title} for €{tier.amount_cents / 100}/mo</a>
