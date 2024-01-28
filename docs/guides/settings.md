@@ -2,14 +2,14 @@
 
 To configure RDO Compendium, a selection of different settings is available. This quick guide provides an in-depth look at all the different settings, what they do, and what they can be set to.
 
-Settings are divided into multiple categories in this guide. Settings are saved on a per-Discord basis, so if you add RDO Compendium to multiple servers, you will need to configure it on all the different guilds you administrate.
+Settings are divided into multiple categories in this guide. Settings are saved on a per-Discord basis, so if you add RDO Compendium to multiple servers, you will need to configure it on all the different servers you administrate.
 
 ## Commands
 
 | Command                | Description                                                         |
 | :--------------------- | :------------------------------------------------------------------ |
 | /settings fix          | Fixes up settings and ensures everything works as intended          |
-| /settings list         | Displays all the settings for this guild                            |
+| /settings list         | Displays all the settings for this server                           |
 | /settings reset        | Resets a setting to its default value                               |
 | /settings set boolean  | Updates a [boolean setting](./settings#booleans) to a new value     |
 | /settings set color    | Updates a [color setting](./settings#colors) to a new value         |

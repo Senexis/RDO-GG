@@ -12,14 +12,14 @@ This is an old article kept for archival reasons and does not represent the curr
 
 ## Premium
 
-Unfortunately, it is not possible to migrate your guild's Premium status to the next version. The bot will ask you to re-activate your Premium status. To do this, follow the [Premium activation instructions](/wiki/guides/premium).
+Unfortunately, it is not possible to migrate your server's Premium status to the next version. The bot will ask you to re-activate your Premium status. To do this, follow the [Premium activation instructions](/wiki/guides/premium).
 
 :::danger
 If you don't re-activate Premium, you will not be able to use the Premium benefits.
 :::
 
 :::tip
-If, for any reason, you can't activate your guild, reach out to us either in the support channels or send us a DM.
+If, for any reason, you can't activate your server, reach out to us either in the support channels or send us a DM.
 :::
 
 ## Manual Migration

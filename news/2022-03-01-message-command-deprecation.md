@@ -1,6 +1,6 @@
 # Message Command Deprecation
 
-Message commands are deprecated and have been replaced with [Slash Commands](https://support.discord.com/hc/en-us/articles/1500000368501). This means that the bot will not reply to commands using the prefix set by the guild but will instead only use commands that start with a `/`. For example, `!help` has now become `/help`.
+Message commands are deprecated and have been replaced with [Slash Commands](https://support.discord.com/hc/en-us/articles/1500000368501). This means that the bot will not reply to commands using the prefix set by the server but will instead only use commands that start with a `/`. For example, `!help` has now become `/help`.
 
 <!--truncate-->
 
