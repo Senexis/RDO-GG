@@ -32,7 +32,7 @@
     "react-parallax": "^3.5.1",
     "react-step-builder": "^3.0.6",
     "redoc": "^2.1.3",
-    "usehooks-ts": "^2.10.0"
+    "usehooks-ts": "^2.11.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.1.1",
