@@ -52,7 +52,7 @@ In general, the answer to this is yes to be able to keep RDO.GG up and running. 
 
 ### If I do stop, how long do I get to keep Premium?
 
-If you decide you want to stop supporting RDO.GG for any reason, you'll lose access to Premium at the start of the next week. So say you stop supporting at the 14th, you'll keep Premium until the 21st.
+If you decide you want to stop supporting RDO.GG for any reason, you'll lose access to Premium the next week. So say you stop supporting at the 14th, you'll keep Premium until the 21st.
 
 ### Can I get Premium for free?
 

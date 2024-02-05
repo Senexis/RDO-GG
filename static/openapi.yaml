@@ -1626,7 +1626,7 @@ components:
       properties:
         documentation:
           type: string
-          description: A link the the documentation for the current response.
+          description: A link to the documentation for the current response.
           format: uri
           example: https://api.rdo.gg/
         provider:
