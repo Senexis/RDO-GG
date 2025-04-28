@@ -33,7 +33,6 @@ These commands find information about the game that is not within the game.
 | :-------- | :----------------------------------------------------------- |
 | /benefits | Displays the latest in-game benefits from Social Club        |
 | /last     | Displays the amount of days passed since the last update     |
-| /live     | Displays the latest live events from Social Club             |
 | /news     | Displays the latest news from Newswire                       |
 | /patches  | Displays the latest game patch article from Rockstar Support |
 | /photos   | Displays top-liked Social Club photos from the last 7 days   |

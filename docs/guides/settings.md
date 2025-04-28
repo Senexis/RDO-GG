@@ -74,11 +74,10 @@ Ping settings allow you to configure RDO Compendium to automatically post messag
 | Setting                     | Description                                                  | Premium |
 | :-------------------------- | :----------------------------------------------------------- | :-----: |
 | Benefits                    | Ping when the in-game Benefits screen updates.               |   ✅    |
-| Bot Notifications           | Ping when the developers of RDO Compendium post a new notification. |         |
+| Bot Notifications           | Ping when the developers post a new notification.            |         |
 | Collector Cycles            | Ping when the Collector item cycles change.                  |   ✅    |
 | Daily Challenges            | Ping when the Daily Challenges update.                       |   ✅    |
 | Free Roam Events Schedule   | Ping when the Free Roam Event schedule is updated.           |   ✅    |
-| Live Events                 | Ping when the Live Events have changed.                      |   ✅    |
 | Madam Nazar                 | Ping when Madam Nazar moves to a new location.               |   ✅    |
 | Newswire Articles           | Ping when a new Newswire article is posted.                  |   ✅    |
 | Patch Notes                 | Ping when new patch notes are available.                     |   ✅    |

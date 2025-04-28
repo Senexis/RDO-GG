@@ -143,23 +143,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/EventsResponse'
-  /live:
-    get:
-      tags:
-      - social-club
-      summary: Get Live Events
-      description: |-
-        **Provided by [Senexis](https://rdo.gg/).**
-
-        Retrieves the full list of the current Live Events. These update every Tuesday at around 6 AM or 3 PM (UTC) but the update window is pretty sizeable.
-      operationId: get-live
-      responses:
-        "200":
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/LiveResponse'
   /nazar:
     get:
       tags:
@@ -843,95 +826,6 @@ components:
           - standard_hat
           - tall_trees_elk
       description: "A singular FME item, representing one event timeslot."
-    LiveResponse:
-      properties:
-        updated:
-          type: integer
-          description: The epoch timestamp the response was last updated.
-          example: 1620518400
-        hash:
-          type: string
-          description: A generated SHA-1 hash of this response.
-          example: 99201971A8132C891C2CA7E0C9EAFF381C970C70
-        events:
-          type: array
-          items:
-            $ref: '#/components/schemas/LiveItem'
-        meta:
-          $ref: '#/components/schemas/ApiMeta'
-      description: The base response of the request.
-    LiveItem:
-      properties:
-        slug:
-          type: string
-          description: The slug of this live event.
-          example: lorem-ipsum
-        headerText:
-          type: string
-          description: The header of this live event.
-          example: Lorem ipsum dolor sit amet
-        eventName:
-          type: string
-          description: The name of this live event.
-          example: Lorem ipsum dolor sit amet
-        imgUrl:
-          type: string
-          description: The main image of this live event.
-          example: https://example.com/image.jpg
-        description:
-          type: string
-          description: The description of this live event.
-          example: Lorem ipsum dolor sit amet
-        eventTypeId:
-          type: number
-          description: The identifier of this live event's type.
-          example: 1
-        eventType:
-          type: string
-          description: The type of this live event.
-          example: InGameBonus
-        startDate:
-          type: number
-          description: The epoch timestamp of when this live event will start.
-          example: 1620518400
-        endDate:
-          type: number
-          description: The epoch timestamp of when this live event will end.
-          example: 1620518400
-        isFeatured:
-          type: boolean
-          description: Whether this live event is featured.
-          example: true
-        urlHash:
-          type: string
-          description: The hash of this live event's URL.
-          example: Gr4xoExT
-        linkToUrl:
-          type: string
-          description: The relative link of this live event. Prefix with `https://socialclub.rockstargames.com/`
-            for the full URL.
-          example: events/bonuses/1
-        gameId:
-          type: string
-          description: The ID of this live event's game.
-          example: RDR2
-        isLive:
-          type: boolean
-          description: Whether this live event is available.
-          example: true
-        isPast:
-          type: boolean
-          description: Whether this live event has expired.
-          example: false
-        isComingSoon:
-          type: boolean
-          description: Whether this live event is coming soon.
-          example: false
-        tagIdentifier:
-          type: string
-          description: The identifier of this live event's tag.
-          example: live
-      description: A singular live event.
     NazarResponse:
       properties:
         updated:
